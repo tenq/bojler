@@ -7,14 +7,14 @@ This boilerplate is merely a guideline for writing HTML code that will render co
 
 ## Credits
 Special thanks to: 
-/ [Sean Powell](https://github.com/seanpowell/Email-Boilerplate)
-/ [Ian Hoar](http://www.ianhoar.com/)
-/ [James White](https://blog.jmwhite.co.uk)
-/ Campaign Monitor
-/ MailChimp
-/ [Email on Acid](http://www.emailology.org/#1)
-/ Litmus
-/ [Bringinteraktiv](http://removebluelinks.com)
+- [Sean Powell](https://github.com/seanpowell/Email-Boilerplate)
+- [Ian Hoar](http://www.ianhoar.com/)
+- [James White](https://blog.jmwhite.co.uk)
+- Campaign Monitor
+- MailChimp
+- [Email on Acid](http://www.emailology.org/#1)
+- Litmus
+- [Bringinteraktiv](http://removebluelinks.com)
 
 ## License
 All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE).
