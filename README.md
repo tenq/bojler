@@ -5,6 +5,7 @@ Slicejack Email Boilerplate is merely a guideline for writing HTML code that wil
 - [**Getting started**](https://github.com/Slicejack/slicejack-email-boilerplate#getting-started)
     + [*Use lite version of boilerplate*](https://github.com/Slicejack/slicejack-email-boilerplate#use-lite-version-of-boilerplate)
     + [*Follow email CSS guide*](https://github.com/Slicejack/slicejack-email-boilerplate#follow-this-email-css-guide)
+    + [Compress and optimize your images](https://github.com/Slicejack/slicejack-email-boilerplate#compress-and-optimize-your-images)
     + [*Bring your styles inline*](https://github.com/Slicejack/slicejack-email-boilerplate#bring-your-styles-inline)
     + [*Test your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#test-your-email-properly)
     + [*Send your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#send-your-email-properly)
@@ -26,6 +27,9 @@ First of all we suggest you to use `email-lite.html` for your email development 
 
 ### Follow [this](https://www.campaignmonitor.com/css/b/) email CSS guide
 On [this link](https://www.campaignmonitor.com/css/b/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
+
+### Compress and optimize your images
+It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
 ### Bring your styles inline
 Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [@peterbe](https://www.peterbe.com/) built [this conversion tool](https://premailer.io/) to automatically inline your email's CSS.
