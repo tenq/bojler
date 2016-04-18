@@ -28,7 +28,7 @@ First of all we suggest you to use `email-lite.html` for your email development 
 On [this link](https://www.campaignmonitor.com/css/b/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
 
 ### Bring your styles inline
-Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so ZURB team built [this conversion tool](http://foundation.zurb.com/emails/inliner.html) to automatically inline your email's CSS.
+Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [@peterbe](https://www.peterbe.com/) built [this conversion tool](https://premailer.io/) to automatically inline your email's CSS.
 
 ### Test your email properly
 Before you send your HTML email you should test it properly. We recommend you to use [Litmus](http://litmus.com) or [Email on Acid](https://www.emailonacid.com).
@@ -298,6 +298,7 @@ Special thanks to:
 - [Litmus](http://litmus.com)
 - [Bringinteraktiv](http://removebluelinks.com)
 - [Zurb Foundation](http://foundation.zurb.com/emails.html)
+- [Peter Bengtsson](https://www.peterbe.com/)
 
 ## License
 All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE).
