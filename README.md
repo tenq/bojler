@@ -2,10 +2,11 @@
 Slicejack Email Boilerplate is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
 ## Table of contents
+- [**Features**](https://github.com/Slicejack/slicejack-email-boilerplate#features)
 - [**Getting started**](https://github.com/Slicejack/slicejack-email-boilerplate#getting-started)
     + [*Use lite version of boilerplate*](https://github.com/Slicejack/slicejack-email-boilerplate#use-lite-version-of-boilerplate)
     + [*Follow email CSS guide*](https://github.com/Slicejack/slicejack-email-boilerplate#follow-this-email-css-guide)
-    + [Compress and optimize your images](https://github.com/Slicejack/slicejack-email-boilerplate#compress-and-optimize-your-images)
+    + [*Compress and optimize your images*](https://github.com/Slicejack/slicejack-email-boilerplate#compress-and-optimize-your-images)
     + [*Bring your styles inline*](https://github.com/Slicejack/slicejack-email-boilerplate#bring-your-styles-inline)
     + [*Test your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#test-your-email-properly)
     + [*Send your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#send-your-email-properly)
@@ -20,6 +21,44 @@ Slicejack Email Boilerplate is merely a guideline for writing HTML code that wil
     + [*Columns without gutter*](https://github.com/Slicejack/slicejack-email-boilerplate#columns-without-gutter)
 - [**Credits**](https://github.com/Slicejack/slicejack-email-boilerplate#credits)
 - [**License**](https://github.com/Slicejack/slicejack-email-boilerplate#license)
+
+## Features
+Quick features overview:
+
+<table>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td><strong><i>Reset styles</i></strong></td>
+        <td>This styles are great starting point for your email template develpment. They fix all well known bugs in various email clients.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Responsive</i></strong></td>
+        <td>This email boilerplate is responsive and ready for mobile devices and tablets.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Grid</i></strong></td>
+        <td>Slicejack email boilerplate uses 12-column grid with a 600px container.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Lite version</i></strong></td>
+        <td>There's lite version of boilerplate available for you. It's without comments so you can use it right out of the box.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Great compatibility</i></strong></td>
+        <td>We have tested this boilerplate on numerous email clients and devices.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Well documented code</i></strong></td>
+        <td>Well documented code for easier usage.</td>
+    </tr>
+    <tr>
+        <td><strong><i>Open source</i></strong></td>
+        <td>All contents of this boilerplate are licensed under the <a href="https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE">MIT license</a>.</td>
+    </tr>
+</table>
 
 ## Getting started
 ### Use lite version of boilerplate
