@@ -1,6 +1,10 @@
 # Slicejack Email Boilerplate
 Slicejack Email Boilerplate is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
+If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
+
+To make it easier for you to develop responsive and lightweight email templates we have created Slicejack Email Boilerplate.
+
 ## Table of contents
 - [**Features**](https://github.com/Slicejack/slicejack-email-boilerplate#features)
 - [**Getting started**](https://github.com/Slicejack/slicejack-email-boilerplate#getting-started)
@@ -61,6 +65,8 @@ Quick features overview:
 </table>
 
 ## Getting started
+This is some kind of development process that you should follow when developing email templates with Slicejack Email Boilerplate. If you are experienced email developer then you can skip this section.
+
 ### Use lite version of boilerplate
 First of all we suggest you to use `email-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
 
@@ -68,7 +74,9 @@ First of all we suggest you to use `email-lite.html` for your email development 
 On [this link](https://www.campaignmonitor.com/css/b/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
 
 ### Compress and optimize your images
-It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
+It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. 
+
+Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
 ### Bring your styles inline
 Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [@peterbe](https://www.peterbe.com/) built [this conversion tool](https://premailer.io/) to automatically inline your email's CSS.
