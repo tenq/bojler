@@ -160,6 +160,11 @@ More info on DOCTYPES in email:
 				line-height: inherit !important;
 			}
 
+			* img[tabindex="0"] + div{
+				/* Hide download icon in Gmail */
+				display: none !important;
+			}
+
 			/* ----- Mobile ----- */
 			@media screen and (max-width: 600px){
 				/* Your mobile styles goes here */

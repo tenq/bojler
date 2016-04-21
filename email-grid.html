@@ -160,6 +160,11 @@ More info on DOCTYPES in email:
 				line-height: inherit !important;
 			}
 
+			* img[tabindex="0"] + div{
+				/* Hide download icon in Gmail */
+				display: none !important;
+			}
+
 			/* ----- Grid ----- */
 			/* Container */
 			/* All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center. */
