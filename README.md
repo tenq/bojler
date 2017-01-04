@@ -70,8 +70,8 @@ This is some kind of development process that you should follow when developing 
 ### Use lite version of boilerplate
 First of all we suggest you to use `email-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
 
-### Follow [this](https://www.campaignmonitor.com/css/b/) email CSS guide
-On [this link](https://www.campaignmonitor.com/css/b/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
+### Follow [this](https://www.campaignmonitor.com/css/) email CSS guide
+On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
 
 ### Compress and optimize your images
 It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. 
