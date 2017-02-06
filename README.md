@@ -79,7 +79,7 @@ It’s also a really great idea to try to keep your entire email as small as hum
 Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
 ### Bring your styles inline
-Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [@peterbe](https://www.peterbe.com/) built [this conversion tool](https://premailer.io/) to automatically inline your email's CSS.
+Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [Mailchimp](https://mailchimp.com/) built [this conversion tool](https://templates.mailchimp.com/resources/inline-css/) to automatically inline your email's CSS.
 
 ### Test your email properly
 Before you send your HTML email you should test it properly. We recommend you to use [Litmus](http://litmus.com) or [Email on Acid](https://www.emailonacid.com).
@@ -349,7 +349,6 @@ Special thanks to:
 - [Litmus](http://litmus.com)
 - [Bringinteraktiv](http://removebluelinks.com)
 - [Zurb Foundation](http://foundation.zurb.com/emails.html)
-- [Peter Bengtsson](https://www.peterbe.com/)
 
 ## License
 All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE).
