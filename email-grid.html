@@ -50,14 +50,14 @@ More info on DOCTYPES in email:
 
 		<!--[if gte mso 15]>
 			<style type="text/css">
-				table{
+				table {
 					font-size: 1px;
 					line-height: 0;
 					mso-margin-top-alt: 1px;
 					mso-line-height-rule: exactly;
 				}
 
-				*{
+				* {
 					mso-line-height-rule: exactly;
 				}
 			</style>
@@ -69,7 +69,7 @@ More info on DOCTYPES in email:
 		<style type="text/css">
 			/* ----- Reset ----- */
 			html,
-			body{
+			body {
 				/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
 				width: 100% !important;
 				height: 100% !important;
@@ -80,12 +80,12 @@ More info on DOCTYPES in email:
 				background-color: #ffffff !important;
 			}
 
-			#outlook a{
+			#outlook a {
 				/* Force Outlook to provide a "View in browser" menu link. */
 				padding: 0;
 			}
 
-			.ExternalClass{
+			.ExternalClass {
 				/* Force Hotmail to display emails at full width */
 				width: 100%;
 			}
@@ -95,12 +95,12 @@ More info on DOCTYPES in email:
 			.ExternalClass span,
 			.ExternalClass font,
 			.ExternalClass td,
-			.ExternalClass div{
+			.ExternalClass div {
 				/* Force Hotmail to display normal line spacing. More on that: - http://www.emailonacid.com/forum/viewthread/43 */
 				line-height: 100%;
 			}
 
-			#body-table{
+			#body-table {
 				/* The #body-table id helps reset some email client specific formatting while setting the canvas for you to work in. */
 				margin: 0;
 				padding: 0;
@@ -109,22 +109,22 @@ More info on DOCTYPES in email:
 				line-height: 100% !important;
 			}
 
-			img{
+			img {
 				outline: none;
 				text-decoration: none;
 				-ms-interpolation-mode: bicubic; /* This works to help IE properly resize images. (If you are resizing them using the width and height attributes) */
 			}
 
-			a img{
+			a img {
 				border: none; /* Removes border when linking images. */
 			}
 
-			.image-fix{
+			.image-fix {
 				/* Updated the common Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers. You may not always want all of your images to be block elements. Apply the "image-fix" class to any image you need to fix. */
 				display: block;
 			}
 
-			table td{
+			table td {
 				/* Outlook 07, 10 Padding issue: These "newer" versions of Outlook add some padding around table cells potentially throwing off your perfectly pixeled table. The issue can cause added space and also throw off borders completely. Use this fix in your header or inline to safely fix your table woes.
 				More info:
 				 - http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
@@ -132,7 +132,7 @@ More info on DOCTYPES in email:
 				border-collapse: collapse;
 			}
 
-			table{
+			table {
 				/* Remove spacing around Outlook 07, 10 tables. More info: - http://www.campaignmonitor.com/blog/post/3694/removing-spacing-from-around-tables-in-outlook-2007-and-2010 */
 				border-spacing: 0 !important;
 				border-collapse: collapse !important;
@@ -140,17 +140,17 @@ More info on DOCTYPES in email:
 				mso-table-rspace: 0pt !important;
 			}
 
-			div[style*="margin: 16px 0"]{
+			div[style*="margin: 16px 0"] {
 				/* Centering emails in Android 4.4 KitKat. More info: - https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat */
 				margin: 0 !important;
 			}
 
-			.yshortcuts a{
+			.yshortcuts a {
 				/* Yahoo! Mail has a knack for picking keywords in emails and linking them to advertising popups (blue, dotted links). This is how to remove them. */
 				border-bottom: none !important;
 			}
 
-			a[x-apple-data-detectors]{
+			a[x-apple-data-detectors] {
 				/* Removing auto-generated blue links on Apple devices such as iPhone. More info: - http://removebluelinks.com */
 				color: inherit !important;
 				text-decoration: none !important;
@@ -163,83 +163,83 @@ More info on DOCTYPES in email:
 			/* ----- Grid ----- */
 			/* Container */
 			/* All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center. */
-			.container{
+			.container {
 				width: 600px;
 				margin: 0 auto 0 auto;
 			}
 
 			/* Columns */
 			/* Content should be placed within columns, and columns should be placed as <td> of your .container. You can define width of the column with classes such as .column-1, .column-2, .column-3 etc. In .container you can place max. 12 columns. */
-			.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12{
+			.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {
 				padding-left: 10px;
 				padding-right: 10px;
 			}
 			
-			.column-1 table, .column-2 table, .column-3 table, .column-4 table, .column-5 table, .column-6 table, .column-7 table, .column-8 table, .column-9 table, .column-10 table, .column-11 table, .column-12 table{
+			.column-1 table, .column-2 table, .column-3 table, .column-4 table, .column-5 table, .column-6 table, .column-7 table, .column-8 table, .column-9 table, .column-10 table, .column-11 table, .column-12 table {
 				width: 100%;
 			}
 
-			.column-1{
+			.column-1 {
 				width: 50px;
 			}
 
-			.column-2{
+			.column-2 {
 				width: 100px;
 			}
 
-			.column-3{
+			.column-3 {
 				width: 150px;
 			}
 
-			.column-4{
+			.column-4 {
 				width: 200px;
 			}
 
-			.column-5{
+			.column-5 {
 				width: 250px;
 			}
 
-			.column-6{
+			.column-6 {
 				width: 300px;
 			}
 
-			.column-7{
+			.column-7 {
 				width: 350px;
 			}
 
-			.column-8{
+			.column-8 {
 				width: 400px;
 			}
 
-			.column-9{
+			.column-9 {
 				width: 450px;
 			}
 
-			.column-10{
+			.column-10 {
 				width: 500px;
 			}
 
-			.column-11{
+			.column-11 {
 				width: 550px;
 			}
 
-			.column-12{
+			.column-12 {
 				width: 600px;
 			}
 
 			/* First and last classes */
 			/* The .first class adds the appropriate amount of padding-left to space the content away from the container’s edge. The .last class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between .first and .last, these classes are not needed on the middle columns. The reason these classes exist is that CSS properties like :last-child don’t work in most email clients so a class is needed. */
-			.first{
+			.first {
 				padding-left: 20px;
 			}
 
-			.last{
+			.last {
 				padding-right: 20px;
 			}
 
 			/* Columns without gutter */
 			/* If you need columns without gutter than you should use .no-gutter class on your .container. */
-			.no-gutter .column-1, .no-gutter .column-2, .no-gutter .column-3, .no-gutter .column-4, .no-gutter .column-5, .no-gutter .column-6, .no-gutter .column-7, .no-gutter .column-8, .no-gutter .column-9, .no-gutter .column-10, .no-gutter .column-11, .no-gutter .column-12{
+			.no-gutter .column-1, .no-gutter .column-2, .no-gutter .column-3, .no-gutter .column-4, .no-gutter .column-5, .no-gutter .column-6, .no-gutter .column-7, .no-gutter .column-8, .no-gutter .column-9, .no-gutter .column-10, .no-gutter .column-11, .no-gutter .column-12 {
 				padding: 0;
 			}
 
@@ -247,21 +247,21 @@ More info on DOCTYPES in email:
 			@media screen and (max-width: 600px){
 				/* Your mobile styles goes here */
 				/* Grid */
-				.container{
+				.container {
 					width: 100%;
 				}
 
-				.container td{
+				.container td {
 					width: 100%;
 					display: block;
 					box-sizing: border-box;
 				}
 
-				.first{
+				.first {
 					padding-left: 10px;
 				}
 
-				.last{
+				.last {
 					padding-right: 10px;
 				}
 			}
