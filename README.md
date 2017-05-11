@@ -3,15 +3,15 @@ Bojler is merely a guideline for writing HTML code that will render correctly ac
 
 If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
 
-To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
+To make it easier for you to develop responsive and lightweight email templates we have created bojler.
 
 ## Table of contents
-- [Project documentation 📖]()
-- [Quick-start guide 🚀]()
-- [Features]()
-- [Bugs and feature requests 🕷️]()
-- [Credits]()
-- [License]()
+- [Project documentation 📖](https://github.com/Slicejack/bojler#project-documentation-)
+- [Quick-start guide 🚀](https://github.com/Slicejack/bojler#quick-start-guide-)
+- [Features](https://github.com/Slicejack/bojler#features)
+- [Bugs and feature requests 🕷️](https://github.com/Slicejack/bojler#bugs-and-feature-requests-️)
+- [Credits](https://github.com/Slicejack/bojler#credits)
+- [License](https://github.com/Slicejack/bojler#license)
 
 ## Project documentation 📖
 Full project documentation can be found at http://slicejack.github.io/bojler/.
@@ -33,15 +33,15 @@ Quick features overview:
 - Lite version
 - Great compatibility
 - Well documented code
-- It's open source!
+- It's an open source project!
 
 ## Bugs and feature requests 🕷️
 If you find a bug or need new feature please open a [new issue](https://github.com/Slicejack/bojler/issues) and we will discuss about it.
 
 ## Credits
 Special thanks to:
-- [Sean Powell](https://github.com/seanpowell/Email-Boilerplate)
 - Ian Hoar
+- [Sean Powell](https://github.com/seanpowell/Email-Boilerplate)
 - [James White](https://blog.jmwhite.co.uk)
 - [Campaign Monitor](https://www.campaignmonitor.com/)
 - [MailChimp](http://www.mailchimp.com/)
