@@ -1,347 +1,47 @@
-# Slicejack Email Boilerplate
-Slicejack Email Boilerplate is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
+# bojler
+Bojler is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
 If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
 
-To make it easier for you to develop responsive and lightweight email templates we have created Slicejack Email Boilerplate.
+To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
 
 ## Table of contents
-- [**Features**](https://github.com/Slicejack/slicejack-email-boilerplate#features)
-- [**Getting started**](https://github.com/Slicejack/slicejack-email-boilerplate#getting-started)
-    + [*Use lite version of boilerplate*](https://github.com/Slicejack/slicejack-email-boilerplate#use-lite-version-of-boilerplate)
-    + [*Follow email CSS guide*](https://github.com/Slicejack/slicejack-email-boilerplate#follow-this-email-css-guide)
-    + [*Compress and optimize your images*](https://github.com/Slicejack/slicejack-email-boilerplate#compress-and-optimize-your-images)
-    + [*Bring your styles inline*](https://github.com/Slicejack/slicejack-email-boilerplate#bring-your-styles-inline)
-    + [*Test your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#test-your-email-properly)
-    + [*Send your email properly*](https://github.com/Slicejack/slicejack-email-boilerplate#send-your-email-properly)
-- [**Compatibility**](https://github.com/Slicejack/slicejack-email-boilerplate#compatibility)
-- [**Grid system**](https://github.com/Slicejack/slicejack-email-boilerplate#grid-system)
-    + [*Use grid version of boilerplate*](https://github.com/Slicejack/slicejack-email-boilerplate#use-grid-version-of-boilerplate)
-    + [*Media queries*](https://github.com/Slicejack/slicejack-email-boilerplate#media-queries)
-    + [*Grid options*](https://github.com/Slicejack/slicejack-email-boilerplate#grid-options)
-    + [*Container*](https://github.com/Slicejack/slicejack-email-boilerplate#container)
-    + [*Columns*](https://github.com/Slicejack/slicejack-email-boilerplate#columns)
-    + [*First and last classes*](https://github.com/Slicejack/slicejack-email-boilerplate#first-and-last-classes)
-    + [*Columns without gutter*](https://github.com/Slicejack/slicejack-email-boilerplate#columns-without-gutter)
-- [**Credits**](https://github.com/Slicejack/slicejack-email-boilerplate#credits)
-- [**License**](https://github.com/Slicejack/slicejack-email-boilerplate#license)
+- [Project documentation 📖]()
+- [Quick-start guide 🚀]()
+- [Features]()
+- [Bugs and feature requests 🕷️]()
+- [Credits]()
+- [License]()
+
+## Project documentation 📖
+Full project documentation can be found at http://slicejack.github.io/bojler/.
+
+## Quick-start guide 🚀
+1. Clone the repo: `git@github.com:Slicejack/bojler.git`
+2. Create an email
+3. [Compress and optimize images](http://slicejack.github.io/bojler/#compress-and-optimize-your-images)
+4. [Test email properly](http://slicejack.github.io/bojler/#test-your-email-properly)
+5. [Send email properly 🎉](http://slicejack.github.io/bojler/#send-your-email-properly)
+
+Full getting started guide can be found [here](http://slicejack.github.io/bojler/#getting-started).
 
 ## Features
 Quick features overview:
+- Reset styles
+- Responsive design
+- Grid
+- Lite version
+- Great compatibility
+- Well documented code
+- It's open source!
 
-<table>
-    <tr>
-        <td><strong>Feature</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td><strong><i>Reset styles</i></strong></td>
-        <td>This styles are great starting point for your email template develpment. They fix all well known bugs in various email clients.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Responsive</i></strong></td>
-        <td>This email boilerplate is responsive and ready for mobile devices and tablets.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Grid</i></strong></td>
-        <td>Slicejack email boilerplate uses 12-column grid with a 600px container.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Lite version</i></strong></td>
-        <td>There's lite version of boilerplate available for you. It's without comments so you can use it right out of the box.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Great compatibility</i></strong></td>
-        <td>We have tested this boilerplate on numerous email clients and devices.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Well documented code</i></strong></td>
-        <td>Well documented code for easier usage.</td>
-    </tr>
-    <tr>
-        <td><strong><i>Open source</i></strong></td>
-        <td>All contents of this boilerplate are licensed under the <a href="https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE">MIT license</a>.</td>
-    </tr>
-</table>
-
-## Getting started
-This is some kind of development process that you should follow when developing email templates with Slicejack Email Boilerplate. If you are experienced email developer then you can skip this section.
-
-### Use lite version of boilerplate
-First of all we suggest you to use `email-lite.html` for your email development because you should **avoid using comments** in your final email campaign. Else you may get blocked by SPAM filters.
-
-### Follow [this](https://www.campaignmonitor.com/css/) email CSS guide
-On [this link](https://www.campaignmonitor.com/css/) you can find a complete breakdown of the CSS support for the top 10 most popular mobile, web and desktop email clients on the planet. It is recommended to use it as often as possible.
-
-### Compress and optimize your images
-It’s also a really great idea to try to keep your entire email as small as humanly possible: under 100kb is ideal but not always possible, under 250kb is pretty standard. 
-
-Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
-
-### Bring your styles inline
-Some email clients strip out `<head>` and `<style>` tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so [Mailchimp](https://mailchimp.com/) built [this conversion tool](https://templates.mailchimp.com/resources/inline-css/) to automatically inline your email's CSS.
-
-### Test your email properly
-Before you send your HTML email you should test it properly. We recommend you to use [Litmus](http://litmus.com) or [Email on Acid](https://www.emailonacid.com).
-
-### Send your email properly
-Best way to send your HTML email would be using an Email Service Provider (ESP) such as [MailChimp](http://www.mailchimp.com) or [Campaign Monitor](https://www.campaignmonitor.com/). If you’re just running a quick test we recommend you to use https://putsmail.com/
-
-## Compatibility
-We have tested this boilerplate on numerous email clients and devices. In table below you can see what's supported:
-
-<table>
-    <tr>
-        <td><strong>Email clients</strong></td>
-        <td><strong>Web email clients</strong></td>
-        <td><strong>Mobile devices</strong></td>
-    </tr>
-    <tr>
-        <td>
-            Apple Mail 7<br>
-            Apple Mail 8<br>
-            Outlook 2000<br>
-            Outlook 2002<br>
-            Outlook 2003<br>
-            Outlook 2007<br>
-            Outlook 2010<br>
-            Outlook 2011<br>
-            Outlook 2013<br>
-            Outlook 2016
-        </td>
-        <td>
-            Gmail<br>
-            Google Apps<br>
-            Office 365<br>
-            Outlook.com<br>
-            Yahoo! Mail
-        </td>
-        <td>
-            Android 4.4<br>
-            iPhone 5<br>
-            iPhone 6<br>
-            iPad<br>
-            iPad Mini
-        </td>
-    </tr>
-</table>
-
-## Grid system
-Slicejack email boilerplate uses 12-column grid with a 600px container. On mobile devices (under 600px wide), columns become full width and stack vertically.
-
-### Use grid version of boilerplate
-We have created special `email-grid.html` file for email development with our grid. Basically it's a `email-lite.html` combined with grid CSS.
-
-### Media queries
-We suggest you to use this media query when building responsive email with our grid.
-
-```css
-@media screen and (max-width: 600px) {}
-```
-
-### Grid options
-See how aspects of this grid work across devices with a handy table.
-<table>
-  <tr>
-    <td></td>
-    <td><strong>Small devices</strong> <i>(&lt;600px)</i></td>
-    <td><strong>Large devices</strong> <i>(&gt;600px)</i></td>
-  </tr>
-  <tr>
-    <td><strong>Grid behaviour</strong></td>
-    <td>Horizontal</td>
-    <td>Collapsed</td>
-  </tr>
-  <tr>
-    <td><strong>Container width</strong></td>
-    <td>100%</td>
-    <td>600px</td>
-  </tr>
-  <tr>
-    <td><strong>Number of columns</strong></td>
-    <td colspan="2">12</td>
-  </tr>
-  <tr>
-    <td><strong>Column width</strong></td>
-    <td>100%</td>
-    <td>50px</td>
-  </tr>
-  <tr>
-    <td><strong>Gutter width</strong></td>
-    <td colspan="2">20px <i>(10px on each side of a column)</i></td>
-  </tr>
-</table>
-
-### Container
-All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center.
-
-*Example:*
-```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td></td>
-    </tr>
-</table><!-- /.container -->
-```
-
-### Columns
-Content should be placed within columns, and columns should be placed as `<td>` of your `.container`.
-You can define width of the column with classes such as `.column-1`, `.column-2`, `.column-3` etc.
-In `.container` you can place max. 12 columns.
-
-*Examples:*
-```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td class="column-12 first last">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-    </tr>
-</table><!-- /.container -->
-```
-
-![Column 12](http://i.imgur.com/qhGENuF.jpg)
-
-```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td class="column-6 first">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-6 last">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-    </tr>
-</table><!-- /.container -->
-```
-
-![Column 6](http://i.imgur.com/FWefkpW.jpg)
-
-```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td class="column-3 first">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-3">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-3">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-3 last">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-    </tr>
-</table><!-- /.container -->
-```
-
-![Column 3](http://i.imgur.com/dDQ2vZ6.jpg)
-
-### First and last classes
-
-The `.first` class adds the appropriate amount of padding-left to space the content away from the container’s edge. The `.last` class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between `.first` and `.last`, these classes are not needed on the middle columns.
-
-The reason these classes exist is that CSS properties like `:last-child` don’t work in most email clients so a class is needed.
-
-*Example:*
-```html
-<table class="container" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td class="column-4 first">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-4">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-4 last">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-    </tr>
-</table><!-- /.container -->
-```
-
-![Column 4](http://i.imgur.com/NiibAQi.jpg)
-
-### Columns without gutter
-
-If you need columns without gutter than you should use `.no-gutter` class on your `.container`.
-
-*Example:*
-```html
-<table class="container no-gutter" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-        <td class="column-6">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-
-        <td class="column-6">
-            <table border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>Content goes here</td>
-                </tr>
-            </table>
-        </td><!-- /.col -->
-    </tr>
-</table><!-- /.container -->
-```
-
-![No gutter](http://i.imgur.com/SZnAkvM.jpg)
+## Bugs and feature requests 🕷️
+If you find a bug or need new feature please open a [new issue](https://github.com/Slicejack/bojler/issues) and we will discuss about it.
 
 ## Credits
-Special thanks to: 
+Special thanks to:
 - [Sean Powell](https://github.com/seanpowell/Email-Boilerplate)
-- [Ian Hoar](http://www.ianhoar.com/)
+- Ian Hoar
 - [James White](https://blog.jmwhite.co.uk)
 - [Campaign Monitor](https://www.campaignmonitor.com/)
 - [MailChimp](http://www.mailchimp.com/)
@@ -351,4 +51,4 @@ Special thanks to:
 - [Zurb Foundation](http://foundation.zurb.com/emails.html)
 
 ## License
-All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/slicejack-email-boilerplate/blob/master/LICENSE).
+All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/bojler/blob/master/LICENSE).
