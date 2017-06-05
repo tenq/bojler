@@ -29,7 +29,9 @@ Full getting started guide can be found [here](http://slicejack.github.io/bojler
 Quick features overview:
 - Reset styles
 - Responsive design
+- Typography
 - Grid
+- Components
 - Lite version
 - Great compatibility
 - Well documented code
