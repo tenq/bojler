@@ -115,6 +115,13 @@ More info on DOCTYPES in email:
 				width: 100% !important;
 				height: 100% !important;
 				line-height: 100% !important;
+				background: #f1f1f1;
+			}
+
+			.body-table-spacing {
+				/* Adding spacing on main table. If you don't need this spacing just remove class from markup. */
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 
 			img {
@@ -139,7 +146,7 @@ More info on DOCTYPES in email:
 				 - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07 */
 				border-collapse: collapse;
 
-				/* Basic typography settings */
+				/* Basic typography settings. */
 				font-size: 16px;
 				line-height: 1.4;
 				text-align: left;
@@ -179,6 +186,7 @@ More info on DOCTYPES in email:
 			.container {
 				width: 600px;
 				margin: 0 auto 0 auto;
+				background: #ffffff;
 			}
 
 			/* Columns */
@@ -290,8 +298,15 @@ More info on DOCTYPES in email:
 			}
 
 			/* ----- Mobile ----- */
-			@media screen and (max-width: 600px){
-				/* Your mobile styles goes here */
+			@media screen and (max-width: 640px) {
+				/* Reset */
+                .body-table-spacing {
+                    padding-top: 10px;
+					padding-bottom: 10px;
+					padding-left: 10px;
+					padding-right: 10px;
+                }
+
 				/* Grid */
 				.container {
 					width: 100% !important;
@@ -310,23 +325,25 @@ More info on DOCTYPES in email:
 				.last {
 					padding-right: 10px;
 				}
+
+				/* Your mobile styles goes here */
 			}
 		</style>
 	</head>
 
-	<body bgcolor="#f1f1f1">
+	<body>
 	<!--
 	We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to a div. Since it gets converted to a div, the other body attributes like bgcolor are ignored.
 	-->
-		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1f1f1">
+		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>Your preheader text goes here. This block should be hidden.</td>
 			</tr>
 		</table><!-- /#preheader -->
-		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1f1f1">
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
 			<tr>
-				<td align="center" valign="top">
-					<table class="container" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+				<td class="body-table-spacing" align="center" valign="top">
+					<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
 						<tr>
 							<td></td>
 						</tr>
