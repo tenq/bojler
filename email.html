@@ -6,8 +6,8 @@
 - Some email clients strip out <head> and <style> tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so MailChimp built this conversion tool to automatically inline your email's CSS - http://templates.mailchimp.com/resources/inline-css/
 - This boilerplate is under MIT License. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
 - Special thanks to:
+	/ Ian Hoar
 	/ Sean Powell (https://github.com/seanpowell/Email-Boilerplate)
-	/ Ian Hoar (http://www.ianhoar.com/)
 	/ James White (https://blog.jmwhite.co.uk)
 	/ Campaign Monitor
 	/ MailChimp
@@ -77,7 +77,7 @@ More info on DOCTYPES in email:
 				-ms-text-size-adjust: 100%;
 				margin: 0 !important;
 				padding: 0 !important;
-				background-color: #ffffff !important;
+				background: #f1f1f1 !important;
 			}
 
 			html,
@@ -138,6 +138,11 @@ More info on DOCTYPES in email:
 				 - http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
 				 - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07 */
 				border-collapse: collapse;
+
+				/* Basic typography settings */
+				font-size: 16px;
+				line-height: 1.4;
+				text-align: left;
 			}
 
 			table {
@@ -168,6 +173,107 @@ More info on DOCTYPES in email:
 				line-height: inherit !important;
 			}
 
+			/* ----- Grid ----- */
+			/* Container */
+			/* All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center. */
+			.container {
+				width: 600px;
+				margin: 0 auto 0 auto;
+			}
+
+			/* Columns */
+			/* Content should be placed within columns, and columns should be placed as <td> of your .container. You can define width of the column with classes such as .column-1, .column-2, .column-3 etc. In .container you can place max. 12 columns. */
+			.column-1,
+			.column-2,
+			.column-3,
+			.column-4,
+			.column-5,
+			.column-6,
+			.column-7,
+			.column-8,
+			.column-9,
+			.column-10,
+			.column-11,
+			.column-12 {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			.column-1 {
+				width: 50px;
+			}
+
+			.column-2 {
+				width: 100px;
+			}
+
+			.column-3 {
+				width: 150px;
+			}
+
+			.column-4 {
+				width: 200px;
+			}
+
+			.column-5 {
+				width: 250px;
+			}
+
+			.column-6 {
+				width: 300px;
+			}
+
+			.column-7 {
+				width: 350px;
+			}
+
+			.column-8 {
+				width: 400px;
+			}
+
+			.column-9 {
+				width: 450px;
+			}
+
+			.column-10 {
+				width: 500px;
+			}
+
+			.column-11 {
+				width: 550px;
+			}
+
+			.column-12 {
+				width: 600px;
+			}
+
+			/* First and last classes */
+			/* The .first class adds the appropriate amount of padding-left to space the content away from the container’s edge. The .last class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between .first and .last, these classes are not needed on the middle columns. The reason these classes exist is that CSS properties like :last-child don’t work in most email clients so a class is needed. */
+			.first {
+				padding-left: 20px;
+			}
+
+			.last {
+				padding-right: 20px;
+			}
+
+			/* Columns without gutter */
+			/* If you need columns without gutter than you should use .no-gutter class on your .container. */
+			.no-gutter .column-1,
+			.no-gutter .column-2,
+			.no-gutter .column-3,
+			.no-gutter .column-4,
+			.no-gutter .column-5,
+			.no-gutter .column-6,
+			.no-gutter .column-7,
+			.no-gutter .column-8,
+			.no-gutter .column-9,
+			.no-gutter .column-10,
+			.no-gutter .column-11,
+			.no-gutter .column-12 {
+				padding: 0;
+			}
+
 			/* ----- Preheader ----- */
 			#preheader td {
 				/* Hiding preheader. More info: - https://litmus.com/blog/the-ultimate-guide-to-preview-text-support */
@@ -184,22 +290,40 @@ More info on DOCTYPES in email:
 			}
 
 			/* ----- Mobile ----- */
-			@media screen and (max-width: 600px) {
+			@media screen and (max-width: 600px){
 				/* Your mobile styles goes here */
+				/* Grid */
+				.container {
+					width: 100% !important;
+				}
+
+				.container td {
+					width: 100% !important;
+					display: block;
+					box-sizing: border-box;
+				}
+
+				.first {
+					padding-left: 10px;
+				}
+
+				.last {
+					padding-right: 10px;
+				}
 			}
 		</style>
 	</head>
 
-	<body style="background: #ffffff;" bgcolor="#ffffff">
+	<body bgcolor="#f1f1f1">
 	<!--
 	We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to a div. Since it gets converted to a div, the other body attributes like bgcolor are ignored.
 	-->
-		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1f1f1">
 			<tr>
 				<td>Your preheader text goes here. This block should be hidden.</td>
 			</tr>
 		</table><!-- /#preheader -->
-		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f1f1f1">
 			<tr>
 				<td align="center" valign="top">
 					<table class="container" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
