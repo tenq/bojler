@@ -221,6 +221,23 @@ More info on DOCTYPES in email:
 				line-height: 20px;
 			}
 
+			/* Lists */
+			ul, ol {
+				/* Reset list margins. */
+				margin: 0;
+			}
+
+			.have-list {
+				/* Adding padding on list wrapper when used for Outlook fix. */
+				padding-left: 25px;
+			}
+
+			.have-list ul,
+			.have-list ol {
+				/* Removing padding on lists inside list wrapper when used for Outlook fix. */
+				padding: 0;
+			}
+
 			/* ----- Grid ----- */
 			/* Container */
 			/* All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center. */
