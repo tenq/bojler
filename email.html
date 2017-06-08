@@ -146,9 +146,7 @@ More info on DOCTYPES in email:
 				 - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07 */
 				border-collapse: collapse;
 
-				/* Basic typography settings. */
-				font-size: 16px;
-				line-height: 1.4;
+				/* Proper table cell alignment on all e-mail clients. */
 				text-align: left;
 			}
 
@@ -178,6 +176,49 @@ More info on DOCTYPES in email:
 				font-family: inherit !important;
 				font-weight: inherit !important;
 				line-height: inherit !important;
+			}
+
+			/* ----- Typography ----- */
+			/* Base */
+			table td {
+				font-size: 16px;
+				line-height: 23px;
+			}
+
+			/* Headings */
+			h1, h2, h3, h4, h5, h6 {
+				/* Reset heading margins. */
+				margin: 0;
+			}
+
+			h1 {
+				font-size: 50px;
+				line-height: 58px;
+			}
+
+			h2 {
+				font-size: 38px;
+				line-height: 46px;
+			}
+
+			h3 {
+				font-size: 28px;
+				line-height: 36px;
+			}
+
+			h4 {
+				font-size: 21px;
+				line-height: 29px;
+			}
+
+			h5 {
+				font-size: 16px;
+				line-height: 23px;
+			}
+
+			h6 {
+				font-size: 12px;
+				line-height: 20px;
 			}
 
 			/* ----- Grid ----- */
