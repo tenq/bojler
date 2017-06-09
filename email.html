@@ -1,10 +1,18 @@
 <!--
 
 !IMPORTANT:
-- This boilerplate is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
-- Avoid using comments in your final email campaign or else you may get blocked by SPAM filters.
-- Some email clients strip out <head> and <style> tags from emails, so it's best to have your CSS written inline within your markup. We know that writing inline CSS is time consuming and repetitive, so MailChimp built this conversion tool to automatically inline your email's CSS - http://templates.mailchimp.com/resources/inline-css/
-- This boilerplate is under MIT License. Basically, you can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source.
+- This boilerplate is merely a guideline for writing HTML code that will render
+  correctly across each of the most popular email clients.
+- Avoid using comments in your final email campaign or else you may get blocked
+  by SPAM filters.
+- Some email clients strip out <head> and <style> tags from emails, so it's best
+  to have your CSS written inline within your markup. We know that writing
+  inline CSS is time consuming and repetitive, so MailChimp built this
+  conversion tool to automatically inline your email's CSS:
+  http://templates.mailchimp.com/resources/inline-css/
+- This boilerplate is under MIT License. Basically, you can do whatever you want
+  as long as you include the original copyright and license notice in any copy
+  of the software/source.
 - Special thanks to:
 	/ Ian Hoar
 	/ Sean Powell (https://github.com/seanpowell/Email-Boilerplate)
@@ -34,23 +42,32 @@ More info:
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!--
-		We have included meta ‘Content Type’ so that we can set the character set as UTF8 – specifying as much as possible can be a good thing when writing code for the whole range of email clients.
+		We have included meta ‘Content Type’ so that we can set the character
+		set as UTF8 – specifying as much as possible can be a good thing when
+		writing code for the whole range of email clients.
 		More info on Content-Type Character Encoding in HTML Emails:
 		 - https://www.emailonacid.com/blog/article/email-development/the_importance_of_content-type_character_encoding_in_html_emails/
 		-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!--
-		The IE=Edge meta tag enables CSS3 and media queries in Windows Phone 7.5 and higher. That's why you should use it in your email.
+		The IE=Edge meta tag enables CSS3 and media queries in Windows Phone 7.5
+		and higher. That's why you should use it in your email.
 		More info:
 		 - https://www.campaignmonitor.com/forums/topic/7989/windows-phone-8-has-full-css3media-query-support/
 		-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<!--
-		Meta ‘Viewport’ as seen above sets the viewable area to the width of the device screen – this is essential if you want your email to be responsive. If your email is intended solely for desktop users then don’t include this line of code.
+		Meta ‘Viewport’ as seen above sets the viewable area to the width of the
+		device screen – this is essential if you want your email to be
+		responsive. If your email is intended solely for desktop users then
+		don’t include this line of code.
 		-->
 		<title>Email title</title>
 		<!--
-		The final bit of meta data to set is the title tag - this is worth including because it is used by Outlook when people use the ‘View in Browser’ function and it can also appear in email preview snippets in some versions of Hotmail.
+		The final bit of meta data to set is the title tag - this is worth
+		including because it is used by Outlook when people use the ‘View in
+		Browser’ function and it can also appear in email preview snippets in
+		some versions of Hotmail.
 		-->
 
 		<!--[if gte mso 15]>
@@ -75,7 +92,8 @@ More info:
 			/* ----- Reset ----- */
 			html,
 			body {
-				/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+				/* Prevent Webkit and Windows Mobile platforms from changing
+				default font sizes, while not breaking desktop design. */
 				width: 100% !important;
 				height: 100% !important;
 				-webkit-text-size-adjust: 100%;
@@ -89,7 +107,8 @@ More info:
 			body,
 			table,
 			table td {
-				/* System fonts stack. More on that here: - http://slicejack.github.io/bojler/#system-font-stack */
+				/* System fonts stack. More on that here:
+				- http://slicejack.github.io/bojler/#system-font-stack */
 				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 			}
 
@@ -109,12 +128,14 @@ More info:
 			.ExternalClass font,
 			.ExternalClass td,
 			.ExternalClass div {
-				/* Force Hotmail to display normal line spacing. More on that: - http://www.emailonacid.com/forum/viewthread/43 */
+				/* Force Hotmail to display normal line spacing. More on that:
+				- http://www.emailonacid.com/forum/viewthread/43 */
 				line-height: 100%;
 			}
 
 			#body-table {
-				/* The #body-table id helps reset some email client specific formatting while setting the canvas for you to work in. */
+				/* The #body-table id helps reset some email client specific
+				formatting while setting the canvas for you to work in. */
 				margin: 0;
 				padding: 0;
 				width: 100% !important;
@@ -124,7 +145,8 @@ More info:
 			}
 
 			.body-table-spacing {
-				/* Adding spacing around main table. If you don't need this spacing just remove class from markup. */
+				/* Adding spacing around main table. If you don't need this
+				spacing just remove class from markup. */
 				padding-top: 20px;
 				padding-bottom: 20px;
 			}
@@ -132,7 +154,9 @@ More info:
 			img {
 				outline: none;
 				text-decoration: none;
-				-ms-interpolation-mode: bicubic; /* This works to help IE properly resize images. (If you are resizing them using the width and height attributes) */
+				-ms-interpolation-mode: bicubic; /* This works to help IE
+				properly resize images. (If you are resizing them using the
+				width and height attributes) */
 			}
 
 			a img {
@@ -140,12 +164,20 @@ More info:
 			}
 
 			.image-fix {
-				/* Updated the common Gmail/Hotmail image display fix: Gmail and Hotmail unwantedly adds in an extra space below images when using non IE browsers. You may not always want all of your images to be block elements. Apply the "image-fix" class to any image you need to fix. */
+				/* Updated the common Gmail/Hotmail image display fix: Gmail
+				and Hotmail unwantedly adds in an extra space below images when
+				using non IE browsers. You may not always want all of your
+				images to be block elements. Apply the "image-fix" class to any
+				image you need to fix. */
 				display: block;
 			}
 
 			table td {
-				/* Outlook 07, 10 Padding issue: These "newer" versions of Outlook add some padding around table cells potentially throwing off your perfectly pixeled table. The issue can cause added space and also throw off borders completely. Use this fix in your header or inline to safely fix your table woes.
+				/* Outlook 07, 10 Padding issue: These "newer" versions of
+				Outlook add some padding around table cells potentially throwing
+				off your perfectly pixeled table. The issue can cause added
+				space and also throw off borders completely. Use this fix in
+				your header or inline to safely fix your table woes.
 				More info:
 				 - http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
 				 - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07 */
@@ -164,12 +196,15 @@ More info:
 			}
 
 			.yshortcuts a {
-				/* Yahoo! Mail has a knack for picking keywords in emails and linking them to advertising popups (blue, dotted links). This is how to remove them. */
+				/* Yahoo! Mail has a knack for picking keywords in emails and
+				linking them to advertising popups (blue, dotted links). This is
+				 how to remove them. */
 				border-bottom: none !important;
 			}
 
 			a[x-apple-data-detectors] {
-				/* Removing auto-generated blue links on Apple devices such as iPhone. More info: - http://removebluelinks.com */
+				/* Removing auto-generated blue links on Apple devices such as
+				iPhone. More info: - http://removebluelinks.com */
 				color: inherit !important;
 				text-decoration: none !important;
 				font-size: inherit !important;
@@ -179,7 +214,11 @@ More info:
 			}
 
 			/* ----- Typography ----- */
-			/* We’ve updated default typography values for all table cells, headings and lists. Default values are defined in px instead of em to work properly in all e-mail clients (Different e-mail clients use different baselines, which makes pixel-perfect work near-impossible when using em). */
+			/* We’ve updated default typography values for all table cells,
+			headings and lists. Default values are defined in px instead of em
+			to work properly in all e-mail clients (Different e-mail clients use
+			different baselines, which makes pixel-perfect work near-impossible
+			when using em). */
 			/* Base */
 			table td {
 				font-size: 16px;
@@ -235,13 +274,16 @@ More info:
 
 			.have-list ul,
 			.have-list ol {
-				/* Removing padding on lists inside list wrapper when used for Outlook fix. */
+				/* Removing padding on lists inside list wrapper when used for
+				Outlook fix. */
 				padding: 0;
 			}
 
 			/* ----- Grid ----- */
 			/* Container */
-			/* All emails should have a container element. This gives the email a maximum width for email clients on larger screens. It also orients the email in the center. */
+			/* All emails should have a container element. This gives the email
+			a maximum width for email clients on larger screens. It also orients
+			the email in the center. */
 			.container {
 				width: 600px;
 				margin: 0 auto 0 auto;
@@ -249,7 +291,10 @@ More info:
 			}
 
 			/* Columns */
-			/* Content should be placed within columns, and columns should be placed as <td> of your .container. You can define width of the column with classes such as .column-1, .column-2, .column-3 etc. In .container you can place max. 12 columns. */
+			/* Content should be placed within columns, and columns should be
+			placed as <td> of your .container. You can define width of the
+			column with classes such as .column-1, .column-2, .column-3 etc. In
+			.container you can place max. 12 columns. */
 			.column-1,
 			.column-2,
 			.column-3,
@@ -315,7 +360,13 @@ More info:
 			}
 
 			/* First and last classes */
-			/* The .first class adds the appropriate amount of padding-left to space the content away from the container’s edge. The .last class is added to your last set of columns in a row to add padding-right to the column. If you have columns in between .first and .last, these classes are not needed on the middle columns. The reason these classes exist is that CSS properties like :last-child don’t work in most email clients so a class is needed. */
+			/* The .first class adds the appropriate amount of padding-left to
+			space the content away from the container’s edge. The .last class is
+			added to your last set of columns in a row to add padding-right to
+			the column. If you have columns in between .first and .last, these
+			classes are not needed on the middle columns. The reason these
+			classes exist is that CSS properties like :last-child don’t work in
+			most email clients so a class is needed. */
 			.first {
 				padding-left: 20px;
 			}
@@ -325,7 +376,8 @@ More info:
 			}
 
 			/* Columns without gutter */
-			/* If you need columns without gutter than you should use .no-gutter class on your .container. */
+			/* If you need columns without gutter than you should use .no-gutter
+			class on your .container. */
 			.no-gutter .column-1,
 			.no-gutter .column-2,
 			.no-gutter .column-3,
@@ -367,7 +419,8 @@ More info:
 			/* ----- Components ----- */
 			/* Preheader */
 			#preheader td {
-				/* Hiding preheader. More info: - https://litmus.com/blog/the-ultimate-guide-to-preview-text-support */
+				/* Hiding preheader. More info:
+				- https://litmus.com/blog/the-ultimate-guide-to-preview-text-support */
 				display: none !important;
 				overflow: hidden;
 				opacity: 0;
@@ -482,7 +535,9 @@ More info:
 
 	<body>
 	<!--
-	We've included the style attribute for Gmail because it does not support embedded CSS and it will convert this body tag to a div. Since it gets converted to a div, the other body attributes like bgcolor are ignored.
+	We've included the style attribute for Gmail because it does not support
+	embedded CSS and it will convert this body tag to a div. Since it gets
+	converted to a div, the other body attributes like bgcolor are ignored.
 	-->
 		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
 			<tr>
@@ -493,7 +548,8 @@ More info:
 			<tr>
 				<td class="body-table-spacing" align="center" valign="top">
 				<!--
-				Adding spacing around main table. If you don't need this spacing just remove class from markup.
+				Adding spacing around main table. If you don't need this spacing
+				just remove class from markup.
 				-->
 					<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
 						<tr>
