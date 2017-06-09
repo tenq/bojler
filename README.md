@@ -31,6 +31,7 @@ Quick features overview:
 - Responsive design
 - Typography
 - Grid
+- Utility classes
 - Components
 - Lite version
 - Great compatibility
