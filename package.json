@@ -1,0 +1,22 @@
+{
+    "name": "bojler",
+    "description": "Bojler is an email boilerplate and a guideline for writing HTML code that will render correctly across each of the most popular email clients.",
+    "version": "1.0.0",
+    "author": "Slicejack",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Slicejack/bojler",
+    },
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-connect": "^3.2.2",
+        "gulp-inline-css": "^3.1.0",
+        "gulp-sass": "^2.2.0",
+        "gulp-util": "^3.0.7",
+    },
+    "scripts": {
+        "watch": "gulp",
+    },
+}
