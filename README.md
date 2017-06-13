@@ -1,5 +1,5 @@
 # bojler
-Bojler is merely a guideline for writing HTML code that will render correctly across each of the most popular email clients.
+Bojler is boilerplate and guideline for writing HTML code that will render correctly across each of the most popular email clients.
 
 If you have experienced email template development then you know how painful it is to build perfect email template that works on all email clients.
 
