@@ -1,42 +1,50 @@
 var gulp = require( 'gulp' ),
     util = require( 'gulp-util' ),
     sass = require( 'gulp-sass' ),
-    inlineCss = require( 'gulp-inline-css' ),
     connect = require( 'gulp-connect' ),
+    inlinecss = require( 'gulp-inline-css' ),
+    inject = require( 'gulp-inline-source' ),
+    stripComments = require( 'gulp-strip-comments' ),
     filesToWatch = [
         'source/sass/**/*.scss',
+        'source/*.html',
     ];
 
-// Inline SASS
-gulp.task( 'sassInlined', function( callback ) {
-    return gulp.src( 'source/sass/style-inlined.scss' )
-        .pipe(
-            sass( { outputStyle: 'expanded' } )
-            .on( 'error', util.log )
-        )
-        .pipe( gulp.dest( 'public/css/' ) );
-} );
-
-gulp.task( 'sassEmbedded', function( callback ) {
-    return gulp.src( 'source/sass/style-embedded.scss' )
+// Style to CSS
+gulp.task( 'styleToCss', function() {
+    return gulp.src( 'source/sass/style.scss' )
         .pipe(
             sass( { outputStyle: 'compressed' } )
             .on( 'error', util.log )
         )
-        .pipe( gulp.dest( 'public/css/' ) );
+        .pipe( gulp.dest( 'public/css/' ) )
 } );
 
-gulp.task( 'inlinecss', [ 'sassInlined' ], function() {
+// Inject CSS to head
+gulp.task( 'injectCss', [ 'styleToCss' ], function () {
+    return gulp.src( 'source/*.html' )
+        .pipe( inject() )
+        .pipe( gulp.dest( 'public/' ) );
+} );
+
+// Inline CSS
+gulp.task( 'inlinecss', [ 'injectCss' ], function() {
     return gulp.src( 'public/*.html' )
-        .pipe(
-            inlineCss( {
-                applyStyleTags: false,
-                removeStyleTags: false,
-            } )
-            .on( 'error', util.log )
-        )
-        .pipe( gulp.dest( 'public/') )
-        .pipe( connect.reload() );
+        .pipe( inlinecss( {
+            applyLinkTags: false,
+            preserveMediaQueries: true
+        } ) )
+        .pipe( gulp.dest( 'public/' ) );
+} );
+
+// Strip comments
+gulp.task( 'removeComments', [ 'inlinecss' ], function () {
+  return gulp.src( 'public/*.html' )
+    .pipe( stripComments({
+        safe: true
+    }) )
+    .pipe( gulp.dest( 'public/' ) )
+    .pipe( connect.reload() );
 } );
 
 // Server w/ live reload
@@ -50,8 +58,8 @@ gulp.task( 'connect', function() {
 
 // Watch
 gulp.task( 'watch', function() {
-    gulp.watch( filesToWatch, [ 'inlinecss' ] );
+    gulp.watch( filesToWatch, [ 'removeComments' ] );
 } );
 
-// Default task
-gulp.task( 'default', [ 'connect', 'inlinecss', 'watch' ] );
+// Default
+gulp.task( 'default', [ 'connect', 'removeComments', 'watch' ] );

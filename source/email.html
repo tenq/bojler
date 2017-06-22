@@ -1,0 +1,136 @@
+<!--
+
+!IMPORTANT:
+- Bojler is an email boilerplate and a guideline for writing HTML code that will
+  render correctly across each of the most popular email clients.
+- Avoid using comments in your final email campaign or else you may get blocked
+  by SPAM filters.
+- Some email clients strip out <head> and <style> tags from emails, so it's best
+  to have your CSS written inline within your markup. We know that writing
+  inline CSS is time consuming and repetitive, so MailChimp built this
+  conversion tool to automatically inline your email's CSS:
+  http://templates.mailchimp.com/resources/inline-css/
+- This boilerplate is under MIT License. Basically, you can do whatever you want
+  as long as you include the original copyright and license notice in any copy
+  of the software/source.
+- Special thanks to:
+	/ Ian Hoar
+	/ Sean Powell (https://github.com/seanpowell/Email-Boilerplate)
+	/ James White (https://blog.jmwhite.co.uk)
+	/ Campaign Monitor
+	/ MailChimp
+	/ Email on Acid (http://www.emailology.org/#1)
+	/ Litmus
+	/ Bringinteraktiv (http://removebluelinks.com)
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+For best results we use XHTML Transitional.
+More info on DOCTYPES in email:
+ - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
+ - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
+ - https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-meta-tags-in-email
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+<!--
+DPI images scaling issue in Outlook - Fix.
+More info:
+ - https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
+-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!--
+		We have included meta ‘Content Type’ so that we can set the character
+		set as UTF8 – specifying as much as possible can be a good thing when
+		writing code for the whole range of email clients.
+		More info on Content-Type Character Encoding in HTML Emails:
+		 - https://www.emailonacid.com/blog/article/email-development/the_importance_of_content-type_character_encoding_in_html_emails/
+		-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--
+		The IE=Edge meta tag enables CSS3 and media queries in Windows Phone 7.5
+		and higher. That's why you should use it in your email.
+		More info:
+		 - https://www.campaignmonitor.com/forums/topic/7989/windows-phone-8-has-full-css3media-query-support/
+		-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--
+		Meta ‘Viewport’ as seen above sets the viewable area to the width of the
+		device screen – this is essential if you want your email to be
+		responsive. If your email is intended solely for desktop users then
+		don’t include this line of code.
+		-->
+		<title>Email title</title>
+		<!--
+		The final bit of meta data to set is the title tag - this is worth
+		including because it is used by Outlook when people use the ‘View in
+		Browser’ function and it can also appear in email preview snippets in
+		some versions of Hotmail.
+		-->
+
+		<!--[if gte mso 15]>
+			<style type="text/css">
+				table {
+					font-size: 1px;
+					line-height: 0;
+					mso-margin-top-alt: 1px;
+					mso-line-height-rule: exactly;
+				}
+
+				* {
+					mso-line-height-rule: exactly;
+				}
+			</style>
+		<![endif]-->
+		<!--
+		Outlook line heights fix.
+		-->
+
+		<!--[if gte mso 9]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+		<!--
+		DPI images scaling issue in Outlook - Fix.
+		More info:
+		 - https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
+		-->
+		<link rel="stylesheet" href="../public/css/style.css" inline>
+	</head>
+
+	<body>
+	<!--
+	We've included the style attribute for Gmail because it does not support
+	embedded CSS and it will convert this body tag to a div. Since it gets
+	converted to a div, the other body attributes like bgcolor are ignored.
+	-->
+		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>Your preheader text goes here. This block should be hidden.</td>
+			</tr>
+		</table><!-- /#preheader -->
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td class="body-table-spacing" align="center" valign="top">
+				<!--
+				Adding spacing around main table. If you don't need this spacing
+				just remove class from markup.
+				-->
+					<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="column-12 first last">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</td>
+						</tr>
+					</table><!-- /.container -->
+				</td>
+			</tr>
+		</table><!-- /#body-table -->
+	</body>
+</html>

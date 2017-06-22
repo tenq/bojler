@@ -1,0 +1,31 @@
+/**
+ * Style (style.scss)
+ */
+
+/* ----- Charset ----- */
+@charset 'UTF-8';
+
+/* ----- Variables ----- */
+@import 'variables';
+
+/* ----- Tools ----- */
+@import 'tools/grid';
+
+/* ----- Generic ----- */
+@import 'generic/reset';
+@import 'generic/typography';
+
+/* ----- Objects ----- */
+@import 'objects/grid';
+
+/* ----- Utilities ----- */
+@import 'utilities/alignment';
+@import 'utilities/spacing';
+@import 'utilities/tables';
+
+/* ----- Components ----- */
+@import 'components/preheader';
+@import 'components/buttons';
+@import 'components/hero';
+
+@import 'style-embedded';
