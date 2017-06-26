@@ -37,6 +37,13 @@ body {
     /* 5 */
     padding-top: 20px;
     padding-bottom: 20px;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 /* ----- Tables ----- */
