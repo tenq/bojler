@@ -85,8 +85,20 @@ gulp.task( 'clean:html', function( done ) {
 		.on( 'end', done );
 } );
 
-// Server w/ live reload
-gulp.task( 'connect', function( done ) {
+// Default (Build)
+gulp.task(
+	'default',
+	gulp.series( [
+		'build:sass',
+		'inject:css',
+		'inline:css',
+		'clean:css',
+		'clean:html',
+	] )
+);
+
+// Start server w/ live reload
+gulp.task( 'start', function( done ) {
 	'use strict';
 
 	connect.server( {
@@ -98,18 +110,6 @@ gulp.task( 'connect', function( done ) {
 	done();
 } );
 
-// Build
-gulp.task(
-	'build',
-	gulp.series( [
-		'build:sass',
-		'inject:css',
-		'inline:css',
-		'clean:css',
-		'clean:html',
-	] )
-);
-
 // Watch
 gulp.task( 'watch', function( done ) {
 	'use strict';
@@ -117,20 +117,22 @@ gulp.task( 'watch', function( done ) {
 	gulp.watch(
 		filesToWatch,
 		gulp.series( [
-			'build',
+			'default',
 		] )
 	);
 
 	done();
 } );
 
-// Default task
+// Development mode
 gulp.task(
-	'default',
-	gulp.parallel( [
-		'connect',
-		'build',
-		'watch',
+	'dev',
+	gulp.series( [
+		'default',
+		gulp.parallel( [
+			'start',
+			'watch',
+		] )
 	] )
 );
 
