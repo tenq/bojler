@@ -42,7 +42,7 @@ $line-height-h6: 20px !default;
 // Grid
 $grid-columns: 12 !default;
 $grid-container-width: 600px !default;
-$grid-column-width: $grid-container-width / $grid-columns;
+$grid-column-width: $grid-container-width / $grid-columns !default;
 $grid-gutter: 10px !default;
 
 /* ----- Utilities ----- */

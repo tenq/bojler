@@ -1,32 +1,35 @@
-var gulp = require( 'gulp' ),
-		sass = require( 'gulp-sass' ),
-		gcmq = require( 'gulp-group-css-media-queries' ),
-		gutil = require( 'gulp-util' ),
-		inject = require( 'gulp-inline-source' ),
-		inlinecss = require( 'gulp-inline-css' ),
-		del = require( 'del' ),
+const gulp =        require( 'gulp' ),
+		sass =          require( 'gulp-sass' ),
+		gcmq =          require( 'gulp-group-css-media-queries' ),
+		gutil =         require( 'gulp-util' ),
+		inject =        require( 'gulp-inline-source' ),
+		inlinecss =     require( 'gulp-inline-css' ),
+		del =           require( 'del' ),
 		stripComments = require( 'gulp-strip-comments' ),
-		connect = require( 'gulp-connect' ),
+		connect =       require( 'gulp-connect' ),
 		filesToWatch = [
 			'source/sass/**/*.scss',
 			'source/*.html',
 		];
 
 // Build SASS
-gulp.task( 'build:sass', function() {
+gulp.task( 'build:sass', function( done ) {
 	'use strict';
 
 	return gulp.src( 'source/sass/style.scss' )
 		.pipe(
-			sass( { outputStyle: 'compressed' } )
+			sass( {
+				outputStyle: 'compressed',
+			} )
 			.on( 'error', gutil.log )
 		)
 		.pipe( gcmq() )
-		.pipe( gulp.dest( 'public/css/' ) );
+		.pipe( gulp.dest( 'public/css/' ) )
+		.on( 'end', done );
 } );
 
 // Inject CSS
-gulp.task( 'inject:css', function() {
+gulp.task( 'inject:css', function( done ) {
 	'use strict';
 
 	return gulp.src( 'source/*.html' )
@@ -34,11 +37,12 @@ gulp.task( 'inject:css', function() {
 			inject()
 			.on( 'error', gutil.log )
 		)
-		.pipe( gulp.dest( 'public/' ) );
+		.pipe( gulp.dest( 'public/' ) )
+		.on( 'end', done );
 } );
 
 // Inline CSS
-gulp.task( 'inline:css', function() {
+gulp.task( 'inline:css', function( done ) {
 	'use strict';
 
 	return gulp.src( 'public/*.html' )
@@ -49,31 +53,40 @@ gulp.task( 'inline:css', function() {
 			} )
 			.on( 'error', gutil.log )
 		)
-		.pipe( gulp.dest( 'public/' ) );
+		.pipe( gulp.dest( 'public/' ) )
+		.on( 'end', done );
 } );
 
 // Clean CSS
-gulp.task( 'clean:css', function() {
+gulp.task( 'clean:css', function( done ) {
 	'use strict';
 
-	return del( [ 'public/css/' ] );
+	return del( [
+		'public/css/',
+	] )
+	.then( function() {
+		done();
+	} );
 } );
 
 // Clean HTML
-gulp.task( 'clean:html', function() {
+gulp.task( 'clean:html', function( done ) {
 	'use strict';
 
 	return gulp.src( 'public/*.html' )
 		.pipe(
-			stripComments( { safe: true } )
+			stripComments( {
+				safe: true,
+			} )
 			.on( 'error', gutil.log )
 		)
 		.pipe( gulp.dest( 'public/' ) )
-		.pipe( connect.reload() );
+		.pipe( connect.reload() )
+		.on( 'end', done );
 } );
 
 // Server w/ live reload
-gulp.task( 'connect', function( callback ) {
+gulp.task( 'connect', function( done ) {
 	'use strict';
 
 	connect.server( {
@@ -82,7 +95,7 @@ gulp.task( 'connect', function( callback ) {
 		livereload: true,
 	} );
 
-	callback();
+	done();
 } );
 
 // Build
@@ -98,12 +111,17 @@ gulp.task(
 );
 
 // Watch
-gulp.task( 'watch', function( callback ) {
+gulp.task( 'watch', function( done ) {
 	'use strict';
 
-	gulp.watch( filesToWatch, gulp.series( [ 'build' ] ) );
+	gulp.watch(
+		filesToWatch,
+		gulp.series( [
+			'build',
+		] )
+	);
 
-	callback();
+	done();
 } );
 
 // Default task
@@ -117,8 +135,13 @@ gulp.task(
 );
 
 // Clean project folder
-gulp.task( 'clean', function() {
+gulp.task( 'clean', function( done ) {
 	'use strict';
 
-	return del( [ 'public/' ] );
+	return del( [
+		'public/',
+	] )
+	.then( function() {
+		done();
+	} );
 } );
