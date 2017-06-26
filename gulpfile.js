@@ -1,5 +1,6 @@
 var gulp = require( 'gulp' ),
 		sass = require( 'gulp-sass' ),
+		gcmq = require( 'gulp-group-css-media-queries' ),
 		gutil = require( 'gulp-util' ),
 		inject = require( 'gulp-inline-source' ),
 		inlinecss = require( 'gulp-inline-css' ),
@@ -20,6 +21,7 @@ gulp.task( 'build:sass', function() {
 			sass( { outputStyle: 'compressed' } )
 			.on( 'error', gutil.log )
 		)
+		.pipe( gcmq() )
 		.pipe( gulp.dest( 'public/css/' ) );
 } );
 
