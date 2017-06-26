@@ -71,7 +71,7 @@ gulp.task( 'clean:html', function() {
 } );
 
 // Server w/ live reload
-gulp.task( 'connect', function( done ) {
+gulp.task( 'connect', function( callback ) {
 	'use strict';
 
 	connect.server( {
@@ -80,7 +80,7 @@ gulp.task( 'connect', function( done ) {
 		livereload: true,
 	} );
 
-	done();
+	callback();
 } );
 
 // Build
@@ -96,12 +96,12 @@ gulp.task(
 );
 
 // Watch
-gulp.task( 'watch', function( done ) {
+gulp.task( 'watch', function( callback ) {
 	'use strict';
 
 	gulp.watch( filesToWatch, gulp.series( [ 'build' ] ) );
 
-	done();
+	callback();
 } );
 
 // Default task
