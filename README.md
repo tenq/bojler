@@ -5,6 +5,9 @@ If you have experience with email template development, you know how painful it 
 
 To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
 
+## Old version
+Old version of Bojler is [here](https://github.com/Slicejack/bojler/tree/v1).
+
 ## Table of contents
 - [Project documentation 📖](https://github.com/Slicejack/bojler#project-documentation-)
 - [Quick-start guide 🚀](https://github.com/Slicejack/bojler#quick-start-guide-)
