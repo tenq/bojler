@@ -5,8 +5,8 @@ If you have experience with email template development, you know how painful it 
 
 To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
 
-## Old version
-Old version of Bojler is [here](https://github.com/Slicejack/bojler/tree/v1).
+## Old version ⚠️
+Old version of Bojler can be found [here](https://github.com/Slicejack/bojler/tree/v1).
 
 ## Table of contents
 - [Project documentation 📖](https://github.com/Slicejack/bojler#project-documentation-)
@@ -20,23 +20,27 @@ Old version of Bojler is [here](https://github.com/Slicejack/bojler/tree/v1).
 Full project documentation can be found at http://slicejack.github.io/bojler/.
 
 ## Quick-start guide 🚀
-1. Clone the repo: `git@github.com:Slicejack/bojler.git`
-2. Create an email
-3. [Compress and optimize images](http://slicejack.github.io/bojler/#compress-and-optimize-your-images)
-4. [Test email properly](http://slicejack.github.io/bojler/#test-your-email-properly)
-5. [Send email properly 🎉](http://slicejack.github.io/bojler/#send-your-email-properly)
+1. [Clone the repo](http://slicejack.github.io/bojler/getting-started#clone-the-repo): `git clone https://github.com/Slicejack/bojler.git`
+2. [Install node packages](http://slicejack.github.io/bojler/getting-started#install-node-packages): `npm install`
+3. Create an email with HTML and SASS inside `/source` directory
+4. [Compile an email](http://slicejack.github.io/bojler/getting-started#run-the-bojler-): `npm run gulp`
+5. [Compress and optimize images](http://slicejack.github.io/bojler/#compress-and-optimize-your-images)
+6. [Test email properly](http://slicejack.github.io/bojler/#test-your-email-properly)
+7. [Send email properly 🎉](http://slicejack.github.io/bojler/#send-your-email-properly)
 
-Full getting started guide can be found [here](http://slicejack.github.io/bojler/#getting-started).
+Full getting started guide can be found [here](http://slicejack.github.io/bojler/getting-started).
 
 ## Features
 Quick features overview:
+- SASS support
+- Automatic CSS inlining
+- Webserver with Live Reload
 - Reset styles
 - Responsive design
 - Typography
-- Grid
+- Grid system
 - Utility classes
 - Components
-- Lite version
 - Great compatibility
 - Well documented code
 - It's an open source project!
