@@ -24,9 +24,9 @@ Full project documentation can be found at http://slicejack.github.io/bojler/.
 2. [Install node packages](http://slicejack.github.io/bojler/getting-started#install-node-packages): `npm install`
 3. Create an email with HTML and SASS inside `/source` directory
 4. [Compile an email](http://slicejack.github.io/bojler/getting-started#run-the-bojler-): `npm run gulp`
-5. [Compress and optimize images](http://slicejack.github.io/bojler/#compress-and-optimize-your-images)
-6. [Test email properly](http://slicejack.github.io/bojler/#test-your-email-properly)
-7. [Send email properly 🎉](http://slicejack.github.io/bojler/#send-your-email-properly)
+5. [Compress and optimize images](http://slicejack.github.io/bojler/getting-started#compress-and-optimize-your-images)
+6. [Test email properly](http://slicejack.github.io/bojler/getting-started#test-your-email-properly)
+7. [Send email properly 🎉](http://slicejack.github.io/bojler/getting-started#send-your-email-properly)
 
 Full getting started guide can be found [here](http://slicejack.github.io/bojler/getting-started).
 
@@ -47,6 +47,12 @@ Quick features overview:
 
 ## Bugs and feature requests 🕷️
 If you find a bug or need new feature please open a [new issue](https://github.com/Slicejack/bojler/issues) and we will discuss about it.
+
+## How to contribute ? 🛠️
+You can review the [guidelines for contributing](https://github.com/Slicejack/bojler/blob/master/CONTRIBUTING) to this repository [here](https://github.com/Slicejack/bojler/blob/master/CONTRIBUTING).
+
+## Change Log
+All notable changes to this project will be documented in [CHANGELOG file](https://github.com/Slicejack/bojler/blob/master/CHANGELOG).
 
 ## Credits
 Special thanks to:
