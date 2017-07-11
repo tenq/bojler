@@ -18,7 +18,8 @@
 
     // Generate classes for columns without gutter
     %no-padding-styles {
-        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     @for $i from 1 through $grid-columns {
