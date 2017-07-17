@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.2] - 2017-07-17
+### Fixed
+- Gulp stylesheet tags issue.
+
+### Changed
+- Buttons text alignment.
+- `body-table-spacing` on small screens.
+
+### Added
+- Headings utility classes.
+
 ## [2.0.1] - 2017-07-11
 ### Fixed
 - No gutter columns issue w/ inlined CSS.
