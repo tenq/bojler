@@ -49,6 +49,7 @@ gulp.task( 'inline:css', function( done ) {
 		.pipe(
 			inlinecss( {
 				applyLinkTags: false,
+				removeLinkTags: false,
 				preserveMediaQueries: true,
 			} )
 			.on( 'error', gutil.log )
