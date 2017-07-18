@@ -7,16 +7,15 @@
  * 1. Base typography settings.
  * 2. System fonts stack.
  */
-table td {
+td {
     /* 1 */
     font-size: $font-size-base;
     line-height: $line-height-base;
 }
 
-html,
 body,
 table,
-table td {
+td {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* 2 */
 }
 
