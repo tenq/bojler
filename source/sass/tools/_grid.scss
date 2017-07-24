@@ -4,34 +4,34 @@
 
 /* ----- Columns ----- */
 @mixin grid-columns {
-    // Generate classes for columns with gutter
-    %padding-styles {
-        padding-left: $grid-gutter;
-        padding-right: $grid-gutter;
-    }
+	// Generate classes for columns with gutter
+	%padding-styles {
+		padding-left: $grid-gutter;
+		padding-right: $grid-gutter;
+	}
 
-    @for $i from 1 through $grid-columns {
-        .column-#{$i} {
-            @extend %padding-styles;
-        }
-    }
+	@for $i from 1 through $grid-columns {
+		.column-#{$i} {
+			@extend %padding-styles;
+		}
+	}
 
-    // Generate classes for columns without gutter
-    %no-padding-styles {
-        padding-left: 0;
-        padding-right: 0;
-    }
+	// Generate classes for columns without gutter
+	%no-padding-styles {
+		padding-left: 0;
+		padding-right: 0;
+	}
 
-    @for $i from 1 through $grid-columns {
-        .no-gutter .column-#{$i} {
-            @extend %no-padding-styles;
-        }
-    }
+	@for $i from 1 through $grid-columns {
+		.no-gutter .column-#{$i} {
+			@extend %no-padding-styles;
+		}
+	}
 
-    // Generate classes with width
-    @for $i from 1 through $grid-columns {
-        .column-#{$i} {
-            width: $grid-column-width * $i;
-        }
-    }
+	// Generate classes with width
+	@for $i from 1 through $grid-columns {
+		.column-#{$i} {
+			width: $grid-column-width * $i;
+		}
+	}
 }

@@ -14,34 +14,34 @@
  */
 html,
 body {
-    width: 100% !important;
-    height: 100% !important;
-    -webkit-text-size-adjust: 100%; /* 1 */
-    -ms-text-size-adjust: 100%; /* 1 */
-    margin: 0 !important; /* 2 */
-    padding: 0 !important; /* 2 */
-    background: $email-bg-color !important; /* 3 */
+	width: 100% !important;
+	height: 100% !important;
+	-webkit-text-size-adjust: 100%; /* 1 */
+	-ms-text-size-adjust: 100%; /* 1 */
+	margin: 0 !important; /* 2 */
+	padding: 0 !important; /* 2 */
+	background: $email-bg-color !important; /* 3 */
 }
 
 #body-table {
-    /* 4 */
-    margin: 0;
-    padding: 0;
-    width: 100% !important;
-    height: 100% !important;
-    line-height: 100% !important;
-    background: $email-bg-color;
+	/* 4 */
+	margin: 0;
+	padding: 0;
+	width: 100% !important;
+	height: 100% !important;
+	line-height: 100% !important;
+	background: $email-bg-color;
 }
 
 .body-table-spacing {
-    /* 5 */
-    padding-top: 20px;
-    padding-bottom: 20px;
+	/* 5 */
+	padding-top: 20px;
+	padding-bottom: 20px;
 
-    @media (max-width: $breakpoint-mobile) {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
+	@media (max-width: $breakpoint-mobile) {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
 }
 
 /* ----- Tables ----- */
@@ -58,16 +58,16 @@ body {
  * 3. Proper table cell alignment on all email clients.
  */
 table {
-    /* 1 */
-    border-collapse: collapse !important;
-    border-spacing: 0 !important;
-    mso-table-lspace: 0pt !important;
-    mso-table-rspace: 0pt !important;
+	/* 1 */
+	border-collapse: collapse !important;
+	border-spacing: 0 !important;
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
 
-    td {
-        border-collapse: collapse; /* 2 */
-        text-align: left; /* 3 */
-    }
+	td {
+		border-collapse: collapse; /* 2 */
+		text-align: left; /* 3 */
+	}
 }
 
 /* ----- Images ----- */
@@ -81,18 +81,18 @@ table {
  *    ".image-fix" class to any image you need to fix.
  */
 img {
-    outline: none;
-    text-decoration: none;
-    -ms-interpolation-mode: bicubic; /* 1 */
+	outline: none;
+	text-decoration: none;
+	-ms-interpolation-mode: bicubic; /* 1 */
 
-    a & {
-        border: none; /* 2 */
-    }
+	a & {
+		border: none; /* 2 */
+	}
 }
 
 .image-fix {
-    /* 3 */
-    display: block;
+	/* 3 */
+	display: block;
 }
 
 /* ----- Links ----- */
@@ -104,21 +104,21 @@ img {
  *    advertising popups (blue, dotted links). This is how we remove them.
  */
 a[x-apple-data-detectors] {
-    /* 1 */
-    color: inherit !important;
-    text-decoration: none !important;
-    font-size: inherit !important;
-    font-family: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
+	/* 1 */
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
 }
 
 #outlook a {
-    padding: 0; /* 2 */
+	padding: 0; /* 2 */
 }
 
 .yshortcuts a {
-    border-bottom: none !important; /* 3 */
+	border-bottom: none !important; /* 3 */
 }
 
 /* ----- Hotmail ----- */
@@ -128,14 +128,14 @@ a[x-apple-data-detectors] {
  *    More info: http://www.emailonacid.com/forum/viewthread/43
  */
 .ExternalClass {
-    width: 100%; /* 1 */
+	width: 100%; /* 1 */
 
-    &,
-    p,
-    span,
-    font,
-    td,
-    div {
-        line-height: 100%; /* 2 */
-    }
+	&,
+	p,
+	span,
+	font,
+	td,
+	div {
+		line-height: 100%; /* 2 */
+	}
 }
