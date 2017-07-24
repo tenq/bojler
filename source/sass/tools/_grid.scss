@@ -3,35 +3,72 @@
  */
 
 /* ----- Columns ----- */
+/**
+ * 1. Generate classes for columns with gutter.
+ * 2. Generate classes for columns without gutter.
+ * 3. Generate classes with width.
+ * 4. Generate .first and .last classes.
+ */
 @mixin grid-columns {
-	// Generate classes for columns with gutter
 	%padding-styles {
+		/* 1 */
 		padding-left: $grid-gutter;
 		padding-right: $grid-gutter;
 	}
 
 	@for $i from 1 through $grid-columns {
+		/* 1 */
 		.column-#{$i} {
 			@extend %padding-styles;
 		}
 	}
 
-	// Generate classes for columns without gutter
 	%no-padding-styles {
+		/* 2 */
 		padding-left: 0;
 		padding-right: 0;
 	}
 
 	@for $i from 1 through $grid-columns {
+		/* 2 */
 		.no-gutter .column-#{$i} {
 			@extend %no-padding-styles;
 		}
 	}
 
-	// Generate classes with width
 	@for $i from 1 through $grid-columns {
+		/* 3 */
 		.column-#{$i} {
 			width: $grid-column-width * $i;
+		}
+	}
+
+	%first-column-styles {
+		/* 4 */
+		padding-left: $grid-gutter * 2;
+
+		@media (max-width: $breakpoint-mobile) {
+			padding-left: $grid-gutter !important;
+		}
+	}
+
+	%last-column-styles {
+		/* 4 */
+		padding-right: $grid-gutter * 2;
+
+		@media (max-width: $breakpoint-mobile) {
+			padding-right: $grid-gutter !important;
+		}
+	}
+
+	@for $i from 1 through $grid-columns {
+		/* 4 */
+		.column-#{$i}.first {
+			@extend %first-column-styles;
+		}
+
+		.column-#{$i}.last {
+			@extend %last-column-styles;
 		}
 	}
 }

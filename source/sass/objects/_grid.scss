@@ -30,29 +30,5 @@
 /* ----- Columns ----- */
 /**
  * 1. Generate columns. You can find this mixin inside tools/_grid.scss.
- * 2. The .first class adds the appropriate amount of padding-left to space the
- *    content away from the container’s edge. The .last class is added to your
- *    last set of columns in a row to add padding-right to the column. If you
- *    have columns in between .first and .last, these classes are not needed on
- *    the middle columns. The reason these classes exist is that CSS properties
- *    like :last-child don’t work in most email clients so a class is needed.
  */
 @include grid-columns; /* 1 */
-
-.first {
-	/* 2 */
-	padding-left: $grid-gutter * 2;
-
-	@media (max-width: $breakpoint-mobile) {
-		padding-left: $grid-gutter !important;
-	}
-}
-
-.last {
-	/* 2 */
-	padding-right: $grid-gutter * 2;
-
-	@media (max-width: $breakpoint-mobile) {
-		padding-right: $grid-gutter !important;
-	}
-}
