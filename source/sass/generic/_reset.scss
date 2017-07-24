@@ -8,9 +8,10 @@
  *    sizes, while not breaking desktop design.
  * 2. Reset margins and paddings.
  * 3. Default email background color (Optional).
- * 4. The #body-table id helps reset some email client specific formatting while
+ * 4. Apply anti-aliasing when fonts are rendered.
+ * 5. The #body-table id helps reset some email client specific formatting while
  *    setting the canvas for you to work in.
- * 5. Adding spacing around main table (Optional).
+ * 6. Adding spacing around main table (Optional).
  */
 html,
 body {
@@ -21,10 +22,12 @@ body {
 	margin: 0 !important; /* 2 */
 	padding: 0 !important; /* 2 */
 	background: $email-bg-color !important; /* 3 */
+	-webkit-font-smoothing: antialiased; /* 4 */
+	-moz-osx-font-smoothing: grayscale; /* 4 */
 }
 
 #body-table {
-	/* 4 */
+	/* 5 */
 	margin: 0;
 	padding: 0;
 	width: 100% !important;
@@ -34,7 +37,7 @@ body {
 }
 
 .body-table-spacing {
-	/* 5 */
+	/* 6 */
 	padding-top: 20px;
 	padding-bottom: 20px;
 
