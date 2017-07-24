@@ -2,6 +2,22 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.4] - 2017-07-24
+### Fixed
+- Specified `.first` and `.last` classes styles only to columns.
+
+### Changed
+- Updated `$breakpoint-mobile` to `$grid-container-width`.
+- Converted space indentations to tabs.
+
+### Added
+- Added `font-smoothing` for better typography in web browsers.
+- Added images `line-height` fix utility.
+
+### Removed
+- Removed tables utility classes.
+- Removed spacing utility classes.
+
 ## [2.0.3] - 2017-07-18
 ### Changed
 - System fonts selector updated.
