@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.5] - 2017-07-26
+### Fixed
+- Hero component vertical alignment issue (Outlook 2007.) fixed.
+- `no-gutter` class issue fixed.
+
 ## [2.0.4] - 2017-07-24
 ### Fixed
 - Specified `.first` and `.last` classes styles only to columns.
