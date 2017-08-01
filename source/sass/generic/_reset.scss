@@ -81,6 +81,7 @@ table {
  * 3. Removes border when linking images.
  */
 img {
+	vertical-align: top;
 	outline: none;
 	text-decoration: none;
 	-ms-interpolation-mode: bicubic; /* 1 */
