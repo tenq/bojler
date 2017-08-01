@@ -77,18 +77,21 @@ table {
 /**
  * 1. This works to help IE properly resize images (if you are resizing them
  *    using the width and height attributes).
- * 2. Removes border when linking images.
- * 3. Updated the common Gmail/Hotmail image display fix: Gmail and Hotmail
- *    unwantedly adds in an extra space below images when using non IE browsers.
- *    You may not always want all of your images to be block elements. Apply the
- *    ".image-fix" class to any image you need to fix.
+ * 2. Makes images responsive on smaller screens.
+ * 3. Removes border when linking images.
  */
 img {
 	outline: none;
 	text-decoration: none;
 	-ms-interpolation-mode: bicubic; /* 1 */
 
+	@media (max-width: $breakpoint-mobile) {
+		/* 2 */
+		max-width: 100%;
+		height: auto !important;
+	}
+
 	a & {
-		border: none; /* 2 */
+		border: none; /* 3 */
 	}
 }
