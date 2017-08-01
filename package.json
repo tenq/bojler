@@ -1,4 +1,12 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slicejack/bojler"
+  },
+  "license": "MIT",
+  "scripts": {
+    "gulp": "node ./node_modules/gulp/bin/gulp.js"
+  },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
@@ -9,8 +17,5 @@
     "gulp-util": "^3.0.8",
     "@akzhan/gulp-juice": "^0.1.6",
     "web-resource-inliner": "^4.1.0"
-  },
-  "scripts": {
-    "gulp": "node ./node_modules/gulp/bin/gulp.js"
   }
 }
