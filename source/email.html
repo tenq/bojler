@@ -1,90 +1,58 @@
 <!--
-!IMPORTANT:
-- Bojler is an email boilerplate and a guideline for writing HTML code that will
-  render correctly across each of the most popular email clients.
-- Avoid using comments in your final email campaign or else you may get blocked
-  by SPAM filters.
-- Some email clients strip out <head> and <style> tags from emails, so it's best
-  to have your CSS written inline within your markup. We know that writing
-  inline CSS is time consuming and repetitive, so MailChimp built this
-  conversion tool to automatically inline your email's CSS:
-  http://templates.mailchimp.com/resources/inline-css/
-- This boilerplate is under MIT License. Basically, you can do whatever you want
-  as long as you include the original copyright and license notice in any copy
-  of the software/source.
-- Special thanks to:
-	/ Ian Hoar
-	/ Sean Powell (https://github.com/seanpowell/Email-Boilerplate)
-	/ James White (https://blog.jmwhite.co.uk)
-	/ Campaign Monitor
-	/ MailChimp
-	/ Email on Acid (http://www.emailology.org/#1)
-	/ Litmus
-	/ Bringinteraktiv (http://removebluelinks.com)
+  1. For best results we use XHTML Transitional.
+     More info:
+     - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
+     - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
+     - https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-meta-tags-in-email
+  2. DPI images scaling issue in Outlook - Fix.
+     More info: https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
+  3. We have included meta ‘Content Type’ so that we can set the character set as
+     UTF8 – specifying as much as possible can be a good thing when writing code
+     for the whole range of email clients.
+     More info: https://www.emailonacid.com/blog/article/email-development/the_importance_of_content-type_character_encoding_in_html_emails/
+  4. The IE=Edge meta tag enables CSS3 and media queries in Windows Phone 7.5 and
+     higher. That's why you should use it in your email.
+     More info: https://www.campaignmonitor.com/forums/topic/7989/windows-phone-8-has-full-css3media-query-support/
+  5. Meta ‘Viewport’ as seen above sets the viewable area to the width of the
+     device screen – this is essential if you want your email to be responsive.
+     If your email is intended solely for desktop users then don’t include this
+     line of code.
+  6. The final bit of meta data to set is the title tag - this is worth including
+     because it is used by Outlook when people use the ‘View in Browser’ function
+     and it can also appear in email preview snippets in some versions of Hotmail.
+  7. Outlook line heights fix.
+  8. Outlook system fonts stack fallback.
+  9. DPI images scaling issue in Outlook - Fix.
+     More info: https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
+ 10. Embedded CSS - Bojler will not inline CSS from /embedded.css (It will be embedded to <head>).
+ 11. Inlined CSS - Bojler will inline CSS from /inlined.css.
+ 12. Adding spacing around main table. If you don't need this spacing just
+     remove class from markup.
 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
-For best results we use XHTML Transitional.
-More info on DOCTYPES in email:
- - http://www.campaignmonitor.com/blog/post/3317/correct-doctype-to-use-in-html-email/
- - http://www.emailonacid.com/blog/details/C18/doctype_-_the_black_sheep_of_html_email_design
- - https://litmus.com/community/discussions/39-explanation-of-doctype-html-attributes-meta-tags-in-email
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
-<!--
-DPI images scaling issue in Outlook - Fix.
-More info:
- - https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
--->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- 1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"><!-- 2 -->
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<!--
-		We have included meta ‘Content Type’ so that we can set the character
-		set as UTF8 – specifying as much as possible can be a good thing when
-		writing code for the whole range of email clients.
-		More info on Content-Type Character Encoding in HTML Emails:
-		 - https://www.emailonacid.com/blog/article/email-development/the_importance_of_content-type_character_encoding_in_html_emails/
-		-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<!--
-		The IE=Edge meta tag enables CSS3 and media queries in Windows Phone 7.5
-		and higher. That's why you should use it in your email.
-		More info:
-		 - https://www.campaignmonitor.com/forums/topic/7989/windows-phone-8-has-full-css3media-query-support/
-		-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--
-		Meta ‘Viewport’ as seen above sets the viewable area to the width of the
-		device screen – this is essential if you want your email to be
-		responsive. If your email is intended solely for desktop users then
-		don’t include this line of code.
-		-->
-		<title>Email title</title>
-		<!--
-		The final bit of meta data to set is the title tag - this is worth
-		including because it is used by Outlook when people use the ‘View in
-		Browser’ function and it can also appear in email preview snippets in
-		some versions of Hotmail.
-		-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- 3 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- 4 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- 5 -->
+		<title>Email title</title><!-- 6 -->
 
+		<!-- 7 -->
 		<!--[if gte mso 15]>
-			<style type="text/css">
-				table {
-					font-size: 1px;
-					line-height: 0;
-					mso-margin-top-alt: 1px;
-					mso-line-height-rule: exactly;
-				}
-
-				* {
-					mso-line-height-rule: exactly;
-				}
-			</style>
+		<style type="text/css">
+			table {
+				font-size: 1px;
+				line-height: 0;
+				mso-margin-top-alt: 1px;
+				mso-line-height-rule: exactly;
+			}
+			* {
+				mso-line-height-rule: exactly;
+			}
+		</style>
 		<![endif]-->
-		<!--
-		Outlook line heights fix.
-		-->
 
+		<!-- 8 -->
 		<!--[if mso]>
 		<style type="text/css">
 			body,
@@ -94,10 +62,8 @@ More info:
 			}
 		</style>
 		<![endif]-->
-		<!--
-		Outlook system fonts stack fallback.
-		-->
 
+		<!-- 9 -->
 		<!--[if gte mso 9]>
 		<xml>
 			<o:OfficeDocumentSettings>
@@ -106,21 +72,9 @@ More info:
 			</o:OfficeDocumentSettings>
 		</xml>
 		<![endif]-->
-		<!--
-		DPI images scaling issue in Outlook - Fix.
-		More info:
-		 - https://blog.jmwhite.co.uk/2014/03/28/solving-dpi-scaling-issues-with-html-email-in-outlook/
-		-->
 
-		<link rel="stylesheet" href="css/embedded.css" data-inline data-embed />
-		<!--
-		Embedded CSS - Bojler will not inline CSS from /embedded.css (It will be embedded to <head>).
-		-->
-
-		<link rel="stylesheet" href="css/inlined.css" data-inline />
-		<!--
-		Inlined CSS - Bojler will inline CSS from /inlined.css.
-		-->
+		<link rel="stylesheet" href="css/embedded.css" data-inline data-embed /><!-- 10 -->
+		<link rel="stylesheet" href="css/inlined.css" data-inline /><!-- 11 -->
 	</head>
 	<body>
 		<table id="preheader" width="0" border="0" cellpadding="0" cellspacing="0">
@@ -130,19 +84,15 @@ More info:
 		</table><!-- /#preheader -->
 		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
 			<tr>
-				<td class="body-table-spacing" align="center" valign="top">
-				<!--
-				Adding spacing around main table. If you don't need this spacing
-				just remove class from markup.
-				-->
+				<td class="body-table-spacing" align="center" valign="top"><!-- 12 -->
 					<table class="container" width="600" align="center" border="0" cellpadding="0" cellspacing="0">
 						<tr>
 							<td class="column-12 first last">
-								Your content goes here.
-							</td>
+								Your content goes here ...
+							</td><!-- /.column -->
 						</tr>
 					</table><!-- /.container -->
-				</td>
+				</td><!-- /.body-table-spacing -->
 			</tr>
 		</table><!-- /#body-table -->
 	</body>
