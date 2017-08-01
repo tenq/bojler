@@ -92,7 +92,11 @@ gulp.task( 'inline:css', function( done ) {
 
 	return gulp.src( 'public/*.html' )
 		.pipe(
-			juice()
+			juice( {
+				applyHeightAttributes: false,
+				applyWidthAttributes: false,
+				xmlMode: true,
+			} )
 			.on( 'error', gutil.log )
 		)
 		.pipe( gulp.dest( 'public/' ) )
@@ -119,6 +123,7 @@ gulp.task( 'clean:html', function( done ) {
 		.pipe(
 			stripComments( {
 				safe: true,
+				trim: true,
 			} )
 			.on( 'error', gutil.log )
 		)
