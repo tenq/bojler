@@ -183,7 +183,8 @@ gulp.task( 'clean', function( done ) {
 	'use strict';
 
 	return del( [
-		'public/',
+		'public/*',
+		'!public/assets',
 	] )
 	.then( function() {
 		done();

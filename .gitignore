@@ -18,4 +18,5 @@ Thumbs.db
 # ---------------
 # Compiled assets
 # ---------------
-/public
+public/*
+!public/assets
