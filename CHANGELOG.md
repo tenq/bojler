@@ -2,6 +2,24 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.0] - 2017-08-02
+### Added
+- Embedded CSS (#41).
+- Assets directory (#21).
+
+### Changed
+- Updated `package.json` w/ licence and reporsitory fields (#49).
+- Responsive images (#45).
+- Images vertical alignment updated (#38).
+- Updated meta tags (#47).
+- Comments updated (#48).
+
+### Fixed
+- Disabled shorthands (#44).
+
+### Removed
+- Removed `.image-fix` from `_reset.scss` (#40).
+
 ## [2.0.5] - 2017-07-26
 ### Fixed
 - Hero component vertical alignment issue (Outlook 2007.) fixed.
