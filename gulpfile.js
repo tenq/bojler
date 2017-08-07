@@ -2,13 +2,10 @@ const gulp = require( 'gulp' ),
 		sass = require( 'gulp-sass' ),
 		gcmq = require( 'gulp-group-css-media-queries' ),
 		gutil = require( 'gulp-util' ),
-		inliner = require( 'web-resource-inliner' ),
 		juice = require( '@akzhan/gulp-juice' ),
 		del = require( 'del' ),
 		stripComments = require( 'gulp-strip-comments' ),
 		connect = require( 'gulp-connect' ),
-		fs = require( 'fs' ),
-		through = require( 'through2' ),
 		path = require( 'path' ),
 		filesToSass = [
 			'source/sass/inlined.scss',
@@ -35,57 +32,6 @@ gulp.task( 'build:sass', function( done ) {
 		.on( 'end', done );
 } );
 
-// Inject CSS
-const inject = function() {
-	'use strict';
-
-	return through.obj( function( file, enc, callback ) {
-		if ( file.isNull() ) {
-			return callback( null, file );
-		}
-
-		const filePath = file.path;
-
-		fs.readFile( filePath, 'utf8', ( err, content ) => {
-			if ( err ) {
-				return callback( err, null );
-			}
-
-			inliner.html(
-				{
-					fileContent: content,
-					relativeTo: path.resolve( __dirname, 'public/' ),
-					images: false,
-					svgs: false,
-					scripts: false,
-					links: false,
-				},
-				( err, content ) => {
-					if ( err ) {
-						return callback( err, null );
-					}
-
-					file.contents = new Buffer( content );
-
-					return callback( null, file );
-				}
-			);
-		} );
-	} );
-};
-
-gulp.task( 'inject:css', function( done ) {
-	'use strict';
-
-	return gulp.src( 'source/*.html' )
-		.on( 'error', gutil.log )
-		.pipe(
-			inject()
-		)
-		.pipe( gulp.dest( 'public/' ) )
-		.on( 'end', done );
-} );
-
 // Inline CSS
 gulp.task( 'inline:css', function( done ) {
 	'use strict';
@@ -96,6 +42,13 @@ gulp.task( 'inline:css', function( done ) {
 				applyHeightAttributes: false,
 				applyWidthAttributes: false,
 				xmlMode: true,
+				webResources: {
+					relativeTo: path.resolve( __dirname, 'public/' ),
+					images: false,
+					svgs: false,
+					scripts: false,
+					links: false,
+				},
 			} )
 			.on( 'error', gutil.log )
 		)
@@ -137,7 +90,6 @@ gulp.task(
 	'default',
 	gulp.series( [
 		'build:sass',
-		'inject:css',
 		'inline:css',
 		'clean:css',
 		'clean:html',
