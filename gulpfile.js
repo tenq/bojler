@@ -36,7 +36,7 @@ gulp.task( 'build:sass', function( done ) {
 gulp.task( 'inline:css', function( done ) {
 	'use strict';
 
-	return gulp.src( 'public/*.html' )
+	return gulp.src( 'source/*.html' )
 		.pipe(
 			juice( {
 				applyHeightAttributes: false,
