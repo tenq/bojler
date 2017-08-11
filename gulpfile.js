@@ -13,7 +13,7 @@ const gulp = require( 'gulp' ),
 		],
 		filesToWatch = [
 			'source/sass/**/*.scss',
-			'source/*.html',
+			'source/**/*.html',
 		];
 
 // Build SASS
@@ -36,7 +36,7 @@ gulp.task( 'build:sass', function( done ) {
 gulp.task( 'inline:css', function( done ) {
 	'use strict';
 
-	return gulp.src( 'source/*.html' )
+	return gulp.src( 'source/**/*.html' )
 		.pipe(
 			juice( {
 				applyHeightAttributes: false,
@@ -72,7 +72,7 @@ gulp.task( 'clean:css', function( done ) {
 gulp.task( 'clean:html', function( done ) {
 	'use strict';
 
-	return gulp.src( 'public/*.html' )
+	return gulp.src( 'public/**/*.html' )
 		.pipe(
 			stripComments( {
 				safe: true,
