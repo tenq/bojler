@@ -1,0 +1,39 @@
+{
+  "name": "bojler",
+  "version": "3.0.0",
+  "description": "Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
+  "keywords": [
+    "email",
+    "css",
+    "html",
+    "framework",
+    "grid",
+    "email-template",
+    "css-framework",
+    "html-framework",
+    "html-email"
+  ],
+  "homepage": "http://bojler.slicejack.com",
+  "bugs": {
+    "url": "https://github.com/Slicejack/bojler/issues"
+  },
+  "license": "MIT",
+  "author": "Slicejack (https://github.com/Slicejack)",
+  "files": [
+    "dist/",
+    "scss/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slicejack/bojler.git"
+  },
+  "scripts": {
+    "build": "node-sass scss/main-inline.scss dist/main-inline.css && node-sass scss/main-embed.scss dist/main-embed.css && echo '\nBuild was successful!'",
+    "test": "stylelint --config .stylelintrc --syntax scss \"scss/**/*.scss\" && node-sass scss/main-inline.scss > /dev/null && node-sass  scss/main-embed.scss > /dev/null && echo 'Test was successful!'",
+    "deploy": ""
+  },
+  "devDependencies": {
+    "stylelint": "^8.4.0",
+    "node-sass": "^4.7.2"
+  }
+}
