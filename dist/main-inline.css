@@ -1,0 +1,460 @@
+/**
+ * Inlined (inlined.scss)
+ *
+ * - This CSS code will be inlined.
+ * - Media queries will be grouped in the <head> of your email template.
+ */
+/* ----- Charset ----- */
+/* ----- Variables ----- */
+/**
+ * Variables (_variables.scss)
+ */
+/* ----- Colors ----- */
+/* ----- Generic ----- */
+/* ----- Objects ----- */
+/* ----- Components ----- */
+/* ----- RWD breakpoints ----- */
+/* ----- Tools ----- */
+/**
+ * Grid (tools/_grid.scss)
+ */
+/* ----- Columns ----- */
+/**
+ * 1. Generate classes for columns with gutter.
+ * 2. Generate classes with width.
+ * 3. Generate .first and .last classes.
+ * 4. Generate classes for columns without gutter.
+ */
+/* ----- Generic ----- */
+/**
+ * Reset (generic/_reset.scss)
+ */
+/* ----- General ----- */
+/**
+ * 1. Prevent Webkit and Windows Mobile platforms from changing default font
+ *    sizes, while not breaking desktop design.
+ * 2. Reset margins and paddings.
+ * 3. Default email background color (Optional).
+ * 4. Apply anti-aliasing when fonts are rendered.
+ * 5. The #body-table id helps reset some email client specific formatting while
+ *    setting the canvas for you to work in.
+ * 6. Adding spacing around main table (Optional).
+ */
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 1 */
+  margin: 0 !important;
+  /* 2 */
+  padding: 0 !important;
+  /* 2 */
+  background: #f1f1f1 !important;
+  /* 3 */
+  -webkit-font-smoothing: antialiased;
+  /* 4 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 4 */ }
+
+#body-table {
+  /* 5 */
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100% !important;
+  line-height: 100% !important;
+  background: #f1f1f1; }
+
+.body-table-spacing {
+  /* 6 */
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media (max-width: 600px) {
+    .body-table-spacing {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important; } }
+
+/* ----- Tables ----- */
+/**
+ * 1. Remove spacing around Outlook 2007 and 2010 tables.
+ *    More info: http://www.campaignmonitor.com/blog/post/3694/removing-spacing-from-around-tables-in-outlook-2007-and-2010
+ * 2. Outlook 2007 and 2010 padding issue fix. These "newer" versions of Outlook
+ *    add some padding around table cells potentially throwing off your
+ *    perfectly pixeled table. The issue can cause added space and also throw
+ *    off borders completely.
+ *    More info:
+ *    - http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
+ *    - http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07
+ * 3. Proper table cell alignment on all email clients.
+ */
+table {
+  /* 1 */
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important; }
+  table td {
+    border-collapse: collapse;
+    /* 2 */
+    text-align: left;
+    /* 3 */ }
+
+/* ----- Images ----- */
+/**
+ * 1. This works to help IE properly resize images (if you are resizing them
+ *    using the width and height attributes).
+ * 2. Makes images responsive on smaller screens.
+ * 3. Removes border when linking images.
+ */
+img {
+  vertical-align: top;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  /* 1 */ }
+  @media (max-width: 600px) {
+    img {
+      /* 2 */
+      max-width: 100%;
+      height: auto !important; } }
+  a img {
+    border: none;
+    /* 3 */ }
+
+/**
+ * Typography (generic/_typography.scss)
+ */
+/* ----- General ----- */
+/**
+ * 1. Base typography settings.
+ * 2. System fonts stack.
+ */
+td {
+  /* 1 */
+  font-size: 16px;
+  line-height: 23px; }
+
+body,
+table,
+td {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  /* 2 */ }
+
+/* ----- Headings ----- */
+/**
+ * 1. Reset margins.
+ * 2. Base headings typography settings.
+ */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin: 0;
+  /* 1 */ }
+
+h1, .h1 {
+  /* 2 */
+  font-size: 50px;
+  line-height: 58px; }
+
+h2, .h2 {
+  /* 2 */
+  font-size: 38px;
+  line-height: 46px; }
+
+h3, .h3 {
+  /* 2 */
+  font-size: 28px;
+  line-height: 36px; }
+
+h4, .h4 {
+  /* 2 */
+  font-size: 21px;
+  line-height: 29px; }
+
+h5, .h5 {
+  /* 2 */
+  font-size: 16px;
+  line-height: 23px; }
+
+h6, .h6 {
+  /* 2 */
+  font-size: 12px;
+  line-height: 20px; }
+
+/* ----- Lists ----- */
+/**
+ * 1. Reset margins.
+ * 2. Adding padding on list wrapper when used for Outlook fix.
+ * 3. Removing padding on lists inside list wrapper when used for Outlook fix.
+ */
+ul, ol {
+  margin: 0;
+  /* 1 */ }
+
+.have-list {
+  padding-left: 25px;
+  /* 2 */ }
+  .have-list ul, .have-list ol {
+    padding: 0;
+    /* 3 */ }
+
+/* ----- Objects ----- */
+/**
+ * Grid (objects/_grid.scss)
+ */
+/* ----- Container ----- */
+/**
+ * 1. All emails should have a container element. This gives the email a maximum
+ *    width for email clients on larger screens. It also orients the email in
+ *    the center.
+ */
+.container {
+  /* 1 */
+  width: 600px;
+  margin: 0 auto 0 auto;
+  background: #ffffff; }
+  @media (max-width: 600px) {
+    .container {
+      width: 100% !important; } }
+  @media (max-width: 600px) {
+    .container td {
+      width: 100% !important;
+      display: block;
+      box-sizing: border-box; } }
+
+/* ----- Columns ----- */
+/**
+ * 1. Generate columns. You can find this mixin inside tools/_grid.scss.
+ */
+.column-1, .column-2, .column-3, .column-4, .column-5, .column-6, .column-7, .column-8, .column-9, .column-10, .column-11, .column-12 {
+  /* 1 */
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 1 */
+/* 2 */
+.column-1 {
+  width: 50px; }
+
+/* 2 */
+.column-2 {
+  width: 100px; }
+
+/* 2 */
+.column-3 {
+  width: 150px; }
+
+/* 2 */
+.column-4 {
+  width: 200px; }
+
+/* 2 */
+.column-5 {
+  width: 250px; }
+
+/* 2 */
+.column-6 {
+  width: 300px; }
+
+/* 2 */
+.column-7 {
+  width: 350px; }
+
+/* 2 */
+.column-8 {
+  width: 400px; }
+
+/* 2 */
+.column-9 {
+  width: 450px; }
+
+/* 2 */
+.column-10 {
+  width: 500px; }
+
+/* 2 */
+.column-11 {
+  width: 550px; }
+
+/* 2 */
+.column-12 {
+  width: 600px; }
+
+.column-1.first, .column-2.first, .column-3.first, .column-4.first, .column-5.first, .column-6.first, .column-7.first, .column-8.first, .column-9.first, .column-10.first, .column-11.first, .column-12.first {
+  /* 3 */
+  padding-left: 20px; }
+  @media (max-width: 600px) {
+    .column-1.first, .column-2.first, .column-3.first, .column-4.first, .column-5.first, .column-6.first, .column-7.first, .column-8.first, .column-9.first, .column-10.first, .column-11.first, .column-12.first {
+      padding-left: 10px !important; } }
+
+.column-1.last, .column-2.last, .column-3.last, .column-4.last, .column-5.last, .column-6.last, .column-7.last, .column-8.last, .column-9.last, .column-10.last, .column-11.last, .column-12.last {
+  /* 3 */
+  padding-right: 20px; }
+  @media (max-width: 600px) {
+    .column-1.last, .column-2.last, .column-3.last, .column-4.last, .column-5.last, .column-6.last, .column-7.last, .column-8.last, .column-9.last, .column-10.last, .column-11.last, .column-12.last {
+      padding-right: 10px !important; } }
+
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+/* 3 */
+.no-gutter .column-1, .no-gutter .column-2, .no-gutter .column-3, .no-gutter .column-4, .no-gutter .column-5, .no-gutter .column-6, .no-gutter .column-7, .no-gutter .column-8, .no-gutter .column-9, .no-gutter .column-10, .no-gutter .column-11, .no-gutter .column-12 {
+  /* 4 */
+  padding-left: 0;
+  padding-right: 0; }
+
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 4 */
+/* 1 */
+/* ----- Utilities ----- */
+/**
+ * Alignment (utilities/_alignment.scss)
+ */
+/* ----- Yahoo! Mail alignment fix ----- */
+.yahoo-center {
+  margin-right: auto;
+  margin-left: auto; }
+
+/* ----- Text alignment ----- */
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+/**
+ * Images (utilities/_images.scss)
+ */
+/* ----- Reset ----- */
+.image-reset {
+  font-size: 100% !important;
+  line-height: 100% !important; }
+
+/* ----- Components ----- */
+/**
+ * Preheader (components/_preheader.scss)
+ */
+/* ----- General ----- */
+/**
+ * 1. Hiding preheader.
+ *    More info: https://litmus.com/blog/the-ultimate-guide-to-preview-text-support
+ */
+#preheader td {
+  /* 1 */
+  display: none !important;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  mso-hide: all;
+  font-size: 1px;
+  line-height: 1px;
+  max-height: 0px;
+  max-width: 0px;
+  color: #ffffff; }
+
+/**
+ * Buttons (components/_buttons.scss)
+ */
+/* ----- General ----- */
+.btn td {
+  text-align: center;
+  background-color: #bbbbbb;
+  padding-top: 15px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  padding-left: 35px; }
+
+.btn a {
+  color: #ffffff;
+  text-decoration: none; }
+
+/* ----- Variations ----- */
+.btn--full-width {
+  width: 100%; }
+  .btn--full-width td {
+    text-align: center; }
+
+.btn--rounded td {
+  border-radius: 50px; }
+
+.btn--green td {
+  background-color: #2ecc71; }
+
+.btn--red td {
+  background-color: #e74c3c; }
+
+.btn--blue td {
+  background-color: #3498db; }
+
+.btn--dark td {
+  background-color: #2c3e50; }
+
+/**
+ * Hero (components/_hero.scss)
+ */
+/* ----- General ----- */
+.hero {
+  width: 600px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle; }
+  @media (max-width: 600px) {
+    .hero {
+      height: auto !important;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px; } }
+
+/* ----- Inner ----- */
+.hero__inner {
+  height: 350px;
+  vertical-align: middle; }
+  @media (max-width: 600px) {
+    .hero__inner {
+      height: auto !important; } }
+  .hero__inner > table {
+    width: 520px;
+    margin: 0 auto; }
+    @media (max-width: 600px) {
+      .hero__inner > table {
+        width: 100% !important; } }
