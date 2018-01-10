@@ -1,15 +1,17 @@
 # bojler
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/Slicejack/bojler)
-[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/Slicejack/bojler)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Slicejack/bojler/blob/master/LICENSE)
-
 Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.
 
 If you have experience with email template development, you know how painful it is to build a perfect email template that works across all email clients.
 
 To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
+
+## Status
+
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
+[![npm version](https://badge.fury.io/js/%40slicejack%2Fbojler.svg)](https://www.npmjs.com/package/@slicejack/bojler)
+[![npm dependecies](https://david-dm.org/slicejack/bojler/status.svg)](https://www.npmjs.com/package/@slicejack/bojler)
+[![npm devDependecies](https://david-dm.org/slicejack/bojler/dev-status.svg)](https://www.npmjs.com/package/@slicejack/bojler)
 
 ## Old version [v1.0.0] ⚠️
 Old version of Bojler can be found [here](https://github.com/Slicejack/bojler/tree/v1).
