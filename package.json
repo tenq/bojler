@@ -28,12 +28,20 @@
     "url": "git+https://github.com/Slicejack/bojler.git"
   },
   "scripts": {
-    "build": "node-sass scss/main-inline.scss dist/main-inline.css && node-sass scss/main-embed.scss dist/main-embed.css && echo '\nBuild was successful!'",
-    "test": "stylelint --config .stylelintrc --syntax scss \"scss/**/*.scss\" && node-sass scss/main-inline.scss > /dev/null && node-sass  scss/main-embed.scss > /dev/null && echo 'Test was successful!'",
-    "deploy": ""
+    "gulp": "node ./node_modules/gulp/bin/gulp.js",
+    "deploy:prep": "npm run gulp deploy:prep",
+    "docs:build": "cd docs && jekyll build",
+    "docs:serve": "cd docs && jekyll serve"
   },
   "devDependencies": {
-    "stylelint": "^8.4.0",
-    "node-sass": "^4.7.2"
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^6.0.0",
+    "inquirer": "^5.0.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^8.4.0"
   }
 }
