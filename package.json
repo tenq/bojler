@@ -31,7 +31,8 @@
     "gulp": "node ./node_modules/gulp/bin/gulp.js",
     "deploy:prep": "npm run gulp deploy:prep",
     "docs:build": "cd docs && jekyll build",
-    "docs:serve": "cd docs && jekyll serve"
+    "docs:serve": "cd docs && jekyll serve",
+    "test:ci": "npm run gulp deploy:dist"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
