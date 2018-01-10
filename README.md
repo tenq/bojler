@@ -1,4 +1,10 @@
 # bojler
+
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/Slicejack/bojler)
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)](https://github.com/Slicejack/bojler)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Slicejack/bojler/blob/master/LICENSE)
+
 Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.
 
 If you have experience with email template development, you know how painful it is to build a perfect email template that works across all email clients.
