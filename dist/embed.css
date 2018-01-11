@@ -1,0 +1,272 @@
+/**
+ * Embed (embed.scss)
+ *
+ * - This CSS should be embedded in the <head> of your email template.
+ */
+
+/* ----- Settings ----- */
+
+/**
+ * Variables (_variables.scss)
+ */
+
+/* ----- Colors ----- */
+
+/* ----- Generic ----- */
+
+/* ----- Objects ----- */
+
+/* ----- Components ----- */
+
+/* ----- RWD breakpoints ----- */
+
+/* ----- Generic ----- */
+
+/**
+ * Reset (embed/generic/_reset.scss)
+ */
+
+/* ----- General ----- */
+
+/**
+ * 1. Removing auto-generated blue links on Apple devices.
+ *    More info: http://removebluelinks.com
+ * 2. Force Outlook to provide a "View in browser" menu link.
+ * 3. Yahoo! Mail has a knack for picking keywords in emails and linking them to
+ *    advertising popups (blue, dotted links). This is how we remove them.
+ * 4. Force Hotmail to display emails at full width.
+ * 5. Force Hotmail to display normal line spacing.
+ *    More info: http://www.emailonacid.com/forum/viewthread/43
+ */
+
+a[x-apple-data-detectors] {
+  /* 1 */
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+#outlook a {
+  padding: 0;
+  /* 2 */
+}
+
+.yshortcuts a {
+  border-bottom: none !important;
+  /* 3 */
+}
+
+.ExternalClass {
+  width: 100%;
+  /* 4 */
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+  /* 5 */
+}
+
+/* ----- Media queries ----- */
+
+/* ----- Objects ----- */
+
+/**
+ * Grid (embed/objects/_grid.scss)
+ */
+
+/* ----- Media queries ----- */
+
+/* ----- Components ----- */
+
+/**
+ * Hero (embed/components/_hero.scss)
+ */
+
+/* ----- Media queries ----- */
+
+@media (max-width: 600px) {
+  /* ----- General ----- */
+
+  .body-table-spacing {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* ----- Images ----- */
+
+  /**
+	* 1. Makes images responsive on smaller screens.
+	*/
+
+  img {
+    /* 1 */
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  /* ----- Container ----- */
+
+  .container {
+    width: 100% !important;
+  }
+
+  .container td {
+    width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  /* ----- Columns ----- */
+
+  /**
+	 * 1. Generate .first and .last classes.
+	 */
+
+  /* 1 */
+
+  .column-1.first {
+    padding-left: 10px !important;
+  }
+
+  .column-1.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-2.first {
+    padding-left: 10px !important;
+  }
+
+  .column-2.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-3.first {
+    padding-left: 10px !important;
+  }
+
+  .column-3.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-4.first {
+    padding-left: 10px !important;
+  }
+
+  .column-4.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-5.first {
+    padding-left: 10px !important;
+  }
+
+  .column-5.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-6.first {
+    padding-left: 10px !important;
+  }
+
+  .column-6.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-7.first {
+    padding-left: 10px !important;
+  }
+
+  .column-7.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-8.first {
+    padding-left: 10px !important;
+  }
+
+  .column-8.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-9.first {
+    padding-left: 10px !important;
+  }
+
+  .column-9.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-10.first {
+    padding-left: 10px !important;
+  }
+
+  .column-10.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-11.first {
+    padding-left: 10px !important;
+  }
+
+  .column-11.last {
+    padding-right: 10px !important;
+  }
+
+  /* 1 */
+
+  .column-12.first {
+    padding-left: 10px !important;
+  }
+
+  .column-12.last {
+    padding-right: 10px !important;
+  }
+
+  /* ----- General ----- */
+
+  .hero {
+    height: auto !important;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  /* ----- Inner ----- */
+
+  .hero__inner {
+    height: auto !important;
+  }
+
+  .hero__inner > table {
+    width: 100% !important;
+  }
+}

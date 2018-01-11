@@ -5,6 +5,7 @@ var sass = require( 'gulp-sass' );
 var plumber = require( 'gulp-plumber' );
 var styleLint = require( 'gulp-stylelint' );
 var rename = require( 'gulp-rename' );
+var gcmq = require( 'gulp-group-css-media-queries' );
 
 var CONFIG = require( '../config.js' );
 var CURRENT_VERSION = require( '../../package.json' ).version;
@@ -58,9 +59,11 @@ gulp.task( 'deploy:dist', function() {
 		.pipe( plumber() )
 		.pipe( sass( { outputStyle: 'expanded' } )
 			.on( 'error', sass.logError ) )
+		.pipe( gcmq() )
 		.pipe( gulp.dest( './dist' ) )
 		.pipe( sass( { outputStyle: 'compressed' } )
 			.on( 'error', sass.logError ) )
+		.pipe( gcmq() )
 		.pipe( rename( { suffix: '.min' } ) )
 		.pipe( gulp.dest( './dist' ) )
 		.on( 'finish', function() {

@@ -40,11 +40,6 @@ body {
 	/* 6 */
 	padding-top: 20px;
 	padding-bottom: 20px;
-
-	@media (max-width: $breakpoint-mobile) {
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
-	}
 }
 
 /* ----- Tables ----- */
@@ -77,8 +72,7 @@ table {
 /**
  * 1. This works to help IE properly resize images (if you are resizing them
  *    using the width and height attributes).
- * 2. Makes images responsive on smaller screens.
- * 3. Removes border when linking images.
+ * 2. Removes border when linking images.
  */
 img {
 	vertical-align: top;
@@ -86,13 +80,7 @@ img {
 	text-decoration: none;
 	-ms-interpolation-mode: bicubic; /* 1 */
 
-	@media (max-width: $breakpoint-mobile) {
-		/* 2 */
-		max-width: 100%;
-		height: auto !important;
-	}
-
 	a & {
-		border: none; /* 3 */
+		border: none; /* 2 */
 	}
 }
