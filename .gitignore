@@ -21,3 +21,5 @@ Thumbs.db
 dist/*
 !dist/main-embed.css
 !dist/main-inline.css
+!dist/main-embed.min.css
+!dist/main-inline.min.css
