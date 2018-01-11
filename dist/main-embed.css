@@ -21,24 +21,30 @@ a[x-apple-data-detectors] {
   font-size: inherit !important;
   font-family: inherit !important;
   font-weight: inherit !important;
-  line-height: inherit !important; }
+  line-height: inherit !important;
+}
 
 #outlook a {
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 .yshortcuts a {
   border-bottom: none !important;
-  /* 3 */ }
+  /* 3 */
+}
 
 .ExternalClass {
   width: 100%;
-  /* 4 */ }
-  .ExternalClass,
-  .ExternalClass p,
-  .ExternalClass span,
-  .ExternalClass font,
-  .ExternalClass td,
-  .ExternalClass div {
-    line-height: 100%;
-    /* 5 */ }
+  /* 4 */
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+  /* 5 */
+}

@@ -4,6 +4,7 @@ var inquirer = require( 'inquirer' );
 var sass = require( 'gulp-sass' );
 var plumber = require( 'gulp-plumber' );
 var styleLint = require( 'gulp-stylelint' );
+var rename = require( 'gulp-rename' );
 
 var CONFIG = require( '../config.js' );
 var CURRENT_VERSION = require( '../../package.json' ).version;
@@ -55,7 +56,12 @@ gulp.task( 'deploy:version', function() {
 gulp.task( 'deploy:dist', function() {
 	return gulp.src( CONFIG.SASS_BUILD_FILES )
 		.pipe( plumber() )
-		.pipe( sass().on( 'error', sass.logError ) )
+		.pipe( sass( { outputStyle: 'expanded' } )
+			.on( 'error', sass.logError ) )
+		.pipe( gulp.dest( './dist' ) )
+		.pipe( sass( { outputStyle: 'compressed' } )
+			.on( 'error', sass.logError ) )
+		.pipe( rename( { suffix: '.min' } ) )
 		.pipe( gulp.dest( './dist' ) )
 		.on( 'finish', function() {
 			gulp.src( CONFIG.SASS_LINT_FILES )
