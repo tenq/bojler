@@ -1,81 +1,50 @@
-/**
- * Main (main.scss)
- *
- * - This CSS code should be inlined.
- */
-
-/* ----- Settings ----- */
+/* =============================================================================
+   INLINE (inline.scss)
+   ========================================================================== */
 
 /**
- * Variables (_variables.scss)
+ * This CSS code should be inlined.
  */
 
-/* ----- Colors ----- */
+/* Settings
+   ========================================================================== */
 
-/* ----- Generic ----- */
+/* =============================================================================
+   CORE (settings/_core.scss)
+   ========================================================================== */
 
-/* ----- Objects ----- */
+/* Colors
+   ========================================================================== */
 
-/* ----- Components ----- */
+/* Page
+   ========================================================================== */
 
-/* ----- RWD breakpoints ----- */
-
-/* ----- Generic ----- */
+/* Typography
+   ========================================================================== */
 
 /**
- * Reset (generic/_reset.scss)
+ * Base
  */
-
-/* ----- General ----- */
 
 /**
- * 1. Prevent Webkit and Windows Mobile platforms from changing default font
- *    sizes, while not breaking desktop design.
- * 2. Reset margins and paddings.
- * 3. Default email background color (Optional).
- * 4. Apply anti-aliasing when fonts are rendered.
- * 5. The #body-table id helps reset some email client specific formatting while
- *    setting the canvas for you to work in.
- * 6. Adding spacing around main table (Optional).
+ * Headings
  */
 
-html,
-body {
-  width: 100% !important;
-  height: 100% !important;
-  -webkit-text-size-adjust: 100%;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 1 */
-  margin: 0 !important;
-  /* 2 */
-  padding: 0 !important;
-  /* 2 */
-  background: #f1f1f1 !important;
-  /* 3 */
-  -webkit-font-smoothing: antialiased;
-  /* 4 */
-  -moz-osx-font-smoothing: grayscale;
-  /* 4 */
-}
+/* Grid
+   ========================================================================== */
 
-#body-table {
-  /* 5 */
-  margin: 0;
-  padding: 0;
-  width: 100% !important;
-  height: 100% !important;
-  line-height: 100% !important;
-  background: #f1f1f1;
-}
+/* Breakpoints
+   ========================================================================== */
 
-.body-table-spacing {
-  /* 6 */
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+/* Generic
+   ========================================================================== */
 
-/* ----- Tables ----- */
+/* =============================================================================
+   RESET (generic/_reset.scss)
+   ========================================================================== */
+
+/* Tables
+   ========================================================================== */
 
 /**
  * 1. Remove spacing around Outlook 2007 and 2010 tables.
@@ -105,7 +74,8 @@ table td {
   /* 3 */
 }
 
-/* ----- Images ----- */
+/* Images
+   ========================================================================== */
 
 /**
  * 1. This works to help IE properly resize images (if you are resizing them
@@ -126,31 +96,12 @@ a img {
   /* 2 */
 }
 
-/**
- * Typography (generic/_typography.scss)
- */
+/* Elements
+   ========================================================================== */
 
-/* ----- General ----- */
-
-/**
- * 1. Base typography settings.
- * 2. System fonts stack.
- */
-
-td {
-  /* 1 */
-  font-size: 16px;
-  line-height: 23px;
-}
-
-body,
-table,
-td {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
-  /* 2 */
-}
-
-/* ----- Headings ----- */
+/* =============================================================================
+   HEADINGS (elements/_headings.scss)
+   ========================================================================== */
 
 /**
  * 1. Reset margins.
@@ -158,530 +109,478 @@ td {
  */
 
 h1,
-.h1,
 h2,
-.h2,
 h3,
-.h3,
 h4,
-.h4,
 h5,
-.h5,
-h6,
-.h6 {
+h6 {
   margin: 0;
   /* 1 */
 }
 
-h1,
-.h1 {
+h1 {
   /* 2 */
   font-size: 50px;
   line-height: 58px;
 }
 
-h2,
-.h2 {
+h2 {
   /* 2 */
   font-size: 38px;
   line-height: 46px;
 }
 
-h3,
-.h3 {
+h3 {
   /* 2 */
   font-size: 28px;
   line-height: 36px;
 }
 
-h4,
-.h4 {
+h4 {
   /* 2 */
   font-size: 21px;
   line-height: 29px;
 }
 
-h5,
-.h5 {
+h5 {
   /* 2 */
   font-size: 16px;
   line-height: 23px;
 }
 
-h6,
-.h6 {
+h6 {
   /* 2 */
   font-size: 12px;
   line-height: 20px;
 }
 
-/* ----- Lists ----- */
-
-/**
- * 1. Reset margins.
- * 2. Adding padding on list wrapper when used for Outlook fix.
- * 3. Removing padding on lists inside list wrapper when used for Outlook fix.
- */
+/* =============================================================================
+   LISTS (elements/_lists.scss)
+   ========================================================================== */
 
 ul,
 ol {
   margin: 0;
-  /* 1 */
 }
 
-.have-list {
-  padding-left: 25px;
+/* =============================================================================
+   PAGE (elements/_page.scss)
+   ========================================================================== */
+
+/**
+ * 1. Prevent Webkit and Windows Mobile platforms from changing default font
+ *    sizes, while not breaking desktop design.
+ * 2. Reset margins and paddings.
+ * 3. Default email background color (Optional).
+ * 4. Apply anti-aliasing when fonts are rendered.
+ * 5. System fonts stack.
+ */
+
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 1 */
+  margin: 0 !important;
   /* 2 */
-}
-
-.have-list ul,
-.have-list ol {
-  padding: 0;
+  padding: 0 !important;
+  /* 2 */
+  background: #f1f1f1 !important;
   /* 3 */
+  -webkit-font-smoothing: antialiased;
+  /* 4 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 4 */
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif !important;
+  /* 5 */
 }
 
-/* ----- Objects ----- */
+/* =============================================================================
+   TABLE (elements/_table.scss)
+   ========================================================================== */
 
 /**
- * Grid (objects/_grid.scss)
+ * 1. System fonts stack.
+ * 2. Base typography settings.
  */
 
-/* ----- Container ----- */
-
-/**
- * 1. All emails should have a container element. This gives the email a maximum
- *    width for email clients on larger screens. It also orients the email in
- *    the center.
- */
-
-.container {
+table,
+td {
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif !important;
   /* 1 */
+}
+
+td {
+  /* 2 */
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/* Objects
+   ========================================================================== */
+
+/* =============================================================================
+   GRID (objects/_grid.scss)
+   ========================================================================== */
+
+/* Container
+   ========================================================================== */
+
+/**
+ * All emails should have a container element. This gives the email a maximum
+ * width for email clients on larger screens. It also orients the email in the
+ * center.
+ */
+
+.o-container {
   width: 600px;
   margin: 0 auto 0 auto;
   background: #ffffff;
 }
 
-/* ----- Columns ----- */
+/* Columns
+   ========================================================================== */
 
 /**
- * 1. Generate classes for columns with gutter.
- * 2. Generate classes with width.
- * 3. Generate classes for columns without gutter.
- * 4. Generate .first and .last classes.
+ * Generate classes for columns with gutter.
  */
 
-/* 1 */
-
-.column-1 {
+.o-column-1 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-2 {
+.o-column-2 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-3 {
+.o-column-3 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-4 {
+.o-column-4 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-5 {
+.o-column-5 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-6 {
+.o-column-6 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-7 {
+.o-column-7 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-8 {
+.o-column-8 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-9 {
+.o-column-9 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-10 {
+.o-column-10 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-11 {
+.o-column-11 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 1 */
-
-.column-12 {
+.o-column-12 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* 2 */
+/**
+ * Generate classes with width.
+ */
 
-.column-1 {
+.o-column-1 {
   width: 50px;
 }
 
-/* 2 */
-
-.column-2 {
+.o-column-2 {
   width: 100px;
 }
 
-/* 2 */
-
-.column-3 {
+.o-column-3 {
   width: 150px;
 }
 
-/* 2 */
-
-.column-4 {
+.o-column-4 {
   width: 200px;
 }
 
-/* 2 */
-
-.column-5 {
+.o-column-5 {
   width: 250px;
 }
 
-/* 2 */
-
-.column-6 {
+.o-column-6 {
   width: 300px;
 }
 
-/* 2 */
-
-.column-7 {
+.o-column-7 {
   width: 350px;
 }
 
-/* 2 */
-
-.column-8 {
+.o-column-8 {
   width: 400px;
 }
 
-/* 2 */
-
-.column-9 {
+.o-column-9 {
   width: 450px;
 }
 
-/* 2 */
-
-.column-10 {
+.o-column-10 {
   width: 500px;
 }
 
-/* 2 */
-
-.column-11 {
+.o-column-11 {
   width: 550px;
 }
 
-/* 2 */
-
-.column-12 {
+.o-column-12 {
   width: 600px;
 }
 
-/* 3 */
-
-.no-gutter .column-1 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-2 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-3 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-4 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-5 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-6 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-7 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-8 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-9 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-10 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-11 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 3 */
-
-.no-gutter .column-12 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* 4 */
-
-.column-1.first {
-  padding-left: 20px;
-}
-
-.column-1.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-2.first {
-  padding-left: 20px;
-}
-
-.column-2.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-3.first {
-  padding-left: 20px;
-}
-
-.column-3.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-4.first {
-  padding-left: 20px;
-}
-
-.column-4.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-5.first {
-  padding-left: 20px;
-}
-
-.column-5.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-6.first {
-  padding-left: 20px;
-}
-
-.column-6.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-7.first {
-  padding-left: 20px;
-}
-
-.column-7.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-8.first {
-  padding-left: 20px;
-}
-
-.column-8.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-9.first {
-  padding-left: 20px;
-}
-
-.column-9.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-10.first {
-  padding-left: 20px;
-}
-
-.column-10.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-11.first {
-  padding-left: 20px;
-}
-
-.column-11.last {
-  padding-right: 20px;
-}
-
-/* 4 */
-
-.column-12.first {
-  padding-left: 20px;
-}
-
-.column-12.last {
-  padding-right: 20px;
-}
-
-/* ----- Utilities ----- */
-
 /**
- * Alignment (utilities/_alignment.scss)
+ * Generate classes for columns without gutter.
  */
 
-/* ----- Yahoo! Mail alignment fix ----- */
-
-.yahoo-center {
-  margin-right: auto;
-  margin-left: auto;
+.no-gutter .o-column-1 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* ----- Text alignment ----- */
-
-.align-left {
-  text-align: left;
+.no-gutter .o-column-2 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.align-center {
-  text-align: center;
+.no-gutter .o-column-3 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.align-right {
-  text-align: right;
+.no-gutter .o-column-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-5 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-7 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-10 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-11 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-gutter .o-column-12 {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /**
- * Images (utilities/_images.scss)
+ * Generate `.is-first` and `.is-last` classes.
  */
 
-/* ----- Reset ----- */
+.o-column-1.is-first {
+  padding-left: 20px;
+}
 
-.image-reset {
-  font-size: 100% !important;
+.o-column-1.is-last {
+  padding-right: 20px;
+}
+
+.o-column-2.is-first {
+  padding-left: 20px;
+}
+
+.o-column-2.is-last {
+  padding-right: 20px;
+}
+
+.o-column-3.is-first {
+  padding-left: 20px;
+}
+
+.o-column-3.is-last {
+  padding-right: 20px;
+}
+
+.o-column-4.is-first {
+  padding-left: 20px;
+}
+
+.o-column-4.is-last {
+  padding-right: 20px;
+}
+
+.o-column-5.is-first {
+  padding-left: 20px;
+}
+
+.o-column-5.is-last {
+  padding-right: 20px;
+}
+
+.o-column-6.is-first {
+  padding-left: 20px;
+}
+
+.o-column-6.is-last {
+  padding-right: 20px;
+}
+
+.o-column-7.is-first {
+  padding-left: 20px;
+}
+
+.o-column-7.is-last {
+  padding-right: 20px;
+}
+
+.o-column-8.is-first {
+  padding-left: 20px;
+}
+
+.o-column-8.is-last {
+  padding-right: 20px;
+}
+
+.o-column-9.is-first {
+  padding-left: 20px;
+}
+
+.o-column-9.is-last {
+  padding-right: 20px;
+}
+
+.o-column-10.is-first {
+  padding-left: 20px;
+}
+
+.o-column-10.is-last {
+  padding-right: 20px;
+}
+
+.o-column-11.is-first {
+  padding-left: 20px;
+}
+
+.o-column-11.is-last {
+  padding-right: 20px;
+}
+
+.o-column-12.is-first {
+  padding-left: 20px;
+}
+
+.o-column-12.is-last {
+  padding-right: 20px;
+}
+
+/* =============================================================================
+   LIST (objects/_list.scss)
+   ========================================================================== */
+
+/**
+ * 1. Adding padding on list wrapper when used for Outlook fix.
+ * 2. Removing padding on lists inside list wrapper when used for Outlook fix.
+ */
+
+.o-list {
+  padding-left: 25px;
+  /* 1 */
+}
+
+.o-list ul,
+.o-list ol {
+  padding: 0;
+  /* 2 */
+}
+
+/* =============================================================================
+   MAIN-WRAPPER (objects/_main-wrapper.scss)
+   ========================================================================== */
+
+/**
+ * The `.o-main-wrapper` object helps reset some email client specific
+ * formatting while setting the canvas for you to work in.
+ */
+
+.o-main-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: 100% !important;
   line-height: 100% !important;
+  background: #f1f1f1;
 }
 
-/* ----- Components ----- */
-
 /**
- * Preheader (components/_preheader.scss)
+ * Adding spacing around main wrapper (optional).
  */
 
-/* ----- General ----- */
+.o-main-wrapper__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* =============================================================================
+   PREHEADER (objects/_preheader.scss)
+   ========================================================================== */
 
 /**
  * 1. Hiding preheader.
  *    More info: https://litmus.com/blog/the-ultimate-guide-to-preview-text-support
  */
 
-#preheader td {
+.o-preheader td {
   /* 1 */
   display: none !important;
   overflow: hidden;
@@ -695,13 +594,124 @@ ol {
   color: #ffffff;
 }
 
+/* Utilities
+   ========================================================================== */
+
+/* =============================================================================
+   HEADINGS (utilities/_headings.scss)
+   ========================================================================== */
+
 /**
- * Buttons (components/_buttons.scss)
+ * 1. Reset margins.
+ * 2. Base headings typography settings.
  */
 
-/* ----- General ----- */
+.u-h1,
+.u-h2,
+.u-h3,
+.u-h4,
+.u-h5,
+.u-h6 {
+  margin: 0;
+  /* 1 */
+}
 
-.btn td {
+.u-h1 {
+  /* 2 */
+  font-size: 50px;
+  line-height: 58px;
+}
+
+.u-h2 {
+  /* 2 */
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.u-h3 {
+  /* 2 */
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.u-h4 {
+  /* 2 */
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.u-h5 {
+  /* 2 */
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.u-h6 {
+  /* 2 */
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* =============================================================================
+   IMAGES (utilities/_images.scss)
+   ========================================================================== */
+
+/* Reset
+   ========================================================================== */
+
+.u-image-reset {
+  font-size: 100% !important;
+  line-height: 100% !important;
+}
+
+/* =============================================================================
+   SPACING (utilities/_spacing.scss)
+   ========================================================================== */
+
+/* ----- Yahoo! Mail alignment fix ----- */
+
+.u-yahoo-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* =============================================================================
+   TYPOGRAPHY (utilities/_typography.scss)
+   ========================================================================== */
+
+/* Text alignment
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the alignment of text.
+ */
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+/* Components
+   ========================================================================== */
+
+/* =============================================================================
+   BUTTONS (components/_buttons.scss)
+   ========================================================================== */
+
+/* Settings
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+
+.c-btn td {
   text-align: center;
   background-color: #bbbbbb;
   padding-top: 15px;
@@ -710,48 +720,60 @@ ol {
   padding-left: 35px;
 }
 
-.btn a {
+.c-btn a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* ----- Variations ----- */
+/* Variations
+   ========================================================================== */
 
-.btn--full-width {
+/**
+ * Button that populates full width of its parent.
+ */
+
+.c-btn--full-width {
   width: 100%;
 }
 
-.btn--full-width td {
+.c-btn--full-width td {
   text-align: center;
 }
 
-.btn--rounded td {
+/**
+ * Button with rounded edges.
+ */
+
+.c-btn--rounded td {
   border-radius: 50px;
 }
 
-.btn--green td {
+/**
+ * Color variations. To add new color variation you have to add new value in
+ * `$button-colors` map on top of the file.
+ */
+
+.c-btn--green td {
   background-color: #2ecc71;
 }
 
-.btn--red td {
+.c-btn--red td {
   background-color: #e74c3c;
 }
 
-.btn--blue td {
+.c-btn--blue td {
   background-color: #3498db;
 }
 
-.btn--dark td {
+.c-btn--dark td {
   background-color: #2c3e50;
 }
 
-/**
- * Hero (components/_hero.scss)
- */
+/* =============================================================================
+   HERO (components/_hero.scss)
+   ========================================================================== */
 
-/* ----- General ----- */
-
-.hero {
+.c-hero {
   width: 600px;
   height: 350px;
   background-size: cover;
@@ -759,14 +781,15 @@ ol {
   vertical-align: middle;
 }
 
-/* ----- Inner ----- */
+/* Inner
+   ========================================================================== */
 
-.hero__inner {
+.c-hero__inner {
   height: 350px;
   vertical-align: middle;
 }
 
-.hero__inner > table {
+.c-hero__inner > table {
   width: 520px;
   margin: 0 auto;
 }

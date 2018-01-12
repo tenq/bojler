@@ -39,113 +39,113 @@ a[x-apple-data-detectors] {
     height: auto !important;
   }
 
-  .container {
+  .o-container {
     width: 100% !important;
   }
 
-  .container td {
+  .o-container td {
     width: 100% !important;
     display: block;
     box-sizing: border-box;
   }
 
-  .column-1.first {
+  .o-column-1.is-first {
     padding-left: 10px !important;
   }
 
-  .column-1.last {
+  .o-column-1.is-last {
     padding-right: 10px !important;
   }
 
-  .column-2.first {
+  .o-column-2.is-first {
     padding-left: 10px !important;
   }
 
-  .column-2.last {
+  .o-column-2.is-last {
     padding-right: 10px !important;
   }
 
-  .column-3.first {
+  .o-column-3.is-first {
     padding-left: 10px !important;
   }
 
-  .column-3.last {
+  .o-column-3.is-last {
     padding-right: 10px !important;
   }
 
-  .column-4.first {
+  .o-column-4.is-first {
     padding-left: 10px !important;
   }
 
-  .column-4.last {
+  .o-column-4.is-last {
     padding-right: 10px !important;
   }
 
-  .column-5.first {
+  .o-column-5.is-first {
     padding-left: 10px !important;
   }
 
-  .column-5.last {
+  .o-column-5.is-last {
     padding-right: 10px !important;
   }
 
-  .column-6.first {
+  .o-column-6.is-first {
     padding-left: 10px !important;
   }
 
-  .column-6.last {
+  .o-column-6.is-last {
     padding-right: 10px !important;
   }
 
-  .column-7.first {
+  .o-column-7.is-first {
     padding-left: 10px !important;
   }
 
-  .column-7.last {
+  .o-column-7.is-last {
     padding-right: 10px !important;
   }
 
-  .column-8.first {
+  .o-column-8.is-first {
     padding-left: 10px !important;
   }
 
-  .column-8.last {
+  .o-column-8.is-last {
     padding-right: 10px !important;
   }
 
-  .column-9.first {
+  .o-column-9.is-first {
     padding-left: 10px !important;
   }
 
-  .column-9.last {
+  .o-column-9.is-last {
     padding-right: 10px !important;
   }
 
-  .column-10.first {
+  .o-column-10.is-first {
     padding-left: 10px !important;
   }
 
-  .column-10.last {
+  .o-column-10.is-last {
     padding-right: 10px !important;
   }
 
-  .column-11.first {
+  .o-column-11.is-first {
     padding-left: 10px !important;
   }
 
-  .column-11.last {
+  .o-column-11.is-last {
     padding-right: 10px !important;
   }
 
-  .column-12.first {
+  .o-column-12.is-first {
     padding-left: 10px !important;
   }
 
-  .column-12.last {
+  .o-column-12.is-last {
     padding-right: 10px !important;
   }
 
-  .hero {
+  .c-hero {
     height: auto !important;
     padding-top: 20px;
     padding-right: 20px;
@@ -153,11 +153,11 @@ a[x-apple-data-detectors] {
     padding-left: 20px;
   }
 
-  .hero__inner {
+  .c-hero__inner {
     height: auto !important;
   }
 
-  .hero__inner>table {
+  .c-hero__inner>table {
     width: 100% !important;
   }
 }

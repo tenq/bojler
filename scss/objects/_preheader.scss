@@ -1,13 +1,13 @@
-/**
- * Preheader (components/_preheader.scss)
- */
+/* =============================================================================
+   PREHEADER (objects/_preheader.scss)
+   ========================================================================== */
 
-/* ----- General ----- */
 /**
  * 1. Hiding preheader.
  *    More info: https://litmus.com/blog/the-ultimate-guide-to-preview-text-support
  */
-#preheader {
+
+.o-preheader {
 	td {
 		/* 1 */
 		display: none !important;

@@ -1,11 +1,12 @@
-/**
- * Grid (embed/objects/_grid.scss)
- */
+/* =============================================================================
+   GRID (embed/objects/_grid.scss)
+   ========================================================================== */
 
-/* ----- Media queries ----- */
+/* Media queries
+   ========================================================================== */
+
 @media (max-width: $breakpoint-mobile) {
-	/* ----- Container ----- */
-	.container {
+	.o-container {
 		width: 100% !important;
 
 		td {
@@ -15,17 +16,17 @@
 		}
 	}
 
-	/* ----- Columns ----- */
 	/**
-	 * 1. Generate .first and .last classes.
+	 * 1. Generate .is-first and .is-last classes.
 	 */
+
 	@for $i from 1 through $grid-columns {
 		/* 1 */
-		.column-#{$i}.first {
+		.o-column-#{$i}.is-first {
 			padding-left: $grid-gutter !important;
 		}
 
-		.column-#{$i}.last {
+		.o-column-#{$i}.is-last {
 			padding-right: $grid-gutter !important;
 		}
 	}

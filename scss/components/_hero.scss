@@ -1,9 +1,8 @@
-/**
- * Hero (components/_hero.scss)
- */
+/* =============================================================================
+   HERO (components/_hero.scss)
+   ========================================================================== */
 
-/* ----- General ----- */
-.hero {
+.c-hero {
 	width: 600px;
 	height: 350px;
 	background-size: cover;
@@ -11,8 +10,12 @@
 	vertical-align: middle;
 }
 
-/* ----- Inner ----- */
-.hero__inner {
+
+
+/* Inner
+   ========================================================================== */
+
+.c-hero__inner {
 	height: 350px;
 	vertical-align: middle;
 

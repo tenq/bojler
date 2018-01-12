@@ -1,0 +1,22 @@
+/* =============================================================================
+   TYPOGRAPHY (utilities/_typography.scss)
+   ========================================================================== */
+
+/* Text alignment
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the alignment of text.
+ */
+
+.u-text-left {
+	text-align: left !important;
+}
+
+.u-text-center {
+	text-align: center !important;
+}
+
+.u-text-right {
+	text-align: right !important;
+}

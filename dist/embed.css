@@ -1,32 +1,47 @@
-/**
- * Embed (embed.scss)
- *
- * - This CSS should be embedded in the <head> of your email template.
- */
-
-/* ----- Settings ----- */
+/* =============================================================================
+   EMBED (embed.scss)
+   ========================================================================== */
 
 /**
- * Variables (_variables.scss)
+ * This CSS should be embedded in the `<head>` of your email template.
  */
 
-/* ----- Colors ----- */
+/* Settings
+   ========================================================================== */
 
-/* ----- Generic ----- */
+/* =============================================================================
+   CORE (settings/_core.scss)
+   ========================================================================== */
 
-/* ----- Objects ----- */
+/* Colors
+   ========================================================================== */
 
-/* ----- Components ----- */
+/* Page
+   ========================================================================== */
 
-/* ----- RWD breakpoints ----- */
-
-/* ----- Generic ----- */
+/* Typography
+   ========================================================================== */
 
 /**
- * Reset (embed/generic/_reset.scss)
+ * Base
  */
 
-/* ----- General ----- */
+/**
+ * Headings
+ */
+
+/* Grid
+   ========================================================================== */
+
+/* Breakpoints
+   ========================================================================== */
+
+/* Generic
+   ========================================================================== */
+
+/* =============================================================================
+   RESET (embed/generic/_reset.scss)
+   ========================================================================== */
 
 /**
  * 1. Removing auto-generated blue links on Apple devices.
@@ -74,33 +89,34 @@ a[x-apple-data-detectors] {
   /* 5 */
 }
 
-/* ----- Media queries ----- */
+/* Media queries
+   ========================================================================== */
 
-/* ----- Objects ----- */
+/* Objects
+   ========================================================================== */
 
-/**
- * Grid (embed/objects/_grid.scss)
- */
+/* =============================================================================
+   GRID (embed/objects/_grid.scss)
+   ========================================================================== */
 
-/* ----- Media queries ----- */
+/* Media queries
+   ========================================================================== */
 
-/* ----- Components ----- */
+/* Components
+   ========================================================================== */
 
-/**
- * Hero (embed/components/_hero.scss)
- */
+/* =============================================================================
+   HERO (embed/components/_hero.scss)
+   ========================================================================== */
 
-/* ----- Media queries ----- */
+/* Media queries
+   ========================================================================== */
 
 @media (max-width: 600px) {
-  /* ----- General ----- */
-
   .body-table-spacing {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
-
-  /* ----- Images ----- */
 
   /**
 	* 1. Makes images responsive on smaller screens.
@@ -112,147 +128,141 @@ a[x-apple-data-detectors] {
     height: auto !important;
   }
 
-  /* ----- Container ----- */
-
-  .container {
+  .o-container {
     width: 100% !important;
   }
 
-  .container td {
+  .o-container td {
     width: 100% !important;
     display: block;
     box-sizing: border-box;
   }
 
-  /* ----- Columns ----- */
-
   /**
-	 * 1. Generate .first and .last classes.
+	 * 1. Generate .is-first and .is-last classes.
 	 */
 
   /* 1 */
 
-  .column-1.first {
+  .o-column-1.is-first {
     padding-left: 10px !important;
   }
 
-  .column-1.last {
+  .o-column-1.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-2.first {
+  .o-column-2.is-first {
     padding-left: 10px !important;
   }
 
-  .column-2.last {
+  .o-column-2.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-3.first {
+  .o-column-3.is-first {
     padding-left: 10px !important;
   }
 
-  .column-3.last {
+  .o-column-3.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-4.first {
+  .o-column-4.is-first {
     padding-left: 10px !important;
   }
 
-  .column-4.last {
+  .o-column-4.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-5.first {
+  .o-column-5.is-first {
     padding-left: 10px !important;
   }
 
-  .column-5.last {
+  .o-column-5.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-6.first {
+  .o-column-6.is-first {
     padding-left: 10px !important;
   }
 
-  .column-6.last {
+  .o-column-6.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-7.first {
+  .o-column-7.is-first {
     padding-left: 10px !important;
   }
 
-  .column-7.last {
+  .o-column-7.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-8.first {
+  .o-column-8.is-first {
     padding-left: 10px !important;
   }
 
-  .column-8.last {
+  .o-column-8.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-9.first {
+  .o-column-9.is-first {
     padding-left: 10px !important;
   }
 
-  .column-9.last {
+  .o-column-9.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-10.first {
+  .o-column-10.is-first {
     padding-left: 10px !important;
   }
 
-  .column-10.last {
+  .o-column-10.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-11.first {
+  .o-column-11.is-first {
     padding-left: 10px !important;
   }
 
-  .column-11.last {
+  .o-column-11.is-last {
     padding-right: 10px !important;
   }
 
   /* 1 */
 
-  .column-12.first {
+  .o-column-12.is-first {
     padding-left: 10px !important;
   }
 
-  .column-12.last {
+  .o-column-12.is-last {
     padding-right: 10px !important;
   }
 
-  /* ----- General ----- */
-
-  .hero {
+  .c-hero {
     height: auto !important;
     padding-top: 20px;
     padding-right: 20px;
@@ -260,13 +270,11 @@ a[x-apple-data-detectors] {
     padding-left: 20px;
   }
 
-  /* ----- Inner ----- */
-
-  .hero__inner {
+  .c-hero__inner {
     height: auto !important;
   }
 
-  .hero__inner > table {
+  .c-hero__inner > table {
     width: 100% !important;
   }
 }

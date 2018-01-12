@@ -1,11 +1,12 @@
-/**
- * Hero (embed/components/_hero.scss)
- */
+/* =============================================================================
+   HERO (embed/components/_hero.scss)
+   ========================================================================== */
 
-/* ----- Media queries ----- */
+/* Media queries
+   ========================================================================== */
+
 @media (max-width: $breakpoint-mobile) {
-	/* ----- General ----- */
-	.hero {
+	.c-hero {
 		height: auto !important;
 		padding-top: $grid-gutter * 2;
 		padding-right: $grid-gutter * 2;
@@ -13,8 +14,7 @@
 		padding-left: $grid-gutter * 2;
 	}
 
-	/* ----- Inner ----- */
-	.hero__inner {
+	.c-hero__inner {
 		height: auto !important;
 
 		> table {
