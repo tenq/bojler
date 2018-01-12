@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.0.0] - 2018-01-12
+### Changed
+- Transformed bojler to CSS only framework (#61, #70).
+- Moved documentation from `gh-pages` branch to `docs/` directory on `master` branch (#64).
+- Documentation content updated (#63).
+- Licence filename updated.
+
+### Added
+- Added files needed for NPM package creation (#60).
+- Added new automation scripts (#66, #67, #69).
+- Added CI via Travis CI service (#62).
+
 ## [2.2.0] - 2018-01-09
 ### Changed
 - Allow use of subdirectories (#54).
