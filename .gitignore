@@ -19,7 +19,7 @@ Thumbs.db
 # Compiled assets
 # ---------------
 dist/*
-!dist/main.css
+!dist/inline.css
 !dist/embed.css
-!dist/main.min.css
+!dist/inline.min.css
 !dist/embed.min.css
