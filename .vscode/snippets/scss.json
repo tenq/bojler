@@ -1,0 +1,63 @@
+{
+    "Comment Partial Heading": {
+        "prefix": "comment-partial-heading",
+        "body": [
+            "/* =============================================================================",
+            "   ${1:FILE-NAME} (${2:<layer-name>}/_${3:<partial-name>}.scss)",
+            "   ========================================================================== */",
+            "$0"
+        ],
+        "description": "Partial heading comment block."
+    },
+    "Comment Section": {
+        "prefix": "comment-section",
+        "body": [
+            "/* =============================================================================",
+            "   ${1:Section comment block}",
+            "   ========================================================================== */",
+            "$0"
+        ],
+        "description": "Section comment block."
+    },
+    "Comment Sub-Section": {
+        "prefix": "comment-sub-section",
+        "body": [
+            "/* ${1:Sub-section comment block}",
+            "   ========================================================================== */",
+            "$0"
+        ],
+        "description": "Sub-Section comment block."
+    },
+    "Comment Short Description": {
+        "prefix": "comment-short-description",
+        "body": [
+            "/**",
+            " * ${1:Short description using Doxygen-style comment format",
+            " *",
+            " * The first sentence of the long description starts here and continues on this",
+            " * line for a while finally concluding here at the end of this paragraph.",
+            " *",
+            " * The long description is ideal for more detailed explanations and",
+            " * documentation. It can include example HTML, URLs, or any other information",
+            " * that is deemed necessary or useful.}",
+            " */",
+            "$0"
+        ],
+        "description": "Short description comment block."
+    },
+    "Comment Basic": {
+        "prefix": "comment-basic",
+        "body": [
+            "/* ${1:Basic comment block} */",
+            "$0"
+        ],
+        "description": "Basic comment block."
+    },
+    "Comment Number Flag": {
+        "prefix": "comment-number-flag",
+        "body": [
+            "/* ${1:[1]} */$0"
+        ],
+        "description": "Number flag comment block."
+    }
+}
