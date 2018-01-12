@@ -1,0 +1,57 @@
+/**
+ * Grid (objects/_grid.scss)
+ */
+
+/* ----- Container ----- */
+/**
+ * 1. All emails should have a container element. This gives the email a maximum
+ *    width for email clients on larger screens. It also orients the email in
+ *    the center.
+ */
+.container {
+	/* 1 */
+	width: $grid-container-width;
+	margin: 0 auto 0 auto;
+	background: $color-container-bg;
+}
+
+/* ----- Columns ----- */
+/**
+ * 1. Generate classes for columns with gutter.
+ * 2. Generate classes with width.
+ * 3. Generate classes for columns without gutter.
+ * 4. Generate .first and .last classes.
+ */
+@for $i from 1 through $grid-columns {
+	/* 1 */
+	.column-#{$i} {
+		padding-left: $grid-gutter;
+		padding-right: $grid-gutter;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	/* 2 */
+	.column-#{$i} {
+		width: $grid-column-width * $i;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	/* 3 */
+	.no-gutter .column-#{$i} {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@for $i from 1 through $grid-columns {
+	/* 4 */
+	.column-#{$i}.first {
+		padding-left: $grid-gutter * 2;
+	}
+
+	.column-#{$i}.last {
+		padding-right: $grid-gutter * 2;
+	}
+}

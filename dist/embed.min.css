@@ -1,0 +1,163 @@
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+#outlook a {
+  padding: 0;
+}
+
+.yshortcuts a {
+  border-bottom: none !important;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+@media (max-width: 600px) {
+  .body-table-spacing {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto !important;
+  }
+
+  .container {
+    width: 100% !important;
+  }
+
+  .container td {
+    width: 100% !important;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .column-1.first {
+    padding-left: 10px !important;
+  }
+
+  .column-1.last {
+    padding-right: 10px !important;
+  }
+
+  .column-2.first {
+    padding-left: 10px !important;
+  }
+
+  .column-2.last {
+    padding-right: 10px !important;
+  }
+
+  .column-3.first {
+    padding-left: 10px !important;
+  }
+
+  .column-3.last {
+    padding-right: 10px !important;
+  }
+
+  .column-4.first {
+    padding-left: 10px !important;
+  }
+
+  .column-4.last {
+    padding-right: 10px !important;
+  }
+
+  .column-5.first {
+    padding-left: 10px !important;
+  }
+
+  .column-5.last {
+    padding-right: 10px !important;
+  }
+
+  .column-6.first {
+    padding-left: 10px !important;
+  }
+
+  .column-6.last {
+    padding-right: 10px !important;
+  }
+
+  .column-7.first {
+    padding-left: 10px !important;
+  }
+
+  .column-7.last {
+    padding-right: 10px !important;
+  }
+
+  .column-8.first {
+    padding-left: 10px !important;
+  }
+
+  .column-8.last {
+    padding-right: 10px !important;
+  }
+
+  .column-9.first {
+    padding-left: 10px !important;
+  }
+
+  .column-9.last {
+    padding-right: 10px !important;
+  }
+
+  .column-10.first {
+    padding-left: 10px !important;
+  }
+
+  .column-10.last {
+    padding-right: 10px !important;
+  }
+
+  .column-11.first {
+    padding-left: 10px !important;
+  }
+
+  .column-11.last {
+    padding-right: 10px !important;
+  }
+
+  .column-12.first {
+    padding-left: 10px !important;
+  }
+
+  .column-12.last {
+    padding-right: 10px !important;
+  }
+
+  .hero {
+    height: auto !important;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .hero__inner {
+    height: auto !important;
+  }
+
+  .hero__inner>table {
+    width: 100% !important;
+  }
+}

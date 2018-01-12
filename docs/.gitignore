@@ -18,8 +18,5 @@ Thumbs.db
 # ---------------
 # Compiled assets
 # ---------------
-dist/*
-!dist/inline.css
-!dist/embed.css
-!dist/inline.min.css
-!dist/embed.min.css
+.sass-cache
+_site

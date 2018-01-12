@@ -1,21 +1,48 @@
 {
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Slicejack/bojler"
+  "name": "@slicejack/bojler",
+  "version": "3.0.0",
+  "description": "Bojler is an CSS email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
+  "keywords": [
+    "email",
+    "css",
+    "framework",
+    "grid",
+    "email-template",
+    "css-framework"
+  ],
+  "homepage": "http://bojler.slicejack.com",
+  "bugs": {
+    "url": "https://github.com/Slicejack/bojler/issues"
   },
   "license": "MIT",
+  "author": "Slicejack (https://github.com/Slicejack)",
+  "files": [
+    "dist/",
+    "scss/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slicejack/bojler.git"
+  },
   "scripts": {
-    "gulp": "node ./node_modules/gulp/bin/gulp.js"
+    "gulp": "node ./node_modules/gulp/bin/gulp.js",
+    "release": "npm run gulp release:prep && npm run release:zip",
+    "release:zip": "cd dist/ && zip -r9 bojler-$npm_package_version-dist.zip *",
+    "docs:build": "cd docs/ && jekyll build",
+    "docs:serve": "cd docs/ && jekyll serve",
+    "test:ci": "npm run gulp release:dist"
   },
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
-    "gulp-connect": "^3.2.2",
+    "gulp": "^3.9.1",
     "gulp-group-css-media-queries": "^1.2.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-strip-comments": "^2.4.5",
-    "gulp-util": "^3.0.8",
-    "@akzhan/gulp-juice": "^0.1.6",
-    "web-resource-inliner": "^4.1.0"
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^6.0.0",
+    "inquirer": "^5.0.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^8.4.0"
   }
 }

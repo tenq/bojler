@@ -1,0 +1,32 @@
+/**
+ * Grid (embed/objects/_grid.scss)
+ */
+
+/* ----- Media queries ----- */
+@media (max-width: $breakpoint-mobile) {
+	/* ----- Container ----- */
+	.container {
+		width: 100% !important;
+
+		td {
+			width: 100% !important;
+			display: block;
+			box-sizing: border-box;
+		}
+	}
+
+	/* ----- Columns ----- */
+	/**
+	 * 1. Generate .first and .last classes.
+	 */
+	@for $i from 1 through $grid-columns {
+		/* 1 */
+		.column-#{$i}.first {
+			padding-left: $grid-gutter !important;
+		}
+
+		.column-#{$i}.last {
+			padding-right: $grid-gutter !important;
+		}
+	}
+}
