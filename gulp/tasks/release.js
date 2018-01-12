@@ -12,7 +12,7 @@ var CURRENT_VERSION = require( '../../package.json' ).version;
 var NEXT_VERSION;
 
 // Security check, asking for new version number
-gulp.task( 'deploy:prompt', function( callback ) {
+gulp.task( 'release:prompt', function( callback ) {
 	inquirer.prompt( [
 		{
 			type: 'confirm',
@@ -47,14 +47,14 @@ gulp.task( 'deploy:prompt', function( callback ) {
 } );
 
 // Bumps the version number in any file that has one
-gulp.task( 'deploy:version', function() {
+gulp.task( 'release:version', function() {
 	return gulp.src( CONFIG.VERSIONED_FILES, { base: process.cwd() } )
 		.pipe( replace( CURRENT_VERSION, NEXT_VERSION ) )
 		.pipe( gulp.dest( '.' ) );
 } );
 
 // Builds Bojler dist files
-gulp.task( 'deploy:dist', function() {
+gulp.task( 'release:dist', function() {
 	return gulp.src( CONFIG.SASS_BUILD_FILES )
 		.pipe( plumber() )
 		.pipe( sass( { outputStyle: 'expanded' } )

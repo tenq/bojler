@@ -5,11 +5,11 @@ var sequence = require( 'run-sequence' );
 requireDir( './gulp/tasks' );
 
 // Pack everything up for new release
-gulp.task( 'deploy:prep', function( callback ) {
+gulp.task( 'release:prep', function( callback ) {
 	sequence(
-		'deploy:prompt',
-		'deploy:version',
-		'deploy:dist',
+		'release:prompt',
+		'release:version',
+		'release:dist',
 		callback
 	);
 } );

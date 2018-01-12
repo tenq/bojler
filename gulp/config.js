@@ -9,7 +9,9 @@ module.exports = {
 	],
 
 	VERSIONED_FILES: [
-		'package.json'
+		'package.json',
+		'README.md',
+		'docs/getting-started.md'
 	]
 
 };

@@ -1,17 +1,14 @@
 {
   "name": "@slicejack/bojler",
   "version": "3.0.0",
-  "description": "Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
+  "description": "Bojler is an CSS email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
   "keywords": [
     "email",
     "css",
-    "html",
     "framework",
     "grid",
     "email-template",
-    "css-framework",
-    "html-framework",
-    "html-email"
+    "css-framework"
   ],
   "homepage": "http://bojler.slicejack.com",
   "bugs": {
@@ -29,10 +26,11 @@
   },
   "scripts": {
     "gulp": "node ./node_modules/gulp/bin/gulp.js",
-    "deploy:prep": "npm run gulp deploy:prep",
-    "docs:build": "cd docs && jekyll build",
-    "docs:serve": "cd docs && jekyll serve",
-    "test:ci": "npm run gulp deploy:dist"
+    "release": "npm run gulp release:prep && npm run release:zip",
+    "release:zip": "cd dist/ && zip -r9 bojler-$npm_package_version-dist.zip *",
+    "docs:build": "cd docs/ && jekyll build",
+    "docs:serve": "cd docs/ && jekyll serve",
+    "test:ci": "npm run gulp release:dist"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

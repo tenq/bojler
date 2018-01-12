@@ -32,12 +32,12 @@ Download Bojler to get the compiled CSS, source code, or include it with npm.
 Download ready-to-use compiled code for Bojler to easily drop into your project.
 This doesn’t include documentation and source files.
 
-<a href="https://github.com/Slicejack/bojler" class="btn btn--dark btn--rounded">Download</a>
+<a href="https://github.com/Slicejack/bojler/releases/download/v3.0.0/bojler-3.0.0-dist.zip" class="btn btn--dark btn--rounded">Download — v3.0.0</a>
 
 ### Source files
 Compile Bojler with your own asset pipeline by downloading our source Sass and documentation files. This option requires some additional tooling such as Sass compiler.
 
-<a href="https://github.com/Slicejack/bojler" class="btn btn--dark btn--rounded">Download</a>
+<a href="https://github.com/Slicejack/bojler/archive/v3.0.0.zip" class="btn btn--dark btn--rounded">Download — v3.0.0</a>
 
 ### Via NPM
 Install Bojler in your Node.js powered apps with the npm package:

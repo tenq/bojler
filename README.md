@@ -18,8 +18,8 @@ Full project documentation can be found at http://bojler.slicejack.com/.
 
 ## Quick-start guide 🚀
 Several quick start options are available:
-- [Download compiled CSS](http://bojler.slicejack.com/getting-started/#compiled-css)
-- [Download source files](http://bojler.slicejack.com/getting-started/#source-files)
+- [Download compiled CSS](https://github.com/Slicejack/bojler/releases/download/v3.0.0/bojler-3.0.0-dist.zip)
+- [Download source files](https://github.com/Slicejack/bojler/archive/v3.0.0.zip)
 - Clone the repo: `git clone https://github.com/Slicejack/bojler.git`
 - Install with [NPM](https://www.npmjs.com): `npm install @slicejack/bojler`
 
