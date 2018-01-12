@@ -5,7 +5,7 @@ keywords: email, css, html, framework, boilerplate, grid, campaigns, templates, 
 
 # Hero section
 title: Bojler
-description: Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.
+description: Bojler is an CSS email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.
 buttons:
     - icon: github
       content: View on GitHub
