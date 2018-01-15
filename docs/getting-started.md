@@ -189,13 +189,28 @@ It’s also a really great idea to try to keep your entire email as small as hum
 
 Use a compression app like [compressor.io](https://compressor.io/) to cut all your images down to size as much as possible before you send. Slower load times, especially on mobile, can make or break your email if the overall file size is too large.
 
-<div class="callout callout--info">
-    <p><strong>How to use images locally?</strong> We recommend you to add <code>/assets</code> directory containing your images inside <code>/public</code> directory. Bojler will not delete your <code>/assets</code> directory on build or during development mode.</p>
-	<p>Also <code>npm run gulp clean</code> command will not delete your <code>/assets</code> directory.</p>
-</div>
-
 ### Test your email properly
 Before you send your HTML email you should test it properly. We recommend you to use [Litmus](http://litmus.com) or [Email on Acid](https://www.emailonacid.com).
 
 ### Send your email properly
 Best way to send your HTML email would be using an Email Service Provider (ESP) such as [MailChimp](http://www.mailchimp.com) or [Campaign Monitor](https://www.campaignmonitor.com/). If you’re just running a quick test we recommend you to use [Putsmail](https://putsmail.com/).
+
+## Modifying and extending
+### CSS architecture
+The architecture we use on our projects is called [ITCSS](http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731) – “Inverted Triangle CSS”. This is a methodology that involves visualising your entire CSS project as a layered, upside-down triangle. This hierarchical shape represents a model that will help you order your CSS in the most effective, least wasteful way.
+
+What ITCSS aims to do is to provide a level of formality and structure to the way we write our CSS. It’s a way of planning and structuring your CSS for large and long-running projects.
+
+<div class="callout callout--info">
+    <p><strong>Learn more about ITCSS</strong> You can find more resources about ITCSS <a href="https://github.com/ahmadajmi/awesome-itcss" target="_blank">here</a>.</p>
+</div>
+
+### Modifying
+To modify Bojler we recommend using our `settings/core.scss` partial. Duplicate it to your project, update settings and import it instead of default `settings/core.scss` file.
+
+### Extending
+If you want to extend some of existing features do the same thing you did with `core.scss` partial. Duplicate, for example, `components/hero.scss` partial to your project, update it and import it instead of default `components/hero.scss`.
+
+## Documentation
+Documentation is powered by [Jekyll](https://jekyllrb.com).
+To serve the documentation just run `npm run docs:serve` in package root directory.
