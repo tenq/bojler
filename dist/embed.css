@@ -30,11 +30,25 @@
  * Headings
  */
 
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Control the default spacing of most elements by modifying these variables.
+ * You can add more entries to the `$spacers` map, should you need more
+ * variation.
+ */
+
 /* Grid
    ========================================================================== */
 
 /* Breakpoints
    ========================================================================== */
+
+/**
+ * Define the minimum dimension at which your layout will change, adapting to
+ * different screen sizes, for use in media queries.
+ */
 
 /* Generic
    ========================================================================== */
@@ -102,6 +116,13 @@ a[x-apple-data-detectors] {
 /* Media queries
    ========================================================================== */
 
+/* =============================================================================
+   MAIN-WRAPPER (embed/objects/_main-wrapper.scss)
+   ========================================================================== */
+
+/* Media queries
+   ========================================================================== */
+
 /* Components
    ========================================================================== */
 
@@ -112,19 +133,42 @@ a[x-apple-data-detectors] {
 /* Media queries
    ========================================================================== */
 
-@media (max-width: 600px) {
-  .body-table-spacing {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
+/* Utilities
+   ========================================================================== */
 
+/* =============================================================================
+   DISPLAY (embed/utilities/_display.scss)
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the display box type of an element.
+ */
+
+/* Media queries
+   ========================================================================== */
+
+/* =============================================================================
+   SPACING (embed/utilities/_spacing.scss)
+   ========================================================================== */
+
+/* Media queries
+   ========================================================================== */
+
+/* =============================================================================
+   TYPOGRAPHY (embed/utilities/_typography.scss)
+   ========================================================================== */
+
+/* Media queries
+   ========================================================================== */
+
+@media (max-width: 600px) {
   /**
 	* 1. Makes images responsive on smaller screens.
 	*/
 
   img {
     /* 1 */
-    max-width: 100%;
+    max-width: 100% !important;
     height: auto !important;
   }
 
@@ -139,7 +183,7 @@ a[x-apple-data-detectors] {
   }
 
   /**
-	 * 1. Generate .is-first and .is-last classes.
+	 * 1. Generate `.is-first` and `.is-last` classes.
 	 */
 
   /* 1 */
@@ -262,6 +306,15 @@ a[x-apple-data-detectors] {
     padding-right: 10px !important;
   }
 
+  /**
+	 * Removing spacing around main wrapper (optional).
+	 */
+
+  .o-main-wrapper__inner {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   .c-hero {
     height: auto !important;
     padding-top: 20px;
@@ -276,5 +329,132 @@ a[x-apple-data-detectors] {
 
   .c-hero__inner > table {
     width: 100% !important;
+  }
+
+  .u-block\@sm {
+    display: block !important;
+  }
+
+  .u-table\@sm {
+    display: table !important;
+  }
+
+  .u-table-row\@sm {
+    display: table-row !important;
+  }
+
+  .u-table-cell\@sm {
+    display: table-cell !important;
+  }
+
+  .u-hidden\@sm {
+    display: none !important;
+  }
+
+  /**
+	 * Utilities for controlling an element's padding.
+	 */
+
+  .u-pt-1\@sm {
+    padding-top: 10px !important;
+  }
+
+  .u-pt-2\@sm {
+    padding-top: 20px !important;
+  }
+
+  .u-pt-3\@sm {
+    padding-top: 30px !important;
+  }
+
+  .u-pr-1\@sm {
+    padding-right: 10px !important;
+  }
+
+  .u-pr-2\@sm {
+    padding-right: 20px !important;
+  }
+
+  .u-pr-3\@sm {
+    padding-right: 30px !important;
+  }
+
+  .u-pb-1\@sm {
+    padding-bottom: 10px !important;
+  }
+
+  .u-pb-2\@sm {
+    padding-bottom: 20px !important;
+  }
+
+  .u-pb-3\@sm {
+    padding-bottom: 30px !important;
+  }
+
+  .u-pl-1\@sm {
+    padding-left: 10px !important;
+  }
+
+  .u-pl-2\@sm {
+    padding-left: 20px !important;
+  }
+
+  .u-pl-3\@sm {
+    padding-left: 30px !important;
+  }
+
+  .u-px-1\@sm {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .u-px-2\@sm {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  .u-px-3\@sm {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
+
+  /**
+	 * Utilities for controlling an element's margin.
+	 */
+
+  .u-mx-auto\@sm {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .u-mx-1\@sm {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .u-mx-2\@sm {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+
+  .u-mx-3\@sm {
+    margin-right: 30px !important;
+    margin-left: 30px !important;
+  }
+
+  /**
+	 * Utilities for controlling the alignment of text.
+	 */
+
+  .u-text-left\@sm {
+    text-align: left !important;
+  }
+
+  .u-text-center\@sm {
+    text-align: center !important;
+  }
+
+  .u-text-right\@sm {
+    text-align: right !important;
   }
 }

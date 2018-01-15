@@ -27,6 +27,7 @@ $colors: (
    ========================================================================== */
 
 $page-background-color: #f1f1f1 !default;
+$page-vertical-spacing: 20px !default;
 
 
 
@@ -63,6 +64,32 @@ $line-height-h6: 20px !default;
 
 
 
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Control the default spacing of most elements by modifying these variables.
+ * You can add more entries to the `$spacers` map, should you need more
+ * variation.
+ */
+
+$spacers: (
+	'auto': auto,
+	'1': 10px,
+	'2': 20px,
+	'3': 30px,
+) !default;
+
+$spacing-sides: (
+	'top': t,
+	'right': r,
+	'bottom': b,
+	'left': l,
+	'horizontal': x,
+) !default;
+
+
+
 /* Grid
    ========================================================================== */
 
@@ -76,5 +103,10 @@ $grid-gutter: 10px !default;
 
 /* Breakpoints
    ========================================================================== */
+
+/**
+ * Define the minimum dimension at which your layout will change, adapting to
+ * different screen sizes, for use in media queries.
+ */
 
 $breakpoint-mobile: $grid-container-width !default;

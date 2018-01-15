@@ -1,5 +1,5 @@
 /* =============================================================================
-   LIST (objects/_list.scss)
+   LIST-RESET (objects/_list-reset.scss)
    ========================================================================== */
 
 /**
@@ -7,7 +7,7 @@
  * 2. Removing padding on lists inside list wrapper when used for Outlook fix.
  */
 
-.o-list {
+.o-list-reset {
 	padding-left: 25px; /* 1 */
 
 	ul, ol {

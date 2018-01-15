@@ -17,7 +17,7 @@
 	}
 
 	/**
-	 * 1. Generate .is-first and .is-last classes.
+	 * 1. Generate `.is-first` and `.is-last` classes.
 	 */
 
 	@for $i from 1 through $grid-columns {

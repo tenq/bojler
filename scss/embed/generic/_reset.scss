@@ -50,18 +50,13 @@ a[x-apple-data-detectors] {
    ========================================================================== */
 
 @media (max-width: $breakpoint-mobile) {
-	.body-table-spacing {
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
-	}
-
 	/**
 	* 1. Makes images responsive on smaller screens.
 	*/
 
 	img {
 		/* 1 */
-		max-width: 100%;
+		max-width: 100% !important;
 		height: auto !important;
 	}
 }
