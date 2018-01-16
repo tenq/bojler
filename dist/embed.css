@@ -1,63 +1,31 @@
 /* =============================================================================
    EMBED (embed.scss)
-   ========================================================================== */
-
-/**
+   ========================================================================== *//**
  * This CSS should be embedded in the `<head>` of your email template.
- */
-
-/* Settings
-   ========================================================================== */
-
-/* =============================================================================
+ *//* Settings
+   ========================================================================== *//* =============================================================================
    CORE (settings/_core.scss)
-   ========================================================================== */
-
-/* Colors
-   ========================================================================== */
-
-/* Page
-   ========================================================================== */
-
-/* Typography
-   ========================================================================== */
-
-/**
+   ========================================================================== *//* Colors
+   ========================================================================== *//* Page
+   ========================================================================== *//* Typography
+   ========================================================================== *//**
  * Base
- */
-
-/**
+ *//**
  * Headings
- */
-
-/* Spacing
-   ========================================================================== */
-
-/**
+ *//* Spacing
+   ========================================================================== *//**
  * Control the default spacing of most elements by modifying these variables.
  * You can add more entries to the `$spacers` map, should you need more
  * variation.
- */
-
-/* Grid
-   ========================================================================== */
-
-/* Breakpoints
-   ========================================================================== */
-
-/**
+ *//* Grid
+   ========================================================================== *//* Breakpoints
+   ========================================================================== *//**
  * Define the minimum dimension at which your layout will change, adapting to
  * different screen sizes, for use in media queries.
- */
-
-/* Generic
-   ========================================================================== */
-
-/* =============================================================================
+ *//* Generic
+   ========================================================================== *//* =============================================================================
    RESET (embed/generic/_reset.scss)
-   ========================================================================== */
-
-/**
+   ========================================================================== *//**
  * 1. Removing auto-generated blue links on Apple devices.
  *    More info: http://removebluelinks.com
  * 2. Force Outlook to provide a "View in browser" menu link.
@@ -66,10 +34,8 @@
  * 4. Force Hotmail to display emails at full width.
  * 5. Force Hotmail to display normal line spacing.
  *    More info: http://www.emailonacid.com/forum/viewthread/43
- */
-
-a[x-apple-data-detectors] {
-  /* 1 */
+ */a[x-apple-data-detectors] {
+ /* 1 */
   color: inherit !important;
   text-decoration: none !important;
   font-size: inherit !important;
@@ -80,94 +46,51 @@ a[x-apple-data-detectors] {
 
 #outlook a {
   padding: 0;
-  /* 2 */
+ /* 2 */;
 }
 
 .yshortcuts a {
   border-bottom: none !important;
-  /* 3 */
+ /* 3 */;
 }
 
 .ExternalClass {
   width: 100%;
-  /* 4 */
+ /* 4 */;
 }
 
-.ExternalClass,
-.ExternalClass p,
-.ExternalClass span,
-.ExternalClass font,
-.ExternalClass td,
-.ExternalClass div {
+.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div {
   line-height: 100%;
-  /* 5 */
-}
-
-/* Media queries
-   ========================================================================== */
-
-/* Objects
-   ========================================================================== */
-
-/* =============================================================================
+ /* 5 */;
+}/* Media queries
+   ========================================================================== *//* Objects
+   ========================================================================== *//* =============================================================================
    GRID (embed/objects/_grid.scss)
-   ========================================================================== */
-
-/* Media queries
-   ========================================================================== */
-
-/* =============================================================================
+   ========================================================================== *//* Media queries
+   ========================================================================== *//* =============================================================================
    MAIN-WRAPPER (embed/objects/_main-wrapper.scss)
-   ========================================================================== */
-
-/* Media queries
-   ========================================================================== */
-
-/* Components
-   ========================================================================== */
-
-/* =============================================================================
+   ========================================================================== *//* Media queries
+   ========================================================================== *//* Components
+   ========================================================================== *//* =============================================================================
    HERO (embed/components/_hero.scss)
-   ========================================================================== */
-
-/* Media queries
-   ========================================================================== */
-
-/* Utilities
-   ========================================================================== */
-
-/* =============================================================================
+   ========================================================================== *//* Media queries
+   ========================================================================== *//* Utilities
+   ========================================================================== *//* =============================================================================
    DISPLAY (embed/utilities/_display.scss)
-   ========================================================================== */
-
-/**
+   ========================================================================== *//**
  * Utilities for controlling the display box type of an element.
- */
-
-/* Media queries
-   ========================================================================== */
-
-/* =============================================================================
+ *//* Media queries
+   ========================================================================== *//* =============================================================================
    SPACING (embed/utilities/_spacing.scss)
-   ========================================================================== */
-
-/* Media queries
-   ========================================================================== */
-
-/* =============================================================================
+   ========================================================================== *//* Media queries
+   ========================================================================== *//* =============================================================================
    TYPOGRAPHY (embed/utilities/_typography.scss)
-   ========================================================================== */
-
-/* Media queries
-   ========================================================================== */
-
-@media (max-width: 600px) {
-  /**
+   ========================================================================== *//* Media queries
+   ========================================================================== */@media (max-width: 600px) {
+/**
 	* 1. Makes images responsive on smaller screens.
-	*/
-
-  img {
-    /* 1 */
+	*/  img {
+ /* 1 */
     max-width: 100% !important;
     height: auto !important;
   }
@@ -180,137 +103,83 @@ a[x-apple-data-detectors] {
     width: 100% !important;
     display: block;
     box-sizing: border-box;
-  }
-
-  /**
+  }/**
 	 * 1. Generate `.is-first` and `.is-last` classes.
-	 */
-
-  /* 1 */
-
-  .o-column-1.is-first {
+	 *//* 1 */  .o-column-1.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-1.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-2.is-first {
+  }/* 1 */  .o-column-2.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-2.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-3.is-first {
+  }/* 1 */  .o-column-3.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-3.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-4.is-first {
+  }/* 1 */  .o-column-4.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-4.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-5.is-first {
+  }/* 1 */  .o-column-5.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-5.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-6.is-first {
+  }/* 1 */  .o-column-6.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-6.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-7.is-first {
+  }/* 1 */  .o-column-7.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-7.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-8.is-first {
+  }/* 1 */  .o-column-8.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-8.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-9.is-first {
+  }/* 1 */  .o-column-9.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-9.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-10.is-first {
+  }/* 1 */  .o-column-10.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-10.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-11.is-first {
+  }/* 1 */  .o-column-11.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-11.is-last {
     padding-right: 10px !important;
-  }
-
-  /* 1 */
-
-  .o-column-12.is-first {
+  }/* 1 */  .o-column-12.is-first {
     padding-left: 10px !important;
   }
 
   .o-column-12.is-last {
     padding-right: 10px !important;
-  }
-
-  /**
+  }/**
 	 * Removing spacing around main wrapper (optional).
-	 */
-
-  .o-main-wrapper__inner {
+	 */  .o-main-wrapper__inner {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
@@ -349,82 +218,18 @@ a[x-apple-data-detectors] {
 
   .u-hidden\@sm {
     display: none !important;
-  }
-
-  /**
+  }/**
 	 * Utilities for controlling an element's padding.
-	 */
-
-  .u-pt-1\@sm {
-    padding-top: 10px !important;
-  }
-
-  .u-pt-2\@sm {
-    padding-top: 20px !important;
-  }
-
-  .u-pt-3\@sm {
-    padding-top: 30px !important;
-  }
-
-  .u-pr-1\@sm {
-    padding-right: 10px !important;
-  }
-
-  .u-pr-2\@sm {
-    padding-right: 20px !important;
-  }
-
-  .u-pr-3\@sm {
-    padding-right: 30px !important;
-  }
-
-  .u-pb-1\@sm {
-    padding-bottom: 10px !important;
-  }
-
-  .u-pb-2\@sm {
-    padding-bottom: 20px !important;
-  }
-
-  .u-pb-3\@sm {
-    padding-bottom: 30px !important;
-  }
-
-  .u-pl-1\@sm {
-    padding-left: 10px !important;
-  }
-
-  .u-pl-2\@sm {
-    padding-left: 20px !important;
-  }
-
-  .u-pl-3\@sm {
-    padding-left: 30px !important;
-  }
-
-  .u-px-1\@sm {
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-  }
-
-  .u-px-2\@sm {
-    padding-right: 20px !important;
-    padding-left: 20px !important;
-  }
-
-  .u-px-3\@sm {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
-  }
-
-  /**
+	 */.u-pt-0\@sm {padding-top: 0 !important;}.u-pt-1\@sm {padding-top: 10px !important;}.u-pt-2\@sm {padding-top: 20px !important;}.u-pt-3\@sm {padding-top: 30px !important;}.u-pr-0\@sm {padding-right: 0 !important;}.u-pr-1\@sm {padding-right: 10px !important;}.u-pr-2\@sm {padding-right: 20px !important;}.u-pr-3\@sm {padding-right: 30px !important;}.u-pb-0\@sm {padding-bottom: 0 !important;}.u-pb-1\@sm {padding-bottom: 10px !important;}.u-pb-2\@sm {padding-bottom: 20px !important;}.u-pb-3\@sm {padding-bottom: 30px !important;}.u-pl-0\@sm {padding-left: 0 !important;}.u-pl-1\@sm {padding-left: 10px !important;}.u-pl-2\@sm {padding-left: 20px !important;}.u-pl-3\@sm {padding-left: 30px !important;}.u-px-0\@sm {padding-right: 0 !important;padding-left: 0 !important;}.u-px-1\@sm {padding-right: 10px !important;padding-left: 10px !important;}.u-px-2\@sm {padding-right: 20px !important;padding-left: 20px !important;}.u-px-3\@sm {padding-right: 30px !important;padding-left: 30px !important;}/**
 	 * Utilities for controlling an element's margin.
-	 */
-
-  .u-mx-auto\@sm {
+	 */  .u-mx-auto\@sm {
     margin-right: auto !important;
     margin-left: auto !important;
+  }
+
+  .u-mx-0\@sm {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
   }
 
   .u-mx-1\@sm {
@@ -440,13 +245,9 @@ a[x-apple-data-detectors] {
   .u-mx-3\@sm {
     margin-right: 30px !important;
     margin-left: 30px !important;
-  }
-
-  /**
+  }/**
 	 * Utilities for controlling the alignment of text.
-	 */
-
-  .u-text-left\@sm {
+	 */  .u-text-left\@sm {
     text-align: left !important;
   }
 
