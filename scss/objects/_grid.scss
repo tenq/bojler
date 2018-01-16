@@ -1,57 +1,69 @@
+/* =============================================================================
+   GRID (objects/_grid.scss)
+   ========================================================================== */
+
+/* Container
+   ========================================================================== */
+
 /**
- * Grid (objects/_grid.scss)
+ * All emails should have a container element. This gives the email a maximum
+ * width for email clients on larger screens. It also orients the email in the
+ * center.
  */
 
-/* ----- Container ----- */
-/**
- * 1. All emails should have a container element. This gives the email a maximum
- *    width for email clients on larger screens. It also orients the email in
- *    the center.
- */
-.container {
-	/* 1 */
+.o-container {
 	width: $grid-container-width;
 	margin: 0 auto 0 auto;
-	background: $color-container-bg;
+	background: $grid-container-background-color;
 }
 
-/* ----- Columns ----- */
+
+
+/* Columns
+   ========================================================================== */
+
 /**
- * 1. Generate classes for columns with gutter.
- * 2. Generate classes with width.
- * 3. Generate classes for columns without gutter.
- * 4. Generate .first and .last classes.
+ * Generate classes for columns with gutter.
  */
+
 @for $i from 1 through $grid-columns {
-	/* 1 */
-	.column-#{$i} {
+	.o-column-#{$i} {
 		padding-left: $grid-gutter;
 		padding-right: $grid-gutter;
 	}
 }
 
+/**
+ * Generate classes with width.
+ */
+
 @for $i from 1 through $grid-columns {
-	/* 2 */
-	.column-#{$i} {
+	.o-column-#{$i} {
 		width: $grid-column-width * $i;
 	}
 }
 
+/**
+ * Generate classes for columns without gutter.
+ */
+
 @for $i from 1 through $grid-columns {
-	/* 3 */
-	.no-gutter .column-#{$i} {
+	.no-gutter .o-column-#{$i} {
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
 
+/**
+ * Generate `.is-first` and `.is-last` classes.
+ */
+
 @for $i from 1 through $grid-columns {
-	/* 4 */
-	.column-#{$i}.first {
+	.o-column-#{$i}.is-first {
 		padding-left: $grid-gutter * 2;
 	}
 
-	.column-#{$i}.last {
+	.o-column-#{$i}.is-last {
 		padding-right: $grid-gutter * 2;
 	}
 }

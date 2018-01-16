@@ -1,8 +1,7 @@
-/**
- * Reset (embed/generic/_reset.scss)
- */
+/* =============================================================================
+   RESET (embed/generic/_reset.scss)
+   ========================================================================== */
 
-/* ----- General ----- */
 /**
  * 1. Removing auto-generated blue links on Apple devices.
  *    More info: http://removebluelinks.com
@@ -13,6 +12,7 @@
  * 5. Force Hotmail to display normal line spacing.
  *    More info: http://www.emailonacid.com/forum/viewthread/43
  */
+
 a[x-apple-data-detectors] {
 	/* 1 */
 	color: inherit !important;
@@ -44,21 +44,19 @@ a[x-apple-data-detectors] {
 	}
 }
 
-/* ----- Media queries ----- */
-@media (max-width: $breakpoint-mobile) {
-	/* ----- General ----- */
-	.body-table-spacing {
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
-	}
 
-	/* ----- Images ----- */
+
+/* Media queries
+   ========================================================================== */
+
+@media (max-width: $breakpoint-mobile) {
 	/**
 	* 1. Makes images responsive on smaller screens.
 	*/
+
 	img {
 		/* 1 */
-		max-width: 100%;
+		max-width: 100% !important;
 		height: auto !important;
 	}
 }

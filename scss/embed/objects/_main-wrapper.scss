@@ -1,0 +1,17 @@
+/* =============================================================================
+   MAIN-WRAPPER (embed/objects/_main-wrapper.scss)
+   ========================================================================== */
+
+/* Media queries
+   ========================================================================== */
+
+@media (max-width: $breakpoint-mobile) {
+	/**
+	 * Removing spacing around main wrapper (optional).
+	 */
+
+	.o-main-wrapper__inner {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}

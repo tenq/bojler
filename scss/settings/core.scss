@@ -1,24 +1,52 @@
-/**
- * Variables (_variables.scss)
- */
+/* =============================================================================
+   CORE (settings/_core.scss)
+   ========================================================================== */
 
-/* ----- Colors ----- */
-// General
+/* Colors
+   ========================================================================== */
+
 $color-white: #ffffff !default;
+$color-black: #000000 !default;
 $color-dark: #2c3e50 !default;
 $color-red: #e74c3c !default;
 $color-green: #2ecc71 !default;
 $color-blue: #3498db !default;
 
-// Grid
-$color-container-bg: $color-white !default;
+$colors: (
+	'white': $color-white,
+	'black': $color-black,
+	'dark': $color-dark,
+	'red': $color-red,
+	'green': $color-green,
+	'blue': $color-blue,
+) !default;
 
-/* ----- Generic ----- */
-// General
-$email-bg-color: #f1f1f1 !default;
+
+
+/* Page
+   ========================================================================== */
+
+$page-background-color: #f1f1f1 !default;
+$page-vertical-spacing: 20px !default;
+
+
+
+/* Typography
+   ========================================================================== */
+
+/**
+ * Base
+ */
+
+$font-size-base: 16px !default;
+$line-height-base: 23px !default;
+$font-family-base: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+
+/**
+ * Headings
+ */
 
 // Font sizes
-$font-size-base: 16px !default;
 $font-size-h1: 50px !default;
 $font-size-h2: 38px !default;
 $font-size-h3: 28px !default;
@@ -27,7 +55,6 @@ $font-size-h5: 16px !default;
 $font-size-h6: 12px !default;
 
 // Line heights
-$line-height-base: 23px !default;
 $line-height-h1: 58px !default;
 $line-height-h2: 46px !default;
 $line-height-h3: 36px !default;
@@ -35,16 +62,52 @@ $line-height-h4: 29px !default;
 $line-height-h5: 23px !default;
 $line-height-h6: 20px !default;
 
-/* ----- Objects ----- */
-// Grid
-$grid-columns: 12 !default;
+
+
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Control the default spacing of most elements by modifying these variables.
+ * You can add more entries to the `$spacers` map, should you need more
+ * variation.
+ */
+
+$spacers: (
+	'auto': auto,
+	'0': 0,
+	'1': 10px,
+	'2': 20px,
+	'3': 30px,
+) !default;
+
+$spacing-sides: (
+	'top': t,
+	'right': r,
+	'bottom': b,
+	'left': l,
+	'horizontal': x,
+) !default;
+
+
+
+/* Grid
+   ========================================================================== */
+
+$grid-container-background-color: $color-white !default;
 $grid-container-width: 600px !default;
+$grid-columns: 12 !default;
 $grid-column-width: $grid-container-width / $grid-columns !default;
 $grid-gutter: 10px !default;
 
-/* ----- Components ----- */
-// Buttons
-$button-bg-color: #bbbbbb !default;
 
-/* ----- RWD breakpoints ----- */
+
+/* Breakpoints
+   ========================================================================== */
+
+/**
+ * Define the minimum dimension at which your layout will change, adapting to
+ * different screen sizes, for use in media queries.
+ */
+
 $breakpoint-mobile: $grid-container-width !default;

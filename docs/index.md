@@ -26,20 +26,20 @@ grid_navigation:
       excerpt: In this section you'll find features and support table, basic information about Bojler and how to use it properly. If you're first time user then you should read this first.
       cta: Read more
       url: /getting-started
-    - title: Typography
-      excerpt: Bojler includes simple and easily customized typography for headings, table cells and lists.
+    - title: Foundations
+      excerpt: Bojler includes basic reset styles and simple, easily customized typography for headings and table cells. Lets take a look at bojler foundations.
       cta: Read more
-      url: /typography
-    - title: Grid system
-      excerpt: Bojler uses 12-column grid with a 600px container. On mobile devices (under 640px wide), columns become full width and stack vertically.
+      url: /foundations
+    - title: Objects
+      excerpt: Objects are non-cosmetic styles that handle the skeletal aspect of a lot of UI components. Lets take a look at objects implemented into bojlers core.
       cta: Read more
-      url: /grid-system
-    - title: Utility classes
-      excerpt: High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as alignments and images.
-      cta: Read more
-      url: /utility-classes
+      url: /objects
     - title: Components
       excerpt: Components are pre-made blocks of code which you can use to build your own email template. These components are optional and other things don’t depend on them.
       cta: Read more
       url: /components
+    - title: Utility classes
+      excerpt: High-specificity, very explicit selectors and helper classes. We use them to easily manipulate with things such as alignments and images.
+      cta: Read more
+      url: /utility-classes
 ---
