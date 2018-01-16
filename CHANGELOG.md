@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.1.0] - 2018-01-16
+### Changed
+- Documentation updated (#71, #85).
+- Updated buttons `line-height` for better consistency (#57).
+- ITCSS rules applied (#83).
+- Updated `docs/` directory structure (#68).
+
+### Added
+- Added tests and examples automation (#86).
+- Added more utility classes (#74).
+- Added VSCode comment snippets (#84).
+
 ## [3.0.0] - 2018-01-12
 ### Changed
 - Transformed bojler to CSS only framework (#61, #70).
