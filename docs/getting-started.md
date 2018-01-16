@@ -222,6 +222,7 @@ bojler/
 │   ├── utilities/ # High-specificity, very explicit selectors.
 │   ├── embed.scss # Embed CSS gets copiled from this file.
 │   └── inline.scss # Inline CSS gets copiled from this file.
+├── test/ # Source test files.
 ├── .eslintrc # ESlint configuration file.
 ├── .gitignore # Git related file which specifies intentionally untracked files to ignore.
 ├── .stylelintrc # Stylelint configuration file.
