@@ -5,11 +5,24 @@ var sass = require( 'gulp-sass' );
 var plumber = require( 'gulp-plumber' );
 var styleLint = require( 'gulp-stylelint' );
 var rename = require( 'gulp-rename' );
-var gcmq = require( 'gulp-group-css-media-queries' );
+var combineMq = require( 'gulp-combine-mq' );
+var del = require( 'del' );
+var sequence = require( 'run-sequence' );
 
 var CONFIG = require( '../config.js' );
 var CURRENT_VERSION = require( '../../package.json' ).version;
 var NEXT_VERSION;
+
+// Pack everything up for new release
+gulp.task( 'release:prep', function( callback ) {
+	sequence(
+		'release:prompt',
+		'release:version',
+		'release:dist',
+		'release:examples',
+		callback
+	);
+} );
 
 // Security check, asking for new version number
 gulp.task( 'release:prompt', function( callback ) {
@@ -17,7 +30,7 @@ gulp.task( 'release:prompt', function( callback ) {
 		{
 			type: 'confirm',
 			name: 'confirmation',
-			message: 'Are you sure everything is updated? Documentation? Change Log?'
+			message: 'Are you sure everything is updated? Documentation? Examples? Change Log?'
 		}
 	] )
 		.then( function( result ) {
@@ -59,11 +72,13 @@ gulp.task( 'release:dist', function() {
 		.pipe( plumber() )
 		.pipe( sass( { outputStyle: 'expanded' } )
 			.on( 'error', sass.logError ) )
-		.pipe( gcmq() )
+		.pipe( combineMq() )
 		.pipe( gulp.dest( './dist' ) )
 		.pipe( sass( { outputStyle: 'compressed' } )
 			.on( 'error', sass.logError ) )
-		.pipe( gcmq() )
+		.pipe( combineMq( {
+			beautify: false
+		} ) )
 		.pipe( rename( { suffix: '.min' } ) )
 		.pipe( gulp.dest( './dist' ) )
 		.on( 'finish', function() {
@@ -80,4 +95,17 @@ gulp.task( 'release:dist', function() {
 					syntax: 'scss'
 				} ) );
 		} );
+} );
+
+// Build test files and move them to docs
+gulp.task( 'release:examples', [ 'test:build', 'release:examples:clean' ], function() {
+	return gulp.src( [ 'test/**/*.html', '!test/**/*-source.html' ] )
+		.pipe( gulp.dest( 'docs/examples' ) );
+} );
+
+// Remove existing example files
+gulp.task( 'release:examples:clean', function() {
+	return del( [
+		'docs/examples',
+	] );
 } );

@@ -23,3 +23,5 @@ dist/*
 !dist/embed.css
 !dist/inline.min.css
 !dist/embed.min.css
+test/**/*.html
+!test/**/*-source.html

@@ -12,6 +12,10 @@ module.exports = {
 		'package.json',
 		'README.md',
 		'docs/getting-started.md'
-	]
+	],
+
+	TEST_BUILD_FILES: [
+		'test/**/*.html'
+	],
 
 };
