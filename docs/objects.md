@@ -25,6 +25,18 @@ page_nav:
 Main wrapper is used to define main table inside our email template.
 You should use it in every email template you build with bojler.
 
+Basically, main wrapper adds spacing around your table to move it from browser edge. You can define spacing in your `settings/_core.scss`:
+
+<div class="example"></div>
+```scss
+$page-horizontal-spacing: 20px;
+$page-horizontal-spacing-mobile: 20px;
+$page-vertical-spacing: 40px;
+$page-vertical-spacing-mobile: 20px;
+```
+
+Your markup should look like this:
+
 <div class="example">
     <a href="../examples/objects/main-wrapper.html" target="blank">Preview</a>
 </div>
