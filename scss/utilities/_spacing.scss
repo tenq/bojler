@@ -14,6 +14,11 @@
 					padding-right: $spacer-value;
 					padding-left: $spacer-value;
 				}
+			} @else if $spacing-side-key == 'vertical' {
+				.u-p#{$spacing-side-value}-#{$spacer-key} {
+					padding-top: $spacer-value;
+					padding-bottom: $spacer-value;
+				}
 			} @else {
 				.u-p#{$spacing-side-value}-#{$spacer-key} {
 					padding-#{$spacing-side-key}: $spacer-value;
