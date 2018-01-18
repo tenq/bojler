@@ -35,7 +35,7 @@
   "devDependencies": {
     "@akzhan/gulp-juice": "^0.1.6",
     "del": "^3.0.0",
-    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp": "^4.0.0",
     "gulp-combine-mq": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
