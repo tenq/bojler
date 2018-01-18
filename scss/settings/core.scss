@@ -10,7 +10,7 @@ $color-black: #000000 !default;
 $color-dark: #2c3e50 !default;
 $color-red: #e74c3c !default;
 $color-green: #2ecc71 !default;
-$color-blue: #3498db !default;
+$color-blue: #2b7fff !default;
 
 $colors: (
 	'white': $color-white,
@@ -61,6 +61,12 @@ $line-height-h3: 36px !default;
 $line-height-h4: 29px !default;
 $line-height-h5: 23px !default;
 $line-height-h6: 20px !default;
+
+/**
+ * Links
+ */
+
+$link-color: $color-blue !default;
 
 
 

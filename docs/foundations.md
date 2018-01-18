@@ -93,3 +93,8 @@ Default values are defined in `px` instead of `em` to work properly in all email
 <div class="callout callout--info">
     <p><strong>Heading utility classes</strong> You can use specific heading utility classes to apply heading styles to any element you want in your email template. Read more about it <a href="/utility-classes/#headings">here</a>.</p>
 </div>
+
+## Links
+We've updated default link styles to make them prettier. Underline is removed and new default color is applied.
+
+You can change default link color in `settings/_core.scss`, look for `$link-color` variable.
