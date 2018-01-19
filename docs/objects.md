@@ -29,8 +29,6 @@ Basically, main wrapper adds spacing around your table to move it from browser e
 
 <div class="example"></div>
 ```scss
-$page-horizontal-spacing: 20px;
-$page-horizontal-spacing-mobile: 20px;
 $page-vertical-spacing: 40px;
 $page-vertical-spacing-mobile: 20px;
 ```
