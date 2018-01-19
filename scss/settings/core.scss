@@ -104,7 +104,6 @@ $spacing-sides: (
 /* Grid
    ========================================================================== */
 
-$grid-container-background-color: $color-white !default;
 $grid-container-width: 600px !default;
 $grid-columns: 12 !default;
 $grid-column-width: $grid-container-width / $grid-columns !default;
@@ -120,4 +119,4 @@ $grid-gutter: 10px !default;
  * different screen sizes, for use in media queries.
  */
 
-$breakpoint-mobile: $grid-container-width !default;
+$breakpoint-mobile: $grid-container-width + ($page-horizontal-spacing * 2) !default;

@@ -16,18 +16,10 @@
 		}
 	}
 
-	/**
-	 * 1. Generate `.is-first` and `.is-last` classes.
-	 */
-
 	@for $i from 1 through $grid-columns {
-		/* 1 */
-		.o-column-#{$i}.is-first {
-			padding-left: $grid-gutter !important;
-		}
-
-		.o-column-#{$i}.is-last {
-			padding-right: $grid-gutter !important;
+		.o-column-#{$i} {
+			padding-left: $grid-gutter * 2 !important;
+			padding-right: $grid-gutter * 2 !important;
 		}
 	}
 }
