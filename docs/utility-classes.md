@@ -269,11 +269,15 @@ These keywords are available by default:
     </thead>
     <tbody>
         <tr>
-            <td width="170">
-                <code>p</code> — Padding<br>
-                <code>m</code> — Margin
+            <td width="240" style="vertical-align: top;">
+                Paddings
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>.u-p&lt;side&gt;-&lt;width&gt;</code><br><br>
+                Margins
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>.u-m&lt;side&gt;-&lt;width&gt;</code><br>
             </td>
-            <td>
+            <td style="vertical-align: top;">
                 Paddings only
                 <hr style="margin-top: 5px; margin-bottom: 10px;">
                 <code>t</code> — Top<br>
@@ -285,7 +289,7 @@ These keywords are available by default:
                 <hr style="margin-top: 5px; margin-bottom: 10px;">
                 <code>x</code> — Horizontal<br>
             </td>
-            <td>
+            <td style="vertical-align: top;">
                 Paddings only
                 <hr style="margin-top: 5px; margin-bottom: 10px;">
                 <code>0</code> — 0px<br>
