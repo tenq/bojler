@@ -97,6 +97,10 @@ For example, `.u-border-t-1` would add `1px` of border to the top of the element
     </tbody>
 </table>
 
+<div class="callout callout--info">
+    <p><strong>Border width classes are customizable</strong> Border width utilities are auto generated, you can modify and add or remove sizes and sides in <code>$border-sizes</code> and <code>$border-sides</code> maps inside <code>settings/core.scss</code> file.</p>
+</div>
+
 <div class="example"></div>
 ```html
 <td class="u-border-t-1"></td>
@@ -133,6 +137,10 @@ For example, `.u-border-red` would add red color to your border, `.u-border-blac
         </tr>
     </tbody>
 </table>
+
+<div class="callout callout--info">
+    <p><strong>Border color classes are customizable</strong> Border color utilities are auto generated, you can modify and add or remove colors in <code>$colors</code> map inside <code>settings/core.scss</code> file.</p>
+</div>
 
 <div class="example"></div>
 ```html
