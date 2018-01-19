@@ -18,8 +18,8 @@
 
 	@for $i from 1 through $grid-columns {
 		.o-column-#{$i} {
-			padding-left: $grid-gutter * 2 !important;
-			padding-right: $grid-gutter * 2 !important;
+			padding-left: $grid-gutter !important;
+			padding-right: $grid-gutter !important;
 		}
 	}
 }
