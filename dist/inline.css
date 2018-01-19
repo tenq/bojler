@@ -12,12 +12,15 @@
  * Base
  *//**
  * Headings
+ *//**
+ * Links
  *//* Spacing
    ========================================================================== *//**
  * Control the default spacing of most elements by modifying these variables.
  * You can add more entries to the `$spacers` map, should you need more
  * variation.
- *//* Grid
+ *//* Borders
+   ========================================================================== *//* Grid
    ========================================================================== *//* Breakpoints
    ========================================================================== *//**
  * Define the minimum dimension at which your layout will change, adapting to
@@ -112,6 +115,13 @@ h6 {
   font-size: 12px;
   line-height: 20px;
 }/* =============================================================================
+   LINKS (elements/_links.scss)
+   ========================================================================== *//**
+ * Overriding default link styles to make them prettier.
+ */a {
+  color: #2b7fff;
+  text-decoration: none;
+}/* =============================================================================
    LISTS (elements/_lists.scss)
    ========================================================================== */ul,ol {
   margin: 0;
@@ -168,7 +178,6 @@ td {
  */.o-container {
   width: 600px;
   margin: 0 auto 0 auto;
-  background: #ffffff;
 }/* Columns
    ========================================================================== *//**
  * Generate classes for columns with gutter.
@@ -341,99 +350,99 @@ td {
 }/**
  * Generate `.is-first` and `.is-last` classes.
  */.o-column-1.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-1.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-2.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-2.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-3.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-3.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-4.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-4.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-5.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-5.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-6.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-6.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-7.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-7.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-8.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-8.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-9.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-9.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-10.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-10.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-11.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-11.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }
 
 .o-column-12.is-first {
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .o-column-12.is-last {
-  padding-right: 20px;
+  padding-right: 0;
 }/* =============================================================================
    LIST-RESET (objects/_list-reset.scss)
    ========================================================================== *//**
@@ -462,8 +471,8 @@ td {
 }/**
  * Adding spacing around main wrapper (optional).
  */.o-main-wrapper__inner {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }/* =============================================================================
    PREHEADER (objects/_preheader.scss)
    ========================================================================== *//**
@@ -528,7 +537,7 @@ td {
 }
 
 .c-btn--blue td {
-  background-color: #3498db;
+  background-color: #2b7fff;
 }/* =============================================================================
    HERO (components/_hero.scss)
    ========================================================================== */.c-hero {
@@ -552,7 +561,73 @@ td {
    ========================================================================== *//* Background colors
    ========================================================================== *//**
  * Utilities for controlling an element's background color.
- */.u-bg-white {background-color: #ffffff;}.u-bg-black {background-color: #000000;}.u-bg-dark {background-color: #2c3e50;}.u-bg-red {background-color: #e74c3c;}.u-bg-green {background-color: #2ecc71;}.u-bg-blue {background-color: #3498db;}/* =============================================================================
+ */.u-bg-white {background-color: #ffffff;}.u-bg-gray-100 {background-color: #f1f1f1;}.u-bg-gray-200 {background-color: #a5a5a5;}.u-bg-black {background-color: #000000;}.u-bg-dark {background-color: #2c3e50;}.u-bg-red {background-color: #e74c3c;}.u-bg-yellow {background-color: #f1c40f;}.u-bg-green {background-color: #2ecc71;}.u-bg-blue {background-color: #2b7fff;}.u-bg-dark-blue {background-color: #263950;}.u-bg-transparent {background-color: transparent;}/* =============================================================================
+   BORDERS (utilties/_borders.scss)
+   ========================================================================== *//* Border width
+   ========================================================================== *//**
+ * Utilities for controlling the width an element's borders.
+ */.u-border-t-0 {
+  border-top-width: 0;
+  border-top-style: solid;
+}
+
+.u-border-t-1 {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.u-border-t-2 {
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
+.u-border-r-0 {
+  border-right-width: 0;
+  border-right-style: solid;
+}
+
+.u-border-r-1 {
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+
+.u-border-r-2 {
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+.u-border-b-0 {
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+}
+
+.u-border-b-1 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.u-border-b-2 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.u-border-l-0 {
+  border-left-width: 0;
+  border-left-style: solid;
+}
+
+.u-border-l-1 {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.u-border-l-2 {
+  border-left-width: 2px;
+  border-left-style: solid;
+}/* Border color
+   ========================================================================== *//**
+ * Utilities for controlling the color of an element's borders.
+ */.u-border-white {border-color: #ffffff;}.u-border-gray-100 {border-color: #f1f1f1;}.u-border-gray-200 {border-color: #a5a5a5;}.u-border-black {border-color: #000000;}.u-border-dark {border-color: #2c3e50;}.u-border-red {border-color: #e74c3c;}.u-border-yellow {border-color: #f1c40f;}.u-border-green {border-color: #2ecc71;}.u-border-blue {border-color: #2b7fff;}.u-border-dark-blue {border-color: #263950;}.u-border-transparent {border-color: transparent;}/* =============================================================================
    DISPLAY (utilities/_display.scss)
    ========================================================================== *//**
  * Utilities for controlling the display box type of an element.
@@ -568,68 +643,27 @@ td {
    SPACING (utilities/_spacing.scss)
    ========================================================================== *//**
  * Utilities for controlling an element's padding.
- */.u-pt-0 {
+ */.u-p-0 {
   padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 
-.u-pt-1 {
-  padding-top: 10px;
-}
-
-.u-pt-2 {
-  padding-top: 20px;
-}
-
-.u-pt-3 {
-  padding-top: 30px;
+.u-pt-0 {
+  padding-top: 0;
 }
 
 .u-pr-0 {
   padding-right: 0;
 }
 
-.u-pr-1 {
-  padding-right: 10px;
-}
-
-.u-pr-2 {
-  padding-right: 20px;
-}
-
-.u-pr-3 {
-  padding-right: 30px;
-}
-
 .u-pb-0 {
   padding-bottom: 0;
 }
 
-.u-pb-1 {
-  padding-bottom: 10px;
-}
-
-.u-pb-2 {
-  padding-bottom: 20px;
-}
-
-.u-pb-3 {
-  padding-bottom: 30px;
-}
-
 .u-pl-0 {
   padding-left: 0;
-}
-
-.u-pl-1 {
-  padding-left: 10px;
-}
-
-.u-pl-2 {
-  padding-left: 20px;
-}
-
-.u-pl-3 {
-  padding-left: 30px;
 }
 
 .u-px-0 {
@@ -637,27 +671,149 @@ td {
   padding-left: 0;
 }
 
+.u-py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.u-p-1 {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.u-pt-1 {
+  padding-top: 5px;
+}
+
+.u-pr-1 {
+  padding-right: 5px;
+}
+
+.u-pb-1 {
+  padding-bottom: 5px;
+}
+
+.u-pl-1 {
+  padding-left: 5px;
+}
+
 .u-px-1 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.u-py-1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.u-p-2 {
+  padding-top: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.u-pt-2 {
+  padding-top: 10px;
+}
+
+.u-pr-2 {
+  padding-right: 10px;
+}
+
+.u-pb-2 {
+  padding-bottom: 10px;
+}
+
+.u-pl-2 {
   padding-left: 10px;
 }
 
 .u-px-2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.u-py-2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.u-p-3 {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.u-pt-3 {
+  padding-top: 15px;
+}
+
+.u-pr-3 {
+  padding-right: 15px;
+}
+
+.u-pb-3 {
+  padding-bottom: 15px;
+}
+
+.u-pl-3 {
+  padding-left: 15px;
+}
+
+.u-px-3 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.u-py-3 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.u-p-4 {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.u-pt-4 {
+  padding-top: 20px;
+}
+
+.u-pr-4 {
+  padding-right: 20px;
+}
+
+.u-pb-4 {
+  padding-bottom: 20px;
+}
+
+.u-pl-4 {
+  padding-left: 20px;
+}
+
+.u-px-4 {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.u-px-3 {
-  padding-right: 30px;
-  padding-left: 30px;
+.u-py-4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }/**
  * Utilities for controlling an element's margin.
- */.u-mx-auto {margin-right: auto;margin-left: auto;}.u-mx-0 {margin-right: 0;margin-left: 0;}.u-mx-1 {margin-right: 10px;margin-left: 10px;}.u-mx-2 {margin-right: 20px;margin-left: 20px;}.u-mx-3 {margin-right: 30px;margin-left: 30px;}/* =============================================================================
+ */.u-mx-auto {margin-right: auto;margin-left: auto;}.u-mx-0 {margin-right: 0;margin-left: 0;}.u-mx-1 {margin-right: 5px;margin-left: 5px;}.u-mx-2 {margin-right: 10px;margin-left: 10px;}.u-mx-3 {margin-right: 15px;margin-left: 15px;}.u-mx-4 {margin-right: 20px;margin-left: 20px;}/* =============================================================================
    TYPOGRAPHY (utilities/_typography.scss)
    ========================================================================== *//* Text color
    ========================================================================== *//**
  * Utilities for controlling the text color of an element.
- */.u-text-white {color: #ffffff;}.u-text-black {color: #000000;}.u-text-dark {color: #2c3e50;}.u-text-red {color: #e74c3c;}.u-text-green {color: #2ecc71;}.u-text-blue {color: #3498db;}/* Font weight
+ */.u-text-white {color: #ffffff;}.u-text-gray-100 {color: #f1f1f1;}.u-text-gray-200 {color: #a5a5a5;}.u-text-black {color: #000000;}.u-text-dark {color: #2c3e50;}.u-text-red {color: #e74c3c;}.u-text-yellow {color: #f1c40f;}.u-text-green {color: #2ecc71;}.u-text-blue {color: #2b7fff;}.u-text-dark-blue {color: #263950;}.u-text-transparent {color: transparent;}/* Font weight
    ========================================================================== *//**
  * Utilities for controlling the font weight of an element.
  */.u-font-normal {font-weight: normal;}.u-font-bold {font-weight: bold;}/* Text alignment
