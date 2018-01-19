@@ -64,7 +64,7 @@ Utilities for controlling an element's background color.
 
 ## Borders
 Utilities for controlling element's border.<br>
-Use both `u-border-` classes to create borders on your elements:
+Use both `.u-border-` classes to create borders on your elements:
 
 ### Border width
 Control an element’s border width using the `.u-border-<side>-<width>` utilities.
@@ -81,7 +81,7 @@ For example, `.u-border-t-1` would add `1px` of border to the top of the element
     </thead>
     <tbody>
         <tr>
-            <td width="100" align="center"><code>border</code></td>
+            <td width="290"><code>.u-border-&lt;side&gt;-&lt;width&gt;</code></td>
             <td>
                 <code>t</code> — Top<br>
                 <code>r</code> — Right<br>
@@ -118,16 +118,16 @@ For example, `.u-border-red` would add red color to your border, `.u-border-blac
         <tr>
             <td width="230"><code>.u-border-&lt;color&gt;</code></td>
             <td>
-                <code>white</code>
-                <code>gray-100</code>
-                <code>gray-200</code>
-                <code>black</code>
-                <code>dark</code>
-                <code>red</code>
-                <code>yellow</code>
-                <code>green</code>
-                <code>blue</code>
-                <code>dark-blue</code>
+                <code>white</code><br>
+                <code>gray-100</code><br>
+                <code>gray-200</code><br>
+                <code>black</code><br>
+                <code>dark</code><br>
+                <code>red</code><br>
+                <code>yellow</code><br>
+                <code>green</code><br>
+                <code>blue</code><br>
+                <code>dark-blue</code><br>
                 <code>transparent</code>
             </td>
         </tr>
