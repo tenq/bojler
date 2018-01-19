@@ -6,19 +6,28 @@
    ========================================================================== */
 
 $color-white: #ffffff !default;
+$color-gray-100: #f1f1f1 !default;
+$color-gray-200: #a5a5a5 !default;
 $color-black: #000000 !default;
 $color-dark: #2c3e50 !default;
 $color-red: #e74c3c !default;
+$color-yellow: #f1c40f !default;
 $color-green: #2ecc71 !default;
 $color-blue: #2b7fff !default;
+$color-dark-blue: #263950 !default;
 
 $colors: (
 	'white': $color-white,
+	'gray-100': $color-gray-100,
+	'gray-200': $color-gray-200,
 	'black': $color-black,
 	'dark': $color-dark,
 	'red': $color-red,
+	'yellow': $color-yellow,
 	'green': $color-green,
 	'blue': $color-blue,
+	'dark-blue': $color-dark-blue,
+	'transparent': transparent,
 ) !default;
 
 
@@ -97,6 +106,24 @@ $spacing-sides: (
 	'left': l,
 	'horizontal': x,
 	'vertical': y,
+) !default;
+
+
+
+/* Borders
+   ========================================================================== */
+
+$border-sizes: (
+	'0': 0,
+	'1': 1px,
+	'2': 2px,
+) !default;
+
+$border-sides: (
+	'top': t,
+	'right': r,
+	'bottom': b,
+	'left': l,
 ) !default;
 
 

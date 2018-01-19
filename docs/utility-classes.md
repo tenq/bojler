@@ -62,6 +62,83 @@ Utilities for controlling an element's background color.
     <p><strong>Background color classes are customizable</strong> Background color utilities are auto generated, you can modify and add or remove colors in <code>$colors</code> map inside <code>settings/core.scss</code> file.</p>
 </div>
 
+## Borders
+Utilities for controlling element's border.<br>
+Use both `u-border-` classes to create borders on your elements:
+
+### Border width
+Control an element’s border width using the `.u-border-<side>-<width>` utilities.
+
+For example, `.u-border-t-1` would add `1px` of border to the top of the element, `.u-border-b-0` would make the bottom border zero.
+
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Side</th>
+            <th>Width</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="100" align="center"><code>border</code></td>
+            <td>
+                <code>t</code> — Top<br>
+                <code>r</code> — Right<br>
+                <code>b</code> — Bottom<br>
+                <code>l</code> — Left
+            </td>
+            <td>
+                <code>0</code> — 0px<br>
+                <code>1</code> — 1px<br>
+                <code>2</code> — 2px
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="example"></div>
+```html
+<td class="u-border-t-1"></td>
+```
+
+### Border color
+Control an element’s border color using the `.u-border-<color>` utilities.
+
+For example, `.u-border-red` would add red color to your border, `.u-border-black` would make the border black.
+
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="230"><code>.u-border-&lt;color&gt;</code></td>
+            <td>
+                <code>white</code>
+                <code>gray-100</code>
+                <code>gray-200</code>
+                <code>black</code>
+                <code>dark</code>
+                <code>red</code>
+                <code>yellow</code>
+                <code>green</code>
+                <code>blue</code>
+                <code>dark-blue</code>
+                <code>transparent</code>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="example"></div>
+```html
+<td class="u-border-red"></td>
+```
+
 ## Display
 Utilities for controlling the display box type of an element.
 
