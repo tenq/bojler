@@ -62,6 +62,91 @@ Utilities for controlling an element's background color.
     <p><strong>Background color classes are customizable</strong> Background color utilities are auto generated, you can modify and add or remove colors in <code>$colors</code> map inside <code>settings/core.scss</code> file.</p>
 </div>
 
+## Borders
+Utilities for controlling element's border.<br>
+Use both `.u-border-` classes to create borders on your elements:
+
+### Border width
+Control an element’s border width using the `.u-border-<side>-<width>` utilities.
+
+For example, `.u-border-t-1` would add `1px` of border to the top of the element, `.u-border-b-0` would make the bottom border zero.
+
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Side</th>
+            <th>Width</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="290"><code>.u-border-&lt;side&gt;-&lt;width&gt;</code></td>
+            <td>
+                <code>t</code> — Top<br>
+                <code>r</code> — Right<br>
+                <code>b</code> — Bottom<br>
+                <code>l</code> — Left
+            </td>
+            <td>
+                <code>0</code> — 0px<br>
+                <code>1</code> — 1px<br>
+                <code>2</code> — 2px
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout callout--info">
+    <p><strong>Border width classes are customizable</strong> Border width utilities are auto generated, you can modify and add or remove sizes and sides in <code>$border-sizes</code> and <code>$border-sides</code> maps inside <code>settings/core.scss</code> file.</p>
+</div>
+
+<div class="example"></div>
+```html
+<td class="u-border-t-1"></td>
+```
+
+### Border color
+Control an element’s border color using the `.u-border-<color>` utilities.
+
+For example, `.u-border-red` would add red color to your border, `.u-border-black` would make the border black.
+
+<table>
+    <thead>
+        <tr>
+            <th>Class</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td width="230"><code>.u-border-&lt;color&gt;</code></td>
+            <td>
+                <code>white</code><br>
+                <code>gray-100</code><br>
+                <code>gray-200</code><br>
+                <code>black</code><br>
+                <code>dark</code><br>
+                <code>red</code><br>
+                <code>yellow</code><br>
+                <code>green</code><br>
+                <code>blue</code><br>
+                <code>dark-blue</code><br>
+                <code>transparent</code>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="callout callout--info">
+    <p><strong>Border color classes are customizable</strong> Border color utilities are auto generated, you can modify and add or remove colors in <code>$colors</code> map inside <code>settings/core.scss</code> file.</p>
+</div>
+
+<div class="example"></div>
+```html
+<td class="u-border-red"></td>
+```
+
 ## Display
 Utilities for controlling the display box type of an element.
 
@@ -176,7 +261,7 @@ Use this class only on your parent `<td>` element, not on `<img>`.
 ## Spacing
 Utilities for controlling an element’s padding and margin.
 
-Control an element’s padding and margin using the <code>.u-p{side}-{size}</code> and <code>.u-m{side}-{size}</code> utilities.
+Control an element’s padding and margin using the <code>.u-p&lt;side&gt;-&lt;size&gt;</code> and <code>.u-m&lt;side&gt;-&lt;size&gt;</code> utilities.
 
 For example, <code>.u-pt-1</code> would add <code>10px</code> of padding to the top of the element, <code>.u-mx-0</code> would make the horizontal margin zero.
 
@@ -185,92 +270,45 @@ These keywords are available by default:
 <table>
     <thead>
         <tr>
-            <th>Keyword</th>
-            <th>Property</th>
+            <th>Class</th>
+            <th>Side <em style="text-transform: none; font-weight: 500;">(Optional)</em></th>
+            <th>Width</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td width="100" align="center"><code>p</code></td>
-            <td>Padding</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>m</code></td>
-            <td>Margin</td>
-        </tr>
-    </tbody>
-</table>
-
-<table>
-    <thead>
-        <tr>
-            <th>Keyword</th>
-            <th>Side</th>
-            <th>Compatibility</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td width="100" align="center"><code>t</code></td>
-            <td>Top</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>r</code></td>
-            <td>Right</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>b</code></td>
-            <td>Bottom</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>l</code></td>
-            <td>Left</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>x</code></td>
-            <td>Horizontal</td>
-            <td>Paddings and margins</td>
-        </tr>
-    </tbody>
-</table>
-
-<table>
-    <thead>
-        <tr>
-            <th>Keyword</th>
-            <th>Value</th>
-            <th>Compatibility</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td width="100" align="center"><code>auto</code></td>
-            <td>Auto</td>
-            <td>Margins only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>0</code></td>
-            <td>0</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>1</code></td>
-            <td>10px</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>2</code></td>
-            <td>20px</td>
-            <td>Paddings only</td>
-        </tr>
-        <tr>
-            <td width="100" align="center"><code>3</code></td>
-            <td>30px</td>
-            <td>Paddings only</td>
+            <td width="240" style="vertical-align: top;">
+                Paddings
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>.u-p&lt;side&gt;-&lt;width&gt;</code><br><br>
+                Margins
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>.u-m&lt;side&gt;-&lt;width&gt;</code><br>
+            </td>
+            <td style="vertical-align: top;">
+                Paddings only
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>t</code> — Top<br>
+                <code>r</code> — Right<br>
+                <code>b</code> — Bottom<br>
+                <code>l</code> — Left<br>
+                <code>y</code> — Vertical<br><br>
+                Paddings and Margins
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>x</code> — Horizontal<br>
+            </td>
+            <td style="vertical-align: top;">
+                Paddings only
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>0</code> — 0px<br>
+                <code>1</code> — 5px<br>
+                <code>2</code> — 10px<br>
+                <code>3</code> — 15px<br>
+                <code>4</code> — 20px<br><br>
+                Margins only
+                <hr style="margin-top: 5px; margin-bottom: 10px;">
+                <code>auto</code> — auto
+            </td>
         </tr>
     </tbody>
 </table>
@@ -289,8 +327,16 @@ These keywords are available by default:
 </div>
 ```html
 <!--
-This will add 10px padding to the left side of an element
-and 20px padding to the bottom side of an element.
+This will add 20px padding to all sides of an element.
+-->
+
+<td class="u-p-4">
+    Add some padding
+</td>
+
+<!--
+This will add 5px padding to the left side of an element
+and 10px padding to the bottom side of an element.
 -->
 
 <td class="u-pl-1 u-pb-2">
@@ -298,7 +344,7 @@ and 20px padding to the bottom side of an element.
 </td>
 
 <!--
-This will add 30px padding to the left and right side
+This will add 15px padding to the left and right side
 of an element (horizontaly).
 -->
 

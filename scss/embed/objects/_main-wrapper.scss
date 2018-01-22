@@ -7,11 +7,11 @@
 
 @media (max-width: $breakpoint-mobile) {
 	/**
-	 * Removing spacing around main wrapper (optional).
+	 * Updating spacing around main wrapper on smaller screens.
 	 */
 
 	.o-main-wrapper__inner {
-		padding-top: 0 !important;
-		padding-bottom: 0 !important;
+		padding-top: $page-vertical-spacing-mobile !important;
+		padding-bottom: $page-vertical-spacing-mobile !important;
 	}
 }
