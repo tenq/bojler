@@ -2,6 +2,21 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.0] - 2018-01-22
+### Changed
+- Grid gutter settings updated (#97).
+- Spacing utilites updated (#91, #98, #99).
+- `o-main-wrapper` updated (#95).
+- Updated gulp files to version 4 (#90).
+
+### Added
+- Links styles added (#94).
+- `test:watch` task added (#89).
+- Added "Basic", "Notification Success", "Notification Danger", "Notification Warning", "Account Reset Password", "Notification Unsubscribed" and "Account Activate" templates (#75, #76, #77, #78, #79, #80, #82).
+
+### Fixed
+- Release zip issue fixed (#88).
+
 ## [3.1.0] - 2018-01-16
 ### Changed
 - Documentation updated (#71, #85).
