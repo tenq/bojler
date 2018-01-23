@@ -18,7 +18,9 @@
   "author": "Slicejack (https://github.com/Slicejack)",
   "files": [
     "dist/",
-    "scss/"
+    "scss/",
+    ".eslintrc",
+    ".stylelintrc"
   ],
   "repository": {
     "type": "git",
