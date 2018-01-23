@@ -1,6 +1,6 @@
 {
   "name": "@slicejack/bojler",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Bojler is an CSS email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
   "keywords": [
     "email",
@@ -18,7 +18,9 @@
   "author": "Slicejack (https://github.com/Slicejack)",
   "files": [
     "dist/",
-    "scss/"
+    "scss/",
+    ".eslintrc",
+    ".stylelintrc"
   ],
   "repository": {
     "type": "git",
