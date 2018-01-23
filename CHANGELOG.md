@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [3.2.1] - 2018-01-23
+### Changed
+- Added `.stylelintrc` and `.eslintrc` to npm package (#101).
+
 ## [3.2.0] - 2018-01-22
 ### Changed
 - Grid gutter settings updated (#97).
