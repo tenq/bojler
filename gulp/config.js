@@ -1,39 +1,38 @@
 module.exports = {
 	paths: {
-		sass: {
-			src: [ 'scss/*.scss' ],
-			dest: [ './dist' ],
-			lint: [ 'scss/**/*.scss' ],
+		html: {
+			inline: {
+				src: [ 'src/templates/**/*.html' ],
+				dest: [ 'dist' ],
+			},
+			clean: {
+				src: [ 'dist/**/*.html' ],
+				dest: [ 'dist' ],
+			},
 		},
-		test: {
-			src: [ 'test/**/*.html' ],
-			dest: [ 'test/' ],
-			clean: [
-				'test/**/*.html',
-				'!test/**/*-source.html',
-			],
-			watch: [
-				'scss/**/*.scss',
-				'test/**/*-source.html',
+		sass: {
+			lint: {
+				src: [ 'src/scss/**/*.scss' ],
+				configFile: '.stylelintrc',
+			},
+			build: {
+				src: [ 'src/scss/*.scss' ],
+				dest: [ 'dist/css' ],
+			},
+			clean: {
+				src: [ 'dist/css' ],
+			},
+		},
+		watch: {
+			src: [
+				'src/scss/**/*.scss',
+				'src/templates/**/*.html',
 			],
 		},
 		release: {
 			versionedFiles: [
-				'package.json',
 				'README.md',
-				'docs/getting-started.md',
 			],
-			assets: {
-				src: [ './dist/*' ],
-				dest: [ './release-assets' ],
-			}
-		},
-		examples: {
-			src: [
-				'test/**/*.html',
-				'!test/**/*-source.html'
-			],
-			dest: [ 'docs/examples' ],
 		},
 	},
 };
