@@ -1,5 +1,5 @@
 /* =============================================================================
-   CORE (settings/_core.scss)
+   SETTINGS
    ========================================================================== */
 
 /* Colors
@@ -146,3 +146,17 @@ $grid-gutter: 20px !default;
  */
 
 $breakpoint-mobile: $grid-container-width + ($grid-gutter * 2) !default;
+
+
+
+/* Buttons
+   ========================================================================== */
+
+$button-default-background-color: #bbbbbb !default;
+$button-default-text-color: $color-white !default;
+$button-colors: (
+	'dark': $color-dark,
+	'red': $color-red,
+	'green': $color-green,
+	'blue': $color-blue,
+) !default;

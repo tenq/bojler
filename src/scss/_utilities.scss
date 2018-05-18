@@ -1,0 +1,320 @@
+/* =============================================================================
+   UTILITIES
+   ========================================================================== */
+
+/* Background
+   ========================================================================== */
+
+/**
+ * Utilities for controlling an element's background color.
+ */
+
+@each $color-key, $color-value in $colors {
+	.bg-#{$color-key} {
+		background-color: $color-value;
+	}
+}
+
+
+
+/* Border
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the width an element's borders.
+ */
+
+@each $border-side-key, $border-side-value in $border-sides {
+	@each $size-key, $size-value in $border-sizes {
+		.border-#{$border-side-value}-#{$size-key} {
+			border-#{$border-side-key}-width: $size-value;
+			border-#{$border-side-key}-style: solid;
+		}
+	}
+}
+
+/**
+ * Utilities for controlling the color of an element's borders.
+ */
+
+@each $color-key, $color-value in $colors {
+	.border-#{$color-key} {
+		border-color: $color-value;
+	}
+}
+
+
+
+/* Display
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the display box type of an element.
+ */
+
+.block {
+	display: block;
+}
+
+.table {
+	display: table;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.block\@sm {
+		display: block !important;
+	}
+
+	.table\@sm {
+		display: table !important;
+	}
+
+	.table-row\@sm {
+		display: table-row !important;
+	}
+
+	.table-cell\@sm {
+		display: table-cell !important;
+	}
+
+	.hidden\@sm {
+		display: none !important;
+	}
+}
+
+
+
+/* Typography
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the text color of an element.
+ */
+
+@each $color-key, $color-value in $colors {
+	.text-#{$color-key} {
+		color: $color-value;
+	}
+}
+
+/**
+ * Utilities for controlling the font weight of an element.
+ */
+
+.font-normal {
+	font-weight: normal;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+/**
+ * Utilities for controlling the alignment of text.
+ */
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.text-left\@sm {
+		text-align: left !important;
+	}
+
+	.text-center\@sm {
+		text-align: center !important;
+	}
+
+	.text-right\@sm {
+		text-align: right !important;
+	}
+}
+
+/**
+ * Utilities for controlling the style of text.
+ */
+
+.italic {
+	font-style: italic;
+}
+
+.roman {
+	font-style: normal;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+
+
+/* Headings
+   ========================================================================== */
+
+/**
+ * 1. Reset margins.
+ * 2. Base headings typography settings.
+ */
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0; /* 1 */
+}
+
+.h1 {
+	/* 2 */
+	font-size: $font-size-h1;
+	line-height: $line-height-h1;
+}
+
+.h2 {
+	/* 2 */
+	font-size: $font-size-h2;
+	line-height: $line-height-h2;
+}
+
+.h3 {
+	/* 2 */
+	font-size: $font-size-h3;
+	line-height: $line-height-h3;
+}
+
+.h4 {
+	/* 2 */
+	font-size: $font-size-h4;
+	line-height: $line-height-h4;
+}
+
+.h5 {
+	/* 2 */
+	font-size: $font-size-h5;
+	line-height: $line-height-h5;
+}
+
+.h6 {
+	/* 2 */
+	font-size: $font-size-h6;
+	line-height: $line-height-h6;
+}
+
+
+
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Utilities for controlling an element's padding.
+ */
+
+@each $spacer-key, $spacer-value in $spacers {
+	@if $spacer-key != 'auto' {
+		.p-#{$spacer-key} {
+			padding-top: $spacer-value;
+			padding-right: $spacer-value;
+			padding-bottom: $spacer-value;
+			padding-left: $spacer-value;
+		}
+	}
+
+	@each $spacing-side-key, $spacing-side-value in $spacing-sides {
+		@if $spacer-key != 'auto' {
+			@if $spacing-side-key == 'horizontal' {
+				.p#{$spacing-side-value}-#{$spacer-key} {
+					padding-right: $spacer-value;
+					padding-left: $spacer-value;
+				}
+			} @else if $spacing-side-key == 'vertical' {
+				.p#{$spacing-side-value}-#{$spacer-key} {
+					padding-top: $spacer-value;
+					padding-bottom: $spacer-value;
+				}
+			} @else {
+				.p#{$spacing-side-value}-#{$spacer-key} {
+					padding-#{$spacing-side-key}: $spacer-value;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * Utilities for controlling an element's margin.
+ */
+
+@each $spacing-side-key, $spacing-side-value in $spacing-sides {
+	@each $spacer-key, $spacer-value in $spacers {
+		@if $spacing-side-key == 'horizontal' {
+			.m#{$spacing-side-value}-#{$spacer-key} {
+				margin-right: $spacer-value;
+				margin-left: $spacer-value;
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-mobile) {
+	/**
+	 * Utilities for controlling an element's padding.
+	 */
+
+	@each $spacer-key, $spacer-value in $spacers {
+		@if $spacer-key != 'auto' {
+			.p-#{$spacer-key}\@sm {
+				padding-top: $spacer-value !important;
+				padding-right: $spacer-value !important;
+				padding-bottom: $spacer-value !important;
+				padding-left: $spacer-value !important;
+			}
+		}
+
+		@each $spacing-side-key, $spacing-side-value in $spacing-sides {
+			@if $spacer-key != 'auto' {
+				@if $spacing-side-key == 'horizontal' {
+					.p#{$spacing-side-value}-#{$spacer-key}\@sm {
+						padding-right: $spacer-value !important;
+						padding-left: $spacer-value !important;
+					}
+				} @else {
+					.p#{$spacing-side-value}-#{$spacer-key}\@sm {
+						padding-#{$spacing-side-key}: $spacer-value !important;
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Utilities for controlling an element's margin.
+	 */
+
+	@each $spacing-side-key, $spacing-side-value in $spacing-sides {
+		@each $spacer-key, $spacer-value in $spacers {
+			@if $spacing-side-key == 'horizontal' {
+				.m#{$spacing-side-value}-#{$spacer-key}\@sm {
+					margin-right: $spacer-value !important;
+					margin-left: $spacer-value !important;
+				}
+			}
+		}
+	}
+}

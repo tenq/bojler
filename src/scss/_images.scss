@@ -1,16 +1,11 @@
 /* =============================================================================
-   BACKGROUNDS (utilities/_backgrounds.scss)
+   IMAGES
    ========================================================================== */
 
-/* Background colors
+/* Reset
    ========================================================================== */
 
-/**
- * Utilities for controlling an element's background color.
- */
-
-@each $color-key, $color-value in $colors {
-	.u-bg-#{$color-key} {
-		background-color: $color-value;
-	}
+.image-reset {
+	font-size: 100%;
+	line-height: 100%;
 }

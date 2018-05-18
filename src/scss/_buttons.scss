@@ -1,25 +1,11 @@
 /* =============================================================================
-   BUTTONS (components/_buttons.scss)
+   BUTTONS
    ========================================================================== */
-
-/* Settings
-   ========================================================================== */
-
-$button-default-background-color: #bbbbbb !default;
-$button-default-text-color: $color-white !default;
-$button-colors: (
-	'dark': $color-dark,
-	'red': $color-red,
-	'green': $color-green,
-	'blue': $color-blue,
-) !default;
-
-
 
 /* General
    ========================================================================== */
 
-.c-btn {
+.button {
 	td {
 		text-align: center;
 		line-height: 100%;
@@ -45,7 +31,7 @@ $button-colors: (
  * Button that populates full width of its parent.
  */
 
-.c-btn--full-width {
+.button--full-width {
 	width: 100%;
 
 	td {
@@ -57,7 +43,7 @@ $button-colors: (
  * Button with rounded edges.
  */
 
-.c-btn--rounded {
+.button--rounded {
 	td {
 		border-radius: 50px;
 	}
@@ -69,7 +55,7 @@ $button-colors: (
  */
 
 @each $color-key, $color-value in $button-colors {
-	.c-btn--#{$color-key} {
+	.button--#{$color-key} {
 		td {
 			background-color: $color-value;
 		}

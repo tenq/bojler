@@ -1,13 +1,21 @@
 /* =============================================================================
-   HERO (components/_hero.scss)
+   HERO
    ========================================================================== */
 
-.c-hero {
+.hero {
 	width: 600px;
 	height: 350px;
 	background-size: cover;
 	background-position: center;
 	vertical-align: middle;
+
+	@media (max-width: $breakpoint-mobile) {
+		height: auto !important;
+		padding-top: $grid-gutter;
+		padding-right: $grid-gutter;
+		padding-bottom: $grid-gutter;
+		padding-left: $grid-gutter;
+	}
 }
 
 
@@ -15,12 +23,20 @@
 /* Inner
    ========================================================================== */
 
-.c-hero__inner {
+.hero__inner {
 	height: 350px;
 	vertical-align: middle;
+
+	@media (max-width: $breakpoint-mobile) {
+		height: auto !important;
+	}
 
 	> table {
 		width: 520px;
 		margin: 0 auto;
+
+		@media (max-width: $breakpoint-mobile) {
+			width: 100% !important;
+		}
 	}
 }
