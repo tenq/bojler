@@ -16,7 +16,7 @@ module.exports = {
 				configFile: '.stylelintrc',
 			},
 			build: {
-				src: [ 'src/scss/*.scss' ],
+				src: [ 'src/scss/**/*.scss' ],
 				dest: [ 'dist/css' ],
 			},
 			clean: {
