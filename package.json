@@ -16,22 +16,14 @@
   },
   "license": "MIT",
   "author": "Slicejack (https://github.com/Slicejack)",
-  "files": [
-    "dist/",
-    "scss/",
-    ".eslintrc",
-    ".stylelintrc"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Slicejack/bojler.git"
   },
   "scripts": {
     "gulp": "node ./node_modules/gulp/bin/gulp.js",
-    "docs": "cd docs/ && jekyll serve",
-    "test": "npm run gulp test",
-    "test:watch": "npm run gulp test:watch",
-    "test:ci": "npm run gulp sass",
+    "build": "npm run gulp",
+    "dev": "npm run gulp dev",
     "release": "npm run gulp release"
   },
   "devDependencies": {
@@ -39,12 +31,12 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-combine-mq": "^0.4.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-stylelint": "^6.0.0",
-    "gulp-zip": "^4.1.0",
-    "inquirer": "^5.0.0",
-    "stylelint": "^8.4.0"
+    "gulp-connect": "^5.5.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-stylelint": "^7.0.0",
+    "inquirer": "^5.2.0",
+    "stylelint": "^9.2.1"
   }
 }
