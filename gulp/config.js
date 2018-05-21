@@ -8,6 +8,13 @@ module.exports = {
 			clean: {
 				src: [ 'dist/**/*.html' ],
 				dest: [ 'dist' ],
+				options: {
+					collapseWhitespace: true,
+					keepClosingSlash: true,
+					minifyCSS: true,
+					removeComments: true,
+					processConditionalComments: true,
+				},
 			},
 		},
 		sass: {
@@ -28,6 +35,15 @@ module.exports = {
 				'src/scss/**/*.scss',
 				'src/templates/**/*.html',
 			],
+		},
+		assets: {
+			clean: {
+				src: [ 'dist/assets/**/*' ],
+			},
+			copy: {
+				src: [ 'src/assets/**/*' ],
+				dest: [ 'dist/assets' ],
+			},
 		},
 		release: {
 			versionedFiles: [

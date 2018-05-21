@@ -22,9 +22,10 @@
   },
   "scripts": {
     "gulp": "node ./node_modules/gulp/bin/gulp.js",
-    "build": "npm run gulp",
+    "build": "npm run gulp build",
     "start": "npm run gulp dev",
-    "release": "npm run gulp release"
+    "release": "npm run gulp release",
+    "assets": "npm run gulp assets"
   },
   "devDependencies": {
     "@akzhan/gulp-juice": "^0.1.6",
@@ -34,12 +35,12 @@
     "gulp-connect": "^5.5.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.1",
-    "gulp-strip-comments": "^2.5.2",
     "gulp-stylelint": "^7.0.0",
     "inquirer": "^5.2.0",
     "stylelint": "^9.2.1",
     "debug": "^3.1.0",
     "mime": "^2.3.1",
-    "fresh": "^0.5.2"
+    "fresh": "^0.5.2",
+    "gulp-htmlmin": "^4.0.0"
   }
 }

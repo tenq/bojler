@@ -1,6 +1,6 @@
 var gulp = require( 'gulp' );
 var juice = require( '@akzhan/gulp-juice' );
-var stripComments = require( 'gulp-strip-comments' );
+var htmlmin = require( 'gulp-htmlmin' );
 var connect = require( 'gulp-connect' );
 
 // Require main configuration file
@@ -28,13 +28,10 @@ function inline() {
 		.pipe( gulp.dest( config.paths.html.inline.dest ) );
 }
 
-// Clean HTML (Removing unwanted comments)
+// Clean HTML
 function clean() {
 	return gulp.src( config.paths.html.clean.src )
-		.pipe( stripComments( {
-			safe: true,
-			trim: true,
-		} ) )
+		.pipe( htmlmin( config.paths.html.clean.options ) )
 		.pipe( gulp.dest( config.paths.html.clean.dest ) )
 		.pipe( connect.reload() );
 }

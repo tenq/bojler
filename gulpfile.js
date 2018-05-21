@@ -8,18 +8,21 @@ var dev = require( './gulp/tasks/dev.js' );
 var html = require( './gulp/tasks/html.js' );
 var release = require( './gulp/tasks/release.js' );
 var sass = require( './gulp/tasks/sass.js' );
+var assets = require( './gulp/tasks/assets.js' );
 
-// Default task (build)
+// Build task
 gulp.task(
-	'default',
+	'build',
 	gulp.series( [
 		sass.lint,
 		sass.build,
 		html.inline,
 		gulp.parallel( [
+			assets.clean,
 			sass.clean,
 			html.clean,
 		] ),
+		assets.copy,
 	] )
 );
 
@@ -30,7 +33,13 @@ gulp.task(
 		gulp.watch(
 			config.paths.watch.src,
 			gulp.series( [
-				'default',
+				sass.lint,
+				sass.build,
+				html.inline,
+				gulp.parallel( [
+					sass.clean,
+					html.clean,
+				] ),
 			] )
 		);
 	}
@@ -40,11 +49,20 @@ gulp.task(
 gulp.task(
 	'dev',
 	gulp.series( [
-		'default',
+		'build',
 		gulp.parallel( [
 			dev.server,
 			'watch',
 		] ),
+	] )
+);
+
+// Copy all the assets to `dist` directory
+gulp.task(
+	'assets',
+	gulp.series( [
+		assets.clean,
+		assets.copy,
 	] )
 );
 
