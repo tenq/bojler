@@ -23,7 +23,7 @@
   "scripts": {
     "gulp": "node ./node_modules/gulp/bin/gulp.js",
     "build": "npm run gulp",
-    "dev": "npm run gulp dev",
+    "start": "npm run gulp dev",
     "release": "npm run gulp release"
   },
   "devDependencies": {
@@ -37,6 +37,9 @@
     "gulp-strip-comments": "^2.5.2",
     "gulp-stylelint": "^7.0.0",
     "inquirer": "^5.2.0",
-    "stylelint": "^9.2.1"
+    "stylelint": "^9.2.1",
+    "debug": "^3.1.0",
+    "mime": "^2.3.1",
+    "fresh": "^0.5.2"
   }
 }

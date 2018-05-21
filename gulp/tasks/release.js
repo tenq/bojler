@@ -19,7 +19,7 @@ function prompt( callback ) {
 		{
 			type: 'confirm',
 			name: 'confirmation',
-			message: 'Are you sure everything is updated? README.md? CHANGELOG.md?'
+			message: 'Are you sure everything is updated? README.md? CHANGELOG.md? package.json?'
 		}
 	] )
 		.then( function( result ) {

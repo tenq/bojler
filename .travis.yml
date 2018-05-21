@@ -4,6 +4,6 @@ node_js:
 install:
   - npm install
 script:
-  - npm run test:ci
+  - npm run build
 notifications:
   email: false
