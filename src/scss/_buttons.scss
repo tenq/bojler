@@ -50,8 +50,8 @@
 }
 
 /**
- * Color variations. To add new color variation you have to add new value in
- * `$button-colors` map on top of the file.
+ * Color variations. To add a new color variation you have to add a new value in
+ * `$button-colors` map in `_settings.scss` partial.
  */
 
 @each $color-key, $color-value in $button-colors {
