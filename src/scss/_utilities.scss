@@ -11,7 +11,7 @@
 
 @each $color-key, $color-value in $colors {
 	.bg-#{$color-key} {
-		background-color: $color-value;
+		background-color: $color-value !important;
 	}
 }
 
@@ -27,8 +27,8 @@
 @each $border-side-key, $border-side-value in $border-sides {
 	@each $size-key, $size-value in $border-sizes {
 		.border-#{$border-side-value}-#{$size-key} {
-			border-#{$border-side-key}-width: $size-value;
-			border-#{$border-side-key}-style: solid;
+			border-#{$border-side-key}-width: $size-value !important;
+			border-#{$border-side-key}-style: solid !important;
 		}
 	}
 }
@@ -39,7 +39,7 @@
 
 @each $color-key, $color-value in $colors {
 	.border-#{$color-key} {
-		border-color: $color-value;
+		border-color: $color-value !important;
 	}
 }
 
@@ -53,23 +53,23 @@
  */
 
 .block {
-	display: block;
+	display: block !important;
 }
 
 .table {
-	display: table;
+	display: table !important;
 }
 
 .table-row {
-	display: table-row;
+	display: table-row !important;
 }
 
 .table-cell {
-	display: table-cell;
+	display: table-cell !important;
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 @media (max-width: $breakpoint-mobile) {
@@ -105,7 +105,7 @@
 
 @each $color-key, $color-value in $colors {
 	.text-#{$color-key} {
-		color: $color-value;
+		color: $color-value !important;
 	}
 }
 
@@ -114,11 +114,11 @@
  */
 
 .font-normal {
-	font-weight: normal;
+	font-weight: normal !important;
 }
 
 .font-bold {
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 /**
@@ -126,15 +126,15 @@
  */
 
 .text-left {
-	text-align: left;
+	text-align: left !important;
 }
 
 .text-center {
-	text-align: center;
+	text-align: center !important;
 }
 
 .text-right {
-	text-align: right;
+	text-align: right !important;
 }
 
 @media (max-width: $breakpoint-mobile) {
@@ -156,15 +156,15 @@
  */
 
 .italic {
-	font-style: italic;
+	font-style: italic !important;
 }
 
 .roman {
-	font-style: normal;
+	font-style: normal !important;
 }
 
 .uppercase {
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 
 
@@ -178,43 +178,43 @@
  */
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-	margin: 0; /* 1 */
+	margin: 0 !important; /* 1 */
 }
 
 .h1 {
 	/* 2 */
-	font-size: $font-size-h1;
-	line-height: $line-height-h1;
+	font-size: $font-size-h1 !important;
+	line-height: $line-height-h1 !important;
 }
 
 .h2 {
 	/* 2 */
-	font-size: $font-size-h2;
-	line-height: $line-height-h2;
+	font-size: $font-size-h2 !important;
+	line-height: $line-height-h2 !important;
 }
 
 .h3 {
 	/* 2 */
-	font-size: $font-size-h3;
-	line-height: $line-height-h3;
+	font-size: $font-size-h3 !important;
+	line-height: $line-height-h3 !important;
 }
 
 .h4 {
 	/* 2 */
-	font-size: $font-size-h4;
-	line-height: $line-height-h4;
+	font-size: $font-size-h4 !important;
+	line-height: $line-height-h4 !important;
 }
 
 .h5 {
 	/* 2 */
-	font-size: $font-size-h5;
-	line-height: $line-height-h5;
+	font-size: $font-size-h5 !important;
+	line-height: $line-height-h5 !important;
 }
 
 .h6 {
 	/* 2 */
-	font-size: $font-size-h6;
-	line-height: $line-height-h6;
+	font-size: $font-size-h6 !important;
+	line-height: $line-height-h6 !important;
 }
 
 
@@ -229,10 +229,10 @@
 @each $spacer-key, $spacer-value in $spacers {
 	@if $spacer-key != 'auto' {
 		.p-#{$spacer-key} {
-			padding-top: $spacer-value;
-			padding-right: $spacer-value;
-			padding-bottom: $spacer-value;
-			padding-left: $spacer-value;
+			padding-top: $spacer-value !important;
+			padding-right: $spacer-value !important;
+			padding-bottom: $spacer-value !important;
+			padding-left: $spacer-value !important;
 		}
 	}
 
@@ -240,17 +240,17 @@
 		@if $spacer-key != 'auto' {
 			@if $spacing-side-key == 'horizontal' {
 				.p#{$spacing-side-value}-#{$spacer-key} {
-					padding-right: $spacer-value;
-					padding-left: $spacer-value;
+					padding-right: $spacer-value !important;
+					padding-left: $spacer-value !important;
 				}
 			} @else if $spacing-side-key == 'vertical' {
 				.p#{$spacing-side-value}-#{$spacer-key} {
-					padding-top: $spacer-value;
-					padding-bottom: $spacer-value;
+					padding-top: $spacer-value !important;
+					padding-bottom: $spacer-value !important;
 				}
 			} @else {
 				.p#{$spacing-side-value}-#{$spacer-key} {
-					padding-#{$spacing-side-key}: $spacer-value;
+					padding-#{$spacing-side-key}: $spacer-value !important;
 				}
 			}
 		}
@@ -265,8 +265,8 @@
 	@each $spacer-key, $spacer-value in $spacers {
 		@if $spacing-side-key == 'horizontal' {
 			.m#{$spacing-side-value}-#{$spacer-key} {
-				margin-right: $spacer-value;
-				margin-left: $spacer-value;
+				margin-right: $spacer-value !important;
+				margin-left: $spacer-value !important;
 			}
 		}
 	}
