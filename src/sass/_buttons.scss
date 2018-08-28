@@ -48,16 +48,3 @@
 		border-radius: 50px;
 	}
 }
-
-/**
- * Color variations. To add a new color variation you have to add a new value in
- * `$button-colors` map in `_settings.scss` partial.
- */
-
-@each $color-key, $color-value in $button-colors {
-	.button--#{$color-key} {
-		td {
-			background-color: $color-value;
-		}
-	}
-}
