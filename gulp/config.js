@@ -19,11 +19,11 @@ module.exports = {
 		},
 		sass: {
 			lint: {
-				src: [ 'src/scss/**/*.scss' ],
+				src: [ 'src/sass/**/*.scss' ],
 				configFile: '.stylelintrc',
 			},
 			build: {
-				src: [ 'src/scss/**/*.scss' ],
+				src: [ 'src/sass/**/*.scss' ],
 				dest: [ 'dist/css' ],
 			},
 			clean: {
@@ -32,7 +32,7 @@ module.exports = {
 		},
 		watch: {
 			src: [
-				'src/scss/**/*.scss',
+				'src/sass/**/*.scss',
 				'src/templates/**/*.html',
 			],
 		},
