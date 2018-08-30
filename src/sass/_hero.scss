@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .hero {
-	width: 600px;
+	width: $grid-container-width;
 	height: 350px;
 	background-size: cover;
 	background-position: center;
@@ -32,7 +32,7 @@
 	}
 
 	> table {
-		width: 520px;
+		width: $grid-container-width - 80px;
 		margin: 0 auto;
 
 		@media (max-width: $breakpoint-mobile) {
