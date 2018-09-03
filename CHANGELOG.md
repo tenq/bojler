@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Updated settings.
 - Updated `.package-lock.json`.
 - Updated gulp tasks.
+- Updated `config.js`.
+- Updated gutter on first and last columns.
 - Renamed `/scss` folder to `/sass`.
 - Increased grid container size.
 
@@ -21,7 +23,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Added horizontal spacing variable for mobile devices.
 
 ### Removed
+- Removed distribution, documentation and test files.
 - Removed border utilites.
+- Removed VScode snippets.
 
 ## [3.2.1] - 2018-01-23
 ### Changed
