@@ -45,7 +45,7 @@ In `/templates` folder you can find `boilerplate.html` and `boilerplate-with-her
 <table>
 	<thead>
 		<tr>
-			<th>Command</th>
+			<th width="170">Command</th>
 			<th>Description</th>
 		</tr>
 	</thead>
