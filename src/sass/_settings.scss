@@ -8,11 +8,13 @@
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
 $color-gray: #f1f1f1 !default;
+$color-blue: #2b7fff !default;
 
 $colors: (
 	'white': $color-white,
 	'black': $color-black,
 	'gray': $color-gray,
+	'blue': $color-blue,
 ) !default;
 
 
