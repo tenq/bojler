@@ -8,15 +8,11 @@
 $color-white: #ffffff !default;
 $color-black: #000000 !default;
 $color-gray: #f1f1f1 !default;
-$color-red: #e74c3c !default;
-$color-blue: #2b7fff !default;
 
 $colors: (
 	'white': $color-white,
 	'black': $color-black,
 	'gray': $color-gray,
-	'red': $color-red,
-	'blue': $color-blue,
 ) !default;
 
 
@@ -123,6 +119,3 @@ $breakpoint-mobile: $grid-container-width + ($grid-gutter * 2) !default;
 
 $button-default-background-color: $color-black !default;
 $button-default-text-color: $color-white !default;
-$button-colors: (
-	'red': $color-red,
-) !default;
