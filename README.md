@@ -15,10 +15,10 @@ If you have experience with email template development, you know how painful it 
 To make it easier for you to develop responsive and lightweight email templates we have created Bojler.
 
 ## Project documentation 📖
-Full project documentation can be found at http://bojler.slicejack.com/.
+Full project documentation can be found at https://bojler.slicejack.com/.
 
 ## Quick-start guide 🚀
-Full getting started guide can be found [here](http://bojler.slicejack.com/documentation/getting-started/).
+Full getting started guide can be found [here](https://bojler.slicejack.com/documentation/getting-started/).
 
 ### 1. Download
 - [Download source files](https://github.com/Slicejack/bojler/archive/v4.0.0.zip) or
@@ -39,7 +39,7 @@ While your development server is running, every time you make and save changes t
 ### 4. Project configuration and files editing
 You’re ready to edit bojler configuration file in `src/sass/_settings.scss`.
 
-You can take a deeper look at [documentation section](http://bojler.slicejack.com/documentation) where we examine variables and maps more carefully.
+You can take a deeper look at [documentation section](https://bojler.slicejack.com/documentation) where we examine variables and maps more carefully.
 
 Now, you can start adding HTML templates to `src/templates` folder.
 
