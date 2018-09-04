@@ -1,6 +1,7 @@
 ![Bojler Heading](https://bojler.slicejack.com/wp-content/uploads/2018/09/bojler-title-2.png "Bojler")
 
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
+[![GitHub release](https://img.shields.io/github/release/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/releases)
 [![license](https://img.shields.io/github/license/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/blob/master/LICENSE)
 
 ## What is Bojler ?
