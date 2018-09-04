@@ -107,4 +107,4 @@ Special thanks to:
 - [Zurb Foundation](http://foundation.zurb.com/emails.html)
 
 ## License
-All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/bojler/blob/master/LICENSE).
+All contents of this boilerplate are licensed under the [MIT license](https://github.com/Slicejack/bojler/blob/master/LICENSE.md).
