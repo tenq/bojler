@@ -1,7 +1,6 @@
 var gulp = require( 'gulp' );
 var inquirer = require( 'inquirer' );
 var replace = require( 'gulp-replace' );
-var gulpZip = require( 'gulp-zip' );
 
 // Require main configuration file
 var config = require( '../config.js' );
@@ -13,7 +12,6 @@ var nextVersion;
 // Export functions
 exports.prompt = prompt;
 exports.version = version;
-exports.assets = assets;
 
 // Security check, asking for new version number
 function prompt( callback ) {
@@ -21,7 +19,7 @@ function prompt( callback ) {
 		{
 			type: 'confirm',
 			name: 'confirmation',
-			message: 'Are you sure everything is updated? Documentation? Examples? Change Log?'
+			message: 'Are you sure everything is updated? README.md? CHANGELOG.md? package.json?'
 		}
 	] )
 		.then( function( result ) {
@@ -58,11 +56,4 @@ function version() {
 	return gulp.src( config.paths.release.versionedFiles, { base: process.cwd() } )
 		.pipe( replace( currentVersion, nextVersion ) )
 		.pipe( gulp.dest( '.' ) );
-}
-
-// Create release assets
-function assets() {
-	return gulp.src( config.paths.release.assets.src )
-		.pipe( gulpZip( 'bojler-' + nextVersion + '-dist.zip' ) )
-		.pipe( gulp.dest( config.paths.release.assets.dest ) );
 }

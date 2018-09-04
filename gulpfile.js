@@ -4,61 +4,73 @@ var gulp = require( 'gulp' );
 var config = require( './gulp/config.js' );
 
 // Require tasks
-var sass = require( './gulp/tasks/sass.js' );
-var test = require( './gulp/tasks/test.js' );
-var examples = require( './gulp/tasks/examples.js' );
+var dev = require( './gulp/tasks/dev.js' );
+var html = require( './gulp/tasks/html.js' );
 var release = require( './gulp/tasks/release.js' );
+var sass = require( './gulp/tasks/sass.js' );
+var assets = require( './gulp/tasks/assets.js' );
 
-// SASS build task
+// Build task
 gulp.task(
-	'sass',
+	'build',
 	gulp.series( [
 		sass.lint,
 		sass.build,
+		html.inline,
+		gulp.parallel( [
+			assets.clean,
+			sass.clean,
+			html.clean,
+		] ),
+		assets.copy,
 	] )
 );
 
-// Test build task
+// Watch task
 gulp.task(
-	'test',
-	gulp.series( [
-		test.clean,
-		test.build,
-	] )
-);
-
-// Test watch task
-gulp.task(
-	'test:watch',
+	'watch',
 	function() {
 		gulp.watch(
-			config.paths.test.watch,
+			config.paths.watch.src,
 			gulp.series( [
-				'sass',
-				'test',
+				sass.lint,
+				sass.build,
+				html.inline,
+				gulp.parallel( [
+					sass.clean,
+					html.clean,
+				] ),
 			] )
 		);
 	}
 );
 
-// Examples build and migration task
+// Watch + development server and livereload
 gulp.task(
-	'examples',
+	'dev',
 	gulp.series( [
-		'test',
-		examples.clean,
-		examples.move,
+		'build',
+		gulp.parallel( [
+			dev.server,
+			'watch',
+		] ),
 	] )
 );
 
-// Release main task
+// Copy all the assets to `dist` directory
+gulp.task(
+	'assets',
+	gulp.series( [
+		assets.clean,
+		assets.copy,
+	] )
+);
+
+// Prepare everything for new version release
 gulp.task(
 	'release',
 	gulp.series( [
 		release.prompt,
 		release.version,
-		'sass',
-		'examples',
-		release.assets,
 	] )
 );

@@ -2,7 +2,7 @@ var gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
 var styleLint = require( 'gulp-stylelint' );
 var combineMq = require( 'gulp-combine-mq' );
-var rename = require( 'gulp-rename' );
+var del = require( 'del' );
 
 // Require main configuration file
 var config = require( '../config.js' );
@@ -10,12 +10,13 @@ var config = require( '../config.js' );
 // Export functions
 exports.lint = lint;
 exports.build = build;
+exports.clean = clean;
 
 // Lint SASS
 function lint() {
-	return gulp.src( config.paths.sass.lint )
+	return gulp.src( config.paths.sass.lint.src )
 		.pipe( styleLint( {
-			configFile: './.stylelintrc',
+			configFile: config.paths.sass.lint.configFile,
 			reporters: [
 				{
 					formatter: 'string',
@@ -26,16 +27,20 @@ function lint() {
 		} ) );
 }
 
-// Build SASS dist. files
+// Build SASS distribution files
 function build() {
-	return gulp.src( config.paths.sass.src )
-		.pipe( sass( { outputStyle: 'expanded' } )
+	return gulp.src( config.paths.sass.build.src )
+		.pipe( sass( {
+			outputStyle: 'compressed',
+		} )
 			.on( 'error', sass.logError ) )
-		.pipe( combineMq() )
-		.pipe( gulp.dest( config.paths.sass.dest ) )
-		.pipe( sass( { outputStyle: 'compressed' } )
-			.on( 'error', sass.logError ) )
-		.pipe( combineMq( { beautify: false } ) )
-		.pipe( rename( { suffix: '.min' } ) )
-		.pipe( gulp.dest( config.paths.sass.dest ) );
+		.pipe( combineMq( {
+			beautify: false,
+		} ) )
+		.pipe( gulp.dest( config.paths.sass.build.dest ) );
+}
+
+// Remove distribution files
+function clean() {
+	return del( config.paths.sass.clean.src );
 }

@@ -2,6 +2,31 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.0] - 2018-09-03
+### Changed
+- Updated folder structure.
+- Updated boilerplate template.
+- Updated buttons component.
+- Updated settings.
+- Updated `.package-lock.json`.
+- Updated gulp tasks.
+- Updated `config.js`.
+- Updated gutter on first and last columns.
+- Renamed `/scss` folder to `/sass`.
+- Increased grid container size.
+
+### Fixed
+- Fixed some stylint issues.
+
+### Added
+- Added boilerplate with hero template.
+- Added horizontal spacing variable for mobile devices.
+
+### Removed
+- Removed distribution, documentation and test files.
+- Removed border utilites.
+- Removed VScode snippets.
+
 ## [3.2.1] - 2018-01-23
 ### Changed
 - Added `.stylelintrc` and `.eslintrc` to npm package (#101).
