@@ -1,7 +1,10 @@
 ![Bojler Heading](https://bojler.slicejack.com/wp-content/uploads/2018/09/bojler-title-2.png "Bojler")
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
 [![GitHub release](https://img.shields.io/github/release/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/releases)
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
+[![Github All Releases](https://img.shields.io/github/downloads/slicejack/bojler/total.svg)](https://github.com/Slicejack/bojler/releases)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/slicejack/bojler.svg)
+[![GitHub issues](https://img.shields.io/github/issues-raw/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/issues)
 [![license](https://img.shields.io/github/license/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/blob/master/LICENSE)
 
 ## What is Bojler ?
