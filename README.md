@@ -5,6 +5,7 @@
 [![Github All Releases](https://img.shields.io/github/downloads/slicejack/bojler/total.svg)](https://github.com/Slicejack/bojler/releases)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/slicejack/bojler.svg)
 [![GitHub issues](https://img.shields.io/github/issues-raw/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/issues)
 [![license](https://img.shields.io/github/license/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/blob/master/LICENSE)
 
 ## What is Bojler ?
