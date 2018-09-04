@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [4.0.0] - 2018-09-03
+## [4.0.0] - 2018-09-04
 ### Changed
 - Updated folder structure.
 - Updated boilerplate template.
