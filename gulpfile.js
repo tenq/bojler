@@ -29,7 +29,7 @@ gulp.task(
 // Watch task
 gulp.task(
 	'watch',
-	function() {
+	function( done ) {
 		gulp.watch(
 			config.paths.watch.src,
 			gulp.series( [
@@ -42,6 +42,8 @@ gulp.task(
 				] ),
 			] )
 		);
+
+		done();
 	}
 );
 

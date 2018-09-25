@@ -4,10 +4,12 @@ var connect = require( 'gulp-connect' );
 exports.server = server;
 
 // Start server w/ live reload
-function server() {
+function server( done ) {
 	connect.server( {
 		port: 8000,
 		root: 'dist/',
 		livereload: true,
 	} );
+
+	done();
 }
