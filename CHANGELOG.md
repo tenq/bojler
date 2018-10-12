@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Gulp task async completion signal added (#114, #116).
 - Added `:` responsive flag to utility classes (#115, #117).
 
-## [4.0.0] - 2018-09-03
+## [4.0.0] - 2018-09-04
 ### Changed
 - Updated folder structure.
 - Updated boilerplate template.
