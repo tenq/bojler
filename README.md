@@ -21,7 +21,7 @@ Full project documentation can be found at http://bojler.slicejack.com/.
 Full getting started guide can be found [here](http://bojler.slicejack.com/documentation/getting-started/).
 
 ### 1. Download
-- [Download source files](https://github.com/Slicejack/bojler/archive/v4.0.1.zip) or
+- [Download source files](https://github.com/Slicejack/bojler/archive/v4.1.0.zip) or
 - Clone the repo: `git clone https://github.com/Slicejack/bojler.git`
 
 ### 2. Install node packages: `npm install`
