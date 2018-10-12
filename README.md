@@ -22,12 +22,12 @@ Full project documentation can be found at https://bojler.slicejack.com/.
 Full getting started guide can be found [here](https://bojler.slicejack.com/documentation/getting-started/).
 
 ### 1. Download
-- [Download source files](https://github.com/Slicejack/bojler/archive/v4.0.0.zip) or
+- [Download source files](https://github.com/Slicejack/bojler/archive/v4.0.1.zip) or
 - Clone the repo: `git clone https://github.com/Slicejack/bojler.git`
 
 ### 2. Install node packages: `npm install`
 Secondly, install node packages in root of your newly downloaded folder with `npm install` command.
-> [This is an example](https://asciinema.org/a/7wqe0HIwFKBHpg0xGcnx8K7VV) of what you should get after you run `npm install` command.
+> [This is an example](https://asciinema.org/a/IyK0I5IwF2Qfq6KAZVbr0PBqA) of what you should get after you run `npm install` command.
 
 ### 3. Start development server: `npm start`
 Let's fire up our development server 🔥
@@ -35,7 +35,7 @@ Let's fire up our development server 🔥
 Run `npm start` in your project root folder.
 
 While your development server is running, every time you make and save changes they will be automatically compiled from `src/` to `dist/` folder.
-> [This is an example](https://asciinema.org/a/5EgXCtHDLCEUaRKvwzA9sG2Y3) of what you should get after you run `npm start` command and save some changes while your development server is running.
+> [This is an example](https://asciinema.org/a/VAvuKZZiWbAZZLsLeuyAj8rSU) of what you should get after you run `npm start` command and save some changes while your development server is running.
 
 ### 4. Project configuration and files editing
 You’re ready to edit bojler configuration file in `src/sass/_settings.scss`.
@@ -57,15 +57,15 @@ In `/templates` folder you can find `boilerplate.html` and `boilerplate-with-her
 	<tbody>
 		<tr>
 			<td><code>npm start</code></td>
-			<td>This command starts live development server and watch task. While your development server is running, every time you make and save changes they will be automatically compiled from <code>src/</code> to <code>dist/</code> folder. Take a look at example <a href="https://asciinema.org/a/5EgXCtHDLCEUaRKvwzA9sG2Y3" rel="noopener" target="_blank">here</a>.</td>
+			<td>This command starts live development server and watch task. While your development server is running, every time you make and save changes they will be automatically compiled from <code>src/</code> to <code>dist/</code> folder. Take a look at example <a href="https://asciinema.org/a/VAvuKZZiWbAZZLsLeuyAj8rSU" rel="noopener" target="_blank">here</a>.</td>
 		</tr>
 		<tr>
 			<td><code>npm run build</code></td>
-			<td>This command builds everything from <code>src/</code> to <code>dist/</code> folder. Take a look at example <a href="https://asciinema.org/a/UZsom1AwszWhjTcrE8dR9CbLI" rel="noopener" target="_blank">here</a>.</td>
+			<td>This command builds everything from <code>src/</code> to <code>dist/</code> folder. Take a look at example <a href="https://asciinema.org/a/50HH47V2MfzydXAGR69aHStfM" rel="noopener" target="_blank">here</a>.</td>
 		</tr>
 		<tr>
 			<td><code>npm run assets</code></td>
-			<td>This command copies all the assets from <code>src/assets/</code> to <code>dist/assets/</code> folder. You have to run this command every time you add a new asset in order to see changes. Take a look at example <a href="https://asciinema.org/a/5MkMuClKGp5Xc7dZtBHyTH4Ci" rel="noopener" target="_blank">here</a>.</td>
+			<td>This command copies all the assets from <code>src/assets/</code> to <code>dist/assets/</code> folder. You have to run this command every time you add a new asset in order to see changes. Take a look at example <a href="https://asciinema.org/a/kv9gYScQanWr5eijGxcBZagNi" rel="noopener" target="_blank">here</a>.</td>
 		</tr>
 	</tbody>
 </table>

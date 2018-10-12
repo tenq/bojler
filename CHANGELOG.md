@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.0.1] - 2018-10-12
+### Changed
+- Updated `README.md` with few content changes.
+- Updated `CHANGELOG.md` with minor content change.
+
+### Added
+- Gulp task async completion signal added.
+
 ## [4.0.0] - 2018-09-04
 ### Changed
 - Updated folder structure.
