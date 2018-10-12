@@ -10,7 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Gulp task async completion signal added.
 
-## [4.0.0] - 2018-09-03
+## [4.0.0] - 2018-09-04
 ### Changed
 - Updated folder structure.
 - Updated boilerplate template.
