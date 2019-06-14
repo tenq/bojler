@@ -13,7 +13,8 @@ module.exports = {
 					keepClosingSlash: true,
 					minifyCSS: true,
 					removeComments: true,
-					processConditionalComments: true,
+					processConditionalComments: false,
+					ignoreCustomComments: [ /\[if.*|\[endif/ ]
 				},
 			},
 		},
