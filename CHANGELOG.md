@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.1.1] - 2019-06-21
+### Fixed
+- Fixed MacOS Node v10.16.0 compability issue.
+- Fixed issue with content in conditional comments.
+
 ## [4.1.0] - 2018-10-12
 ### Changed
 - Updated `README.md` with few content changes.
