@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [4.1.1] - 2019-06-21
 ### Fixed
-- Fixed MacOS Node v10.16.0 compability issue.
+- Fixed MacOS Node v10.16.0 compatibility issue.
 - Fixed issue with content in conditional comments.
 
 ## [4.1.0] - 2018-10-12
