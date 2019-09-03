@@ -1,7 +1,7 @@
 var gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
 var styleLint = require( 'gulp-stylelint' );
-var combineMq = require( 'gulp-combine-mq' );
+var combineMq = require( 'gulp-group-css-media-queries' );
 var del = require( 'del' );
 
 // Require main configuration file
