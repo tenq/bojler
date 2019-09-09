@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.1.3] - 2019-09-09
+### Fixed
+- Fixed all npm security issues.
+
 ## [4.1.2] - 2019-09-03
 ### Fixed
 - Fixed issues related to Node 12.

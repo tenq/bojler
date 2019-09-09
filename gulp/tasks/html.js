@@ -1,10 +1,26 @@
 var gulp = require( 'gulp' );
-var juice = require( '@akzhan/gulp-juice' );
 var htmlmin = require( 'gulp-htmlmin' );
 var connect = require( 'gulp-connect' );
+var es = require( 'event-stream' );
+var juiceFn = require( 'juice' ).juiceResources;
 
 // Require main configuration file
 var config = require( '../config.js' );
+
+// Juice gulp wrapper
+var juice = function( options ) {
+	options = options || {};
+	return es.map( function( file, fn ) {
+		juiceFn( file.contents.toString(), options, function( err, html ) {
+			if ( err ) {
+				return fn( err );
+			}
+
+			file.contents = Buffer.from( html );
+			fn( null, file );
+		} );
+	} );
+};
 
 // Export functions
 exports.inline = inline;

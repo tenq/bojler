@@ -1,7 +1,7 @@
 ![Bojler Heading](https://bojler.slicejack.com/wp-content/uploads/2018/09/bojler-title-2.png "Bojler")
 
 [![GitHub release](https://img.shields.io/github/release/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/releases)
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://travis-ci.org/Slicejack/bojler)
+[![Travis](https://travis-ci.org/Slicejack/bojler.svg?branch=master)](https://travis-ci.org/Slicejack/bojler)
 [![Github All Releases](https://img.shields.io/github/downloads/slicejack/bojler/total.svg)](https://github.com/Slicejack/bojler/releases)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/slicejack/bojler.svg)
 [![GitHub issues](https://img.shields.io/github/issues-raw/slicejack/bojler.svg)](https://github.com/Slicejack/bojler/issues)
@@ -22,7 +22,7 @@ Full project documentation can be found at https://bojler.slicejack.com/.
 Full getting started guide can be found [here](https://bojler.slicejack.com/documentation/getting-started/).
 
 ### 1. Download
-- [Download source files](https://github.com/Slicejack/bojler/archive/v4.1.2.zip) or
+- [Download source files](https://github.com/Slicejack/bojler/archive/v4.1.3.zip) or
 - Clone the repo: `git clone https://github.com/Slicejack/bojler.git`
 
 ### 2. Install node packages: `npm install`
