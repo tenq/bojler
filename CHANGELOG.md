@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [4.1.5] - 2020-04-10
+### Fixed
+- Fixed all npm security issues.
+
 ## [4.1.4] - 2019-09-25
 ### Fixed
 - Fixed issues with media queries and gmail (#130).
