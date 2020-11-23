@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "debug": "^4.1.1",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "event-stream": "^4.0.1",
     "fresh": "^0.5.2",
     "gulp": "^4.0.2",
